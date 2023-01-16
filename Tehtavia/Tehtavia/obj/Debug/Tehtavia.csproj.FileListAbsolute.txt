@@ -1,0 +1,8 @@
+C:\Users\Opiskelija\source\repos\Ohke\Tehtavia\Tehtavia\bin\Debug\Tehtavia.exe.config
+C:\Users\Opiskelija\source\repos\Ohke\Tehtavia\Tehtavia\bin\Debug\Tehtavia.exe
+C:\Users\Opiskelija\source\repos\Ohke\Tehtavia\Tehtavia\bin\Debug\Tehtavia.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Tehtavia\Tehtavia\obj\Debug\Tehtavia.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\Tehtavia\Tehtavia\obj\Debug\Tehtavia.csproj.SuggestedBindingRedirects.cache
+C:\Users\Opiskelija\source\repos\Ohke\Tehtavia\Tehtavia\obj\Debug\Tehtavia.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Tehtavia\Tehtavia\obj\Debug\Tehtavia.exe
+C:\Users\Opiskelija\source\repos\Ohke\Tehtavia\Tehtavia\obj\Debug\Tehtavia.pdb
