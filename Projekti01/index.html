@@ -1036,6 +1036,137 @@
               }
             </pre>
           </details>
+          <details closed>
+            <summary>Tee ohjelma, joka tulostaa 10 ensimmäistä Fibonaccin numeroa (0, 1, 1, 2, 3, 5...), eli seuraava luku on kahden edellisen summa</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int[] fibo = new int[10];
+                    fibo[0] = 0;
+                    fibo[1] = 1;
+                    for(int i = 2; i < 10; i++)
+                    {
+                      fibo[i] = fibo[i-1] + fibo[i-2];
+                    }
+                    Console.Write("Fibonaccin numerot ovat: [");
+                    for(int j = 0; j < 10; j++)
+                    {
+                      if(j < 9)
+                      {
+                        Console.Write("{0}, ", fibo[j]);
+                      }
+                      else
+                      {
+                        Console.Write("{0}]", fibo[j]);
+                      }
+                    }
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, joka tarkastaa, onko annettu sana / lause palidromi (esim. aaroporaa), eli luettavissa molemmin päin</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    Console.Write("Anna tarkastettava sana / lause: ");
+                    string tarkasta = Console.ReadLine();
+                    char[] kaannettava = tarkasta.ToCharArray();
+                    Array.Reverse(kaannettava);
+                    string kaannetty = new string(kaannettava);
+                    Console.WriteLine(kaannetty);
+                    if(tarkasta == kaannetty)
+                    {
+                        Console.Write("Sana / lause on palidromi");
+                    }
+                    else
+                    {
+                        Console.Write("Sana / lause ei ole palidromi");
+                    }
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Muuta edellinen Fibonacci tehtävää siten, että lasket parillisten lukujen summan</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int[] fibo = new int[10];
+                    int summa = 0;
+                    fibo[0] = 0;
+                    fibo[1] = 1;
+                    for(int i = 2; i < 10; i++)
+                    {
+                      fibo[i] = fibo[i-1] + fibo[i-2];
+                    }
+                    Console.Write("Fibonaccin numerot ovat: [");
+                    for(int j = 0; j < 10; j++)
+                    {
+                      if(fibo[j] % 2)
+                      {
+                        summa += fibo[j];
+                      }
+                    }
+                    Console.WriteLine("Parillisten Fibonaccin lukujen summa on {0}", summa);
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Muuta edellistä tehtävää siten, että lasket parittomien lukujen summan</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int[] fibo = new int[10];
+                    int summa = 0;
+                    fibo[0] = 0;
+                    fibo[1] = 1;
+                    for(int i = 2; i < 10; i++)
+                    {
+                      fibo[i] = fibo[i-1] + fibo[i-2];
+                    }
+                    Console.Write("Fibonaccin numerot ovat: [");
+                    for(int j = 0; j < 10; j++)
+                    {
+                      if(fibo[j] % 2 != 0)
+                      {
+                        summa += fibo[j];
+                      }
+                    }
+                    Console.WriteLine("Parittomien Fibonaccin lukujen summa on {0}", summa);
+                  }
+                }
+              }
+            </pre>
+          </details>
         </section>
       </article>
     </main>
