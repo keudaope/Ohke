@@ -560,7 +560,7 @@
               }
             </pre>
           </details>
-          <details open>
+          <details closed>
             <summary>Tee ohjelma, joka muuntaa metrit yardeiksi</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
@@ -651,6 +651,50 @@
           </details>
           <details closed>
             <summary>Kirjoita laskutehtävät (2-5) uudestaan siten, että käyttäjä voi antaa molemmat arvot (a, b) </summary>
+            <!--<p class="lihava">Javascript</p>
+            <pre class = "koodi">
+              var cel, fah;
+              fah = 74;
+              cel = (fah - 32) * 5 / 9;
+              console.log(fah);
+            </pre>
+            <p class = "lihava">Python</p>
+            <pre class = "koodi">
+              fah = 74
+              cel = (fah - 32) * 5 / 9
+              print(cel)
+            </pre>
+            <p class="lihava">Java</p>
+            <pre class = "koodi">
+              public class lukujenSumma
+              {
+                public static void main(String args[])
+                {
+                  int fah = 74;
+                  float cel = ((float)(fah - 32) * 5) / 9;
+                  System.out.println(cel);
+                }
+              }
+            </pre>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int fah = 75;
+                    float cel = ((float)(fah - 32) * 5) / 9;
+                    Console.WriteLine(cel);
+                  }
+                }
+              }
+
+          </details>-->
+          <details closed><!--</pre>
+            <summary>Tee ohjelma, joka laskee annetun </summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
               var cel, fah;
@@ -692,9 +736,9 @@
                 }
               }
             </pre>
-          </details>
+          </details>-->
           <details closed>
-            <summary>Tee ohjelma, joka muuntaa </summary>
+            <!--<summary>Tee ohjelma, joka muuntaa </summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
               var cel, fah;
@@ -735,54 +779,263 @@
                   }
                 }
               }
-            </pre>
-          </details>
-          <details closed>
-            <summary>Tee ohjelma, joka muuntaa </summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
-              var cel, fah;
-              fah = 74;
-              cel = (fah - 32) * 5 / 9;
-              console.log(fah);
-            </pre>
-            <p class = "lihava">Python</p>
-            <pre class = "koodi">
-              fah = 74
-              cel = (fah - 32) * 5 / 9
-              print(cel)
-            </pre>
-            <p class="lihava">Java</p>
-            <pre class = "koodi">
-              public class lukujenSumma
-              {
-                public static void main(String args[])
-                {
-                  int fah = 74;
-                  float cel = ((float)(fah - 32) * 5) / 9;
-                  System.out.println(cel);
-                }
-              }
-            </pre>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
-              using System;
-              namespace MyApplication
-              {
-                class Program
-                {
-                  static void Main(string[] args)
-                  {
-                    int fah = 75;
-                    float cel = ((float)(fah - 32) * 5) / 9;
-                    Console.WriteLine(cel);
-                  }
-                }
-              }
-            </pre>
+            </pre>-->
           </details>
         </section>
         <section class="sec2">
+          <p class="s6">SILMUKKAHARJOITUKSIA</p>
+          <details closed>
+            <summary>Tee ohjelma, joka laskee annetun luvun kertoman</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int luku, kertoma = 1;
+                    Console.Write("Anna luku, josta lasketaan kertoma: ");
+                    luku = Console.ReadLine();
+                    for (int i = 1; + <= luku; i++)
+                    {
+                      kertoma *= 1;
+                    }
+                    Console.WriteLine("Luvun {0} kertoma on {1}", luku, kertoma);
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, joka etsii luvun 3 ensimmäisen esiintymän taulukosta [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3]</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int[] taulukko = new int[] { 6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3 };
+                    int luku = 3;
+                    for(int i = 0; i < taulukko.Length; i++)
+                    {
+                      if (luku == taulukko[i])
+                      {
+                        Console.WriteLine("Ensimmäinen esiintymä luvulle {0} on kohdassa {1}.", luku, i);
+                        break;
+                      }
+                    }
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, kääntää käyttäjän antaman sanan toisinpäin (Hevonen --> nenoveH)</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    string sana;
+                    Console.Write("Anna käännettävä sana: ");
+                    sana = Console.ReadLine();
+                    for(int i = sana.Length; i > 0; i--)
+                    {
+                      Console.Write(sana[i-1]);
+                    }
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, joka etsii maksimiarvon taulukosta [6, 7, 2, 4, 3, 8, 1]</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int[] talukko = new int[] {6, 7, 2, 4, 3, 8, 1};
+                    int maksimi = 0;
+                    for (int i = 0; i < talukko.Length; i++)
+                    {
+                      if(talukko[i] > maksimi)
+                      {
+                        maksimi = talukko[i];
+                      }
+                    }
+                    Console.Write("Taulukon [ ");
+                    foreach(int arvo in talukko)
+                    {
+                      Console.Write("{0} ", arvo);
+                    }
+                    Console.WriteLine("] maksimiarvo on {0}", maksimi);
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, joka laskee keskiarvon taulukosta [6, 7, 2, 4, 3, 8, 1] ilman Math-luokan metodia</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int[] tallukko = new int[] {6, 7, 2, 4, 3, 8, 1};
+                    int yhteensa = 0;
+                    float keskiarvo;
+                    for (int i = 0; i < tallukko.Length; i++)
+                    {
+                      yhteensa += tallukko[i];
+                    }
+                    keskiarvo = (float)yhteensa / tallukko.Length;
+                    Console.Write("Taulukon [ ");
+                    foreach(int arvo in tallukko)
+                    {
+                      Console.Write("{0} ", arvo);
+                    }
+                    Console.WriteLine("] keskiarvo on {0}", keskiarvo);
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, joka tekee uuden taulukon taulukosta ["a", "b", "c", "d", "e", "f"] siten, että kaikki kirjaimet ovat isoja</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    string[] taulu = new string[] {"a", "b", "c", "d", "e", "f"};
+                    string[] isot = new string[6];
+                    for (int i = 0; i < taulu.Length; i++)
+                    {
+                      isot[i] = taulu[i].ToUpper();
+                    }
+                    Console.Write("Taulukon kirjaimet isoina: [ ");
+                    foreach(string arvo in isot)
+                    {
+                      Console.Write("{0} ", arvo);
+                    }
+                    Console.WriteLine("]");
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, joka etsii seitsemännen parittoman esiintymän taulukosta [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3]</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int[] taulukko = new int[] { 6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3 };
+                    int laskuri = 0;
+                    for(int i = 0; i < taulukko.Length; i++)
+                    {
+                        if(taulukko[i] % 2 == 0)
+                        {
+
+                        }
+                        else
+                        {
+                            laskuri++;
+
+                            if(laskuri == 7)
+                            {
+                                Console.WriteLine("Taulukon 7. pariton luku on: {0} ", taulukko[i]);
+                            }
+                        }
+                    }
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, toiseksi suurimman luvun taulukosta [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3]</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int[] taulukko = new int[] { 6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3 };
+                    Array.Sort(taulukko);
+                    int pituus;
+                    pituus = taulukko.Length;
+                    Console.WriteLine("Toiseksi suurin arvo on {0}", taulukko[pituus-2]);
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>Tee ohjelma, joka tulostaa sadasta luvusta kolme, kun luku on 3:lla jaollinen, 5, kun luku on 5:llä jaollinen ja 15, kun luku on sekä kolmella, että viidellä jaollinen</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    for(int i = 1; i <= 100; i++)
+                    {
+                      if(i % 3 == 0 && i % 5 == 0)
+                      {
+                        Console.Write("viisitoista ");
+                      }
+                      else if(i % 5 == 0)
+                      {
+                        Console.Write("viisi ");
+                      }
+                      else if(i % 3 == 0)
+                      {
+                        Console.Write("kolme ");
+                      }
+                      else
+                      {
+                        Console.Write("{0} ",i);
+                      }
+                    }
+                  }
+                }
+              }
+            </pre>
+          </details>
         </section>
       </article>
     </main>
