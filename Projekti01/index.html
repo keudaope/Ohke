@@ -1378,7 +1378,7 @@
                           Random rand = new Random();
                           string salainenNumero = rand.Next(1000, 9999).ToString();
                           // Pyydetään käyttäjältä numeroa
-                          Console.WriteLine("Arvaa numero, siinä on 4 merkkiä. {0}", salainenNumero);
+                          Console.WriteLine("Arvaa numero, siinä on 4 merkkiä.");
                           // Määritetään arvausten määrä
                           int arvauksetJaljella = 7;
                           // Käydään läpi niin kauan, kun arvauksia on jäljellä
@@ -1442,7 +1442,64 @@
               }
             </pre>
           </details>
+          <details closed>
+            <summary>Tee kivi, paperi, sakset -peli</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
 
+namespace MyApplication
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        // Lista mahdollisista valinnoista
+                        string[] vaihtoehdot = { "kivi", "paperi", "sakset" };
+
+                        // satunnaislukugeneraattorin luonti
+                        Random satunnaisLuku = new Random();
+
+                        while (true)
+                        {
+                            // Get player choice
+                            Console.Write("Anna kivi, paperi tai sakset): ");
+                            string kayttajanValinta = Console.ReadLine().ToLower();
+                            // Katsotaan, löytyykö valinta (0-2) tai jos ei löydy -1
+                            int index = Array.IndexOf(vaihtoehdot, kayttajanValinta);
+                            // Tarkistetaan, antoiko käyttäjä jonkin kolmesta vaihtoehdosta (-1 = ei antanut)
+                            if (index == -1)
+                            {
+                                Console.WriteLine("Väärä valinta. Ole hyvä, ja kirjoita joko kivi, paperi tai sakset.");
+                                continue;
+                            }
+
+                            // Luodaan tietokoneen valinta satunnaisluvun avulla
+                            int tietokoneenValintaIndeksi = satunnaisLuku.Next(vaihtoehdot.Length);
+                            // Valitaan taulukosta oikea valinta
+                            string tietokoneenValinta = vaihtoehdot[tietokoneenValintaIndeksi];
+
+                            // Määritetään voittaja
+                            if (kayttajanValinta == tietokoneenValinta)
+                            {
+                                Console.WriteLine("Tasapeli!");
+                            }
+                            else if ((kayttajanValinta == "kivi" && tietokoneenValinta == "sakset") ||
+                                     (kayttajanValinta == "paperi" && tietokoneenValinta == "kivi") ||
+                                     (kayttajanValinta == "sakset" && tietokoneenValinta == "paperi"))
+                            {
+                                Console.WriteLine("Voitit!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Tietokone voitti!");
+                            }
+                        }
+                    }
+                }
+            }
+            </pre>
+          </details>
         </section>
       </article>
     </main>
