@@ -693,7 +693,23 @@
               }
 
           --></details>
+          <details closed>
+            <summary>Tee ohjelma, joka etsii kolmesta luvusta suurimman</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
 
+                  }
+                }
+              }
+            </pre>
+          </details>
           <p class="s6">IF - ELSE HARJOITUKSIA</p>
           <details closed>
             <summary>Tee ohjelma, joka etsii kahdesta luvusta suuremman</summary>
@@ -903,6 +919,35 @@
         </section>
         <section class="sec2">
           <p class="s6">SILMUKKAHARJOITUKSIA</p>
+          <details closed>
+            <summary>Tee ohjelma, laskee, paljonko joudut maksamaan takaisin, kun lainasit 5000€ kahdeksi vuodeksi 2% korolla</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int laina = 5000;
+                    int lainaAika = 2;
+                    double korko = 0.02;
+                    double korkosumma = 0;
+                    double maksettava = 0;
+                    maksettava = laina;
+                    for(int i = 0; i < lainaAika; i++)
+                    {
+                      maksettava += maksettava * korko;
+                    }
+                    korkosumma = maksettava - laina;
+                    maksettava = laina + korkosumma;
+                    Console.WriteLine("Maksettavaa tulee {0} + {1} = {2}", laina, korkosumma, maksettava);
+                  }
+                }
+              }
+            </pre>
+          </details>
           <details closed>
             <summary>Tee ohjelma, joka laskee annetun luvun kertoman</summary>
             <p class = "lihava">C#</p>
@@ -1316,6 +1361,89 @@
               }
             </pre>
           </details>
+          <p class="s6">PELEJÄ</p>
+          <details closed>
+            <summary>Tee Mastermind peli siten, että jos arvattava nro (4 lukua, esim. 1234) on oikein, tulostuu "oikein" yksi ja jos arvattava numero on oikein, mutta väärällä paikalla, tulostuu "väärällä paikalla" 1. Esim. luku = 1234 ja arvaus 1402, tulostuu (1 oikein, 2 väärällä paikalla). Käyttäjällä on 7 arvauskertaa</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              using System.Linq; // Tuple vaatii tämän - käy lukemassa kirjasto
+
+              namespace MyApplication
+              {
+                  class Program
+                  {
+                      static void Main(string[] args)
+                      {
+                          // Luodaan satunnaislukumuuttuja välillä 1000 - 9999 ja muutetaan se stringiksi
+                          Random rand = new Random();
+                          string salainenNumero = rand.Next(1000, 9999).ToString();
+                          // Pyydetään käyttäjältä numeroa
+                          Console.WriteLine("Arvaa numero, siinä on 4 merkkiä. {0}", salainenNumero);
+                          // Määritetään arvausten määrä
+                          int arvauksetJaljella = 7;
+                          // Käydään läpi niin kauan, kun arvauksia on jäljellä
+                          while (arvauksetJaljella > 0)
+                          {
+                              // Otetaan vastaan käyttäjän syöte
+                              string kayttajanArvaus = Console.ReadLine();
+                              // Tarkistetaan, osuiko oikeaan
+                              if (kayttajanArvaus == salainenNumero)
+                              {
+                                  Console.WriteLine("Mahtavaa, arvasit sen!");
+                                  Console.WriteLine("Voitit.");
+                                  // katkaistaan ohjelman looppi
+                                  break;
+                              }
+                              // Jos ei arvannut oikein, tehdään tämä
+                              else
+                              {
+                                  // Luodaan Tuple -muuttuja (kuin taulukko, mutta ei sittenkään)
+                                  Tuple<int, int> vastaukset = TarkistaArvaus(salainenNumero, kayttajanArvaus);
+                                  // Tulostetaan vastaus käyttäjälle
+                                  Console.WriteLine("Oikea numero oikealla paikalla: " + vastaukset.Item1);
+                                  Console.WriteLine("Oikea numero väärällä paikalla: " + vastaukset.Item2);
+                                  // Pienennetään arvausten määrää
+                                  arvauksetJaljella--;
+                                  // Mikäli arvaukset loppu, tulostetaan häviöviesti
+                                  if (arvauksetJaljella < 1)
+                                  {
+                                      Console.WriteLine("Voih, hävisit pelin.");
+                                      // Katkaistaan looppi
+                                      break;
+                                  }
+                              }
+                          }
+                      }
+
+                      // Luodaan Tuple -metodi, joka tarkastaa arvauksen
+                      static Tuple<int, int> TarkistaArvaus(string numero, string arvaus)
+                          {
+                              // Alustetaan tuple -muuttujat, jotka palautetaan
+                              int oikein = 0;
+                              int vaarallaPaikalla = 0;
+                              // Tarkistetaan kaikki numerot
+                              for (int i = 0; i < numero.Length; i++)
+                              {
+                                  // Mikäli oikealla paikalla
+                                  if (arvaus[i] == numero[i])
+                                  {
+                                      oikein++;
+                                  }
+                                  // Tähän mennään vain, jos if-lause ei toteudu - tarkistetaan väärällä paikalla olevat
+                                  else if (numero.Contains(arvaus[i]))
+                                  {
+                                      vaarallaPaikalla++;
+                                  }
+                              }
+                              // Palautetaan useampi arvo - Siksi Tuple -tyyppinen muuttuja
+                              return Tuple.Create(oikein, vaarallaPaikalla);
+                          }
+                  }
+              }
+            </pre>
+          </details>
+
         </section>
       </article>
     </main>
