@@ -228,3 +228,7 @@ li p
   border-collapse:collapse;
   margin-left:1pt;
 }
+.tab
+{
+  tab-size: 4;
+}
