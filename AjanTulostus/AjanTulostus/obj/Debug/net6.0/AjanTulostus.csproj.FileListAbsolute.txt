@@ -1,0 +1,15 @@
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\AjanTulostus.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\AjanTulostus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\AjanTulostus.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\AjanTulostus.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\AjanTulostus.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\bin\Debug\net6.0\AjanTulostus.exe
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\bin\Debug\net6.0\AjanTulostus.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\bin\Debug\net6.0\AjanTulostus.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\bin\Debug\net6.0\AjanTulostus.dll
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\bin\Debug\net6.0\AjanTulostus.pdb
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\AjanTulostus.dll
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\refint\AjanTulostus.dll
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\AjanTulostus.pdb
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\AjanTulostus.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\AjanTulostus\AjanTulostus\obj\Debug\net6.0\ref\AjanTulostus.dll

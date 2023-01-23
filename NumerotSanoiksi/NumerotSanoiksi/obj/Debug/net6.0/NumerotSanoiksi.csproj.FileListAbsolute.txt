@@ -1,0 +1,15 @@
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\bin\Debug\net6.0\NumerotSanoiksi.exe
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\bin\Debug\net6.0\NumerotSanoiksi.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\bin\Debug\net6.0\NumerotSanoiksi.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\bin\Debug\net6.0\NumerotSanoiksi.dll
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\bin\Debug\net6.0\NumerotSanoiksi.pdb
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\NumerotSanoiksi.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\NumerotSanoiksi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\NumerotSanoiksi.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\NumerotSanoiksi.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\NumerotSanoiksi.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\NumerotSanoiksi.dll
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\refint\NumerotSanoiksi.dll
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\NumerotSanoiksi.pdb
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\NumerotSanoiksi.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\NumerotSanoiksi\NumerotSanoiksi\obj\Debug\net6.0\ref\NumerotSanoiksi.dll
