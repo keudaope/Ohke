@@ -1,0 +1,15 @@
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\bin\Debug\net6.0\MikaTyyppi.exe
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\bin\Debug\net6.0\MikaTyyppi.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\bin\Debug\net6.0\MikaTyyppi.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\bin\Debug\net6.0\MikaTyyppi.dll
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\bin\Debug\net6.0\MikaTyyppi.pdb
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\MikaTyyppi.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\MikaTyyppi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\MikaTyyppi.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\MikaTyyppi.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\MikaTyyppi.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\MikaTyyppi.dll
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\refint\MikaTyyppi.dll
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\MikaTyyppi.pdb
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\MikaTyyppi.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\MikaTyyppi\MikaTyyppi\obj\Debug\net6.0\ref\MikaTyyppi.dll

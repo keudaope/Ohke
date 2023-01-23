@@ -5,10 +5,44 @@ internal class Program
     private static void Main(string[] args)
     {
         //AjanLaskenta();
-        Console.Write("Anna kortin numeerinen arvo: ");
-        int arvo = int.Parse(Console.ReadLine());
-        string tulostus = Korttipakka(arvo);
-        Console.WriteLine(tulostus);    
+        /*Console.Write("Anna kortin numeerinen arvo: ");
+         int arvo = int.Parse(Console.ReadLine());
+         string tulostus = Korttipakka(arvo);
+         Console.WriteLine(tulostus);    */
+        LuvunToisto();
+    }
+
+    static void LuvunToisto()
+    {
+    hyppy:
+        int luku;
+        Console.Write("Anna toistettava luku: ");
+        try
+        {
+            luku = int.Parse(Console.ReadLine());
+        }
+        catch (Exception joulupukki)
+        {
+            Console.WriteLine(joulupukki.Message);
+            Console.WriteLine("Antamasi numero ei ole kokonaisluku!");
+            goto hyppy;
+        }
+        for(int i = 0; i < luku; i++)
+        {
+            for(int j = 0; j < luku; j++)
+            {
+                Console.Write(luku + " ");
+            }
+            Console.WriteLine();
+            for(int k = 0; k < luku; k++)
+            {
+                Console.Write(luku);
+            }
+            Console.WriteLine();
+        }
+        
+
+
     }
     static void AjanLaskenta()
     {
