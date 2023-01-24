@@ -691,12 +691,15 @@
                   }
                 }
               }
-
-          --></details>
+              -->
+          </details>
           <details closed>
-            <summary>P16. Tee ohjelma, joka etsii kolmesta luvusta suurimman</summary>
+            <summary>P16. Tee ohjelma, joka etsii datatyyppien (int, float, double, decimal, string, boolean...) koot (sizeof)  </summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
               using System;
               namespace MyApplication
               {
@@ -704,11 +707,148 @@
                 {
                   static void Main(string[] args)
                   {
-
+                    Console.WriteLine("Size of char: " + sizeof(char));
+                    Console.WriteLine("Size of Short: " + sizeof(short));
+                    Console.WriteLine("Size of int: " + sizeof(int));
+                    Console.WriteLine("Size of long: " + sizeof(long));
+                    Console.WriteLine("Size of float: " + sizeof(float));
+                    Console.WriteLine("Size of double: " + sizeof(double));
+                    Console.ReadKey();
                   }
                 }
               }
-            </pre>
+              -->
+          </details>
+          <details closed>
+            <summary>P17. Tee ohjelma, joka tulostaa annetun kirjaimen ASCII arvon (esim. A --> 65) </summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    char c;
+                    Console.WriteLine("Enter a character: ");
+                    c = Convert.ToChar( Console.ReadLine());
+                    Console.WriteLine("\nASCII Value of " +c+" "+  Convert.ToInt32(c));
+                    Console.ReadKey();
+                  }
+                }
+              }
+              -->
+          </details>
+          <details closed>
+            <summary>P18. Laske ympyrän ala, kun käyttäjä antaa säteen (pituuden) </summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    double radius, area;
+                    Console.WriteLine("Enter Radius: ");
+                    radius = Convert.ToDouble( Console.ReadLine());
+                    area = Math.PI * radius * radius;
+                    Console.WriteLine("\nArea of circle: "+area);
+                    Console.ReadKey();
+                  }
+                }
+              }
+              -->
+          </details>
+          <details closed>
+            <summary>P19. Laske neliön ala, kun käyttäjä antaa sivun mitan </summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    double side, area;
+                    Console.WriteLine("Enter the Length of Side : ");
+                    side = Convert.ToDouble( Console.ReadLine());
+                    area = side * side;
+                    Console.WriteLine("\nArea of Square: " + area);
+                    Console.ReadKey();
+                  }
+                }
+              }
+              -->
+          </details>
+          <details closed>
+            <summary>P20. Laske suorakulmion ala, kun käyttäjä antaa pituuden ja leveyden </summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    double length, breadth, area;
+                    Console.WriteLine("Enter length of rectangle : ");
+                    length = Convert.ToDouble( Console.ReadLine());
+                    Console.WriteLine("Enter breadth of rectangle : ");
+                    breadth = Convert.ToDouble(Console.ReadLine());
+                    area = length * breadth;
+                    Console.WriteLine("\nArea of rectangle: " + area);
+                    Console.ReadKey();
+                  }
+                }
+              }
+              -->
+          </details>
+          <details closed>
+            <summary>P21. Tee ohjelma, joka muuntaa annetun päivien määrän vuosiksi, kuukausiksi ja päiviksi </summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int days, years, weeks;
+                    Console.WriteLine("Enter days:");
+                    days = Convert.ToInt32( Console.ReadLine());
+                    years = (days / 365);
+                    weeks = (days % 365) / 7;
+                    days = days - ((years * 365) + (weeks * 7));
+                    Console.WriteLine("Years : "+ years);
+                    Console.WriteLine("weeks : "+ weeks);
+                    Console.WriteLine("Days : "+ days);
+
+                    Console.ReadKey();
+                  }
+                }
+              }
+              -->
           </details>
           <p class="s6">IF - ELSE HARJOITUKSIA</p>
           <details closed>
@@ -722,7 +862,18 @@
                 {
                   static void Main(string[] args)
                   {
-
+                    Console.Write("Anna ensimmäinen kokonaisluku: ");
+                    int eka = int.Parse(Console.ReadLine());
+                    Console.Write("Anna toinen kokonaisluku: ");
+                    int toka = int.Parse(Console.ReadLine());
+                    if(eka > toka)
+                    {
+                        Console.WriteLine("{0} on suurempi kuin {1}", eka, toka);
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} on suurempi kuin {1}", toka, eka);
+                    }
                   }
                 }
               }
@@ -739,7 +890,19 @@
                 {
                   static void Main(string[] args)
                   {
-
+                    int[] luvut = new int[3];
+                    Console.Write("Anna ensimmäinen kokonaisluku: ");
+                    luvut[0] = int.Parse(Console.ReadLine());
+                    Console.Write("Anna toinen kokonaisluku: ");
+                    luvut[1] = int.Parse(Console.ReadLine());
+                    Console.Write("Anna kolmas kokonaisluku: ");
+                    luvut[2] = int.Parse(Console.ReadLine());
+                    Array.Sort(luvut);
+                    Console.Write("Luvut järjestyksessä: ");
+                    foreach(int x in luvut)
+                    {
+                        Console.Write("{0} ", x);
+                    }
                   }
                 }
               }
@@ -756,7 +919,14 @@
                 {
                   static void Main(string[] args)
                   {
-
+                    Console.Write("Enter a number:");
+                    int num = int.Parse(Console.ReadLine());
+                    if (num > 0)
+                        Console.WriteLine("Positive");
+                    else if (num < 0)
+                        Console.WriteLine("Negative");
+                    else
+                        Console.WriteLine("Zero");
                   }
                 }
               }
@@ -766,6 +936,14 @@
             <summary>IE04. Tee ohjelma, joka kysyy käyttäjältä lukua ja tarkistaa, onko se 5:llä tai 11:sta jaollinen</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              ///<summary>
+              ///This program prompts the user to enter a number,
+              ///and then uses the modulo operator (%) to check if the number
+              ///is divisible by 5 or 11. If the remainder of the number
+              ///divided by 5 or 11 is 0, then the number is divisible by 5 or 11
+              ///and the program will print "The number is divisible by 5 or 11."
+              ///Otherwise, the program will print "The number is not divisible by 5 or 11."
+              ///</summary>
               using System;
               namespace MyApplication
               {
@@ -773,7 +951,16 @@
                 {
                   static void Main(string[] args)
                   {
+                    int num;
 
+                        Console.WriteLine("Enter a number: ");
+                        num = int.Parse(Console.ReadLine());
+
+                        if (num % 5 == 0 || num % 11 == 0) {
+                            Console.WriteLine("The number is divisible by 5 or 11.");
+                        } else {
+                            Console.WriteLine("The number is not divisible by 5 or 11.");
+                        }
                   }
                 }
               }
@@ -783,6 +970,12 @@
             <summary>IE05. Tee ohjelma, joka tarkastaa, onko annettu luku karkausvuosi vai ei</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              ///<summary>
+              /// The program prompts the user to enter a year, and then uses an if-else statement
+              /// to check if the year is a leap year. If the year is evenly divisible by 4 and not
+              /// evenly divisible by 100, or if the year is evenly divisible by 400, it is considered
+              ///a leap year.
+              ///</summary>
               using System;
               namespace MyApplication
               {
@@ -790,7 +983,14 @@
                 {
                   static void Main(string[] args)
                   {
+                    int year;
+                    Console.WriteLine("Enter a year: ");
+                    year = int.Parse(Console.ReadLine());
 
+                    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+                        Console.WriteLine(year + " is a leap year.");
+                    else
+                        Console.WriteLine(year + " is not a leap year.");
                   }
                 }
               }
@@ -800,6 +1000,11 @@
             <summary>IE06. Tee ohjelma, joka tarkastaa, onko annettu luku parillinen vai pariton</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              ///<summary>
+              /// This program uses the modulus operator (%) to find the remainder when the input
+              /// number is divided by 2. If the remainder is 0, then the number is even. If the
+              /// remainder is 1, then the number is odd.
+              /// </summary>
               using System;
               namespace MyApplication
               {
@@ -807,7 +1012,15 @@
                 {
                   static void Main(string[] args)
                   {
+                    Console.WriteLine("Enter a number:");
+                    int num = int.Parse(Console.ReadLine());
 
+                    if (num % 2 == 0)
+                        Console.WriteLine(num + " is even.");
+                    else
+                        Console.WriteLine(num + " is odd.");
+
+                    Console.ReadKey();
                   }
                 }
               }
@@ -817,6 +1030,11 @@
             <summary>IE07. Tee ohjelma, joka tarkistaa, onko annettu merkki kirjain vai ei</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              /// <summary>
+              /// This program uses the Char.IsLetter method to check if the input character is a
+              /// letter or not. If the input is a letter, the program will output "The input is a letter."
+              /// Otherwise, it will output "The input is not a letter."
+              /// </summary>
               using System;
               namespace MyApplication
               {
@@ -824,7 +1042,13 @@
                 {
                   static void Main(string[] args)
                   {
-
+                    Console.WriteLine("Enter a character: ");
+                    char input = Console.ReadKey().KeyChar;
+                    if (Char.IsLetter(input)) {
+                        Console.WriteLine("\nThe input is a letter.");
+                    } else {
+                        Console.WriteLine("\nThe input is not a letter.");
+                    }
                   }
                 }
               }
@@ -834,6 +1058,12 @@
             <summary>IE08. Tee ohjelma, joka tarkastaa, onko annettu kirjain vokaali vai konsonantti</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              /// <summary>
+              /// This program uses the char.ToLower method to convert the input letter to lowercase,
+              /// then uses an if-else statement to check if the input letter is a vowel or a consonant.
+              /// If the input letter is a vowel, the program will output "The input is a vowel."
+              /// Otherwise, it will output "The input is a consonant."
+              /// </summary>
               using System;
               namespace MyApplication
               {
@@ -841,7 +1071,13 @@
                 {
                   static void Main(string[] args)
                   {
-
+                    Console.WriteLine("Enter a letter: ");
+                            char input = char.ToLower(Console.ReadKey().KeyChar);
+                            if (input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u') {
+                                Console.WriteLine("\nThe input is a vowel.");
+                            } else {
+                                Console.WriteLine("\nThe input is a consonant.");
+                            }
                   }
                 }
               }
@@ -851,6 +1087,12 @@
             <summary>IE09. Tee ohjelma, joka tarkastaa, onko annettu merkki kirjain, numero vai erikoismerkki</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              /// <summary>
+              /// This program uses the Char.IsLetter method and Char.IsNumber method to check if the input
+              /// character is a letter or number respectively. If the input is a letter, the program will
+              /// output "The input is a letter." If the input is a number, the program will output
+              /// "The input is a number." Otherwise it will output "The input is other."
+              /// </summary>
               using System;
               namespace MyApplication
               {
@@ -858,7 +1100,15 @@
                 {
                   static void Main(string[] args)
                   {
-
+                    Console.WriteLine("Enter a character: ");
+                    char input = Console.ReadKey().KeyChar;
+                    if (Char.IsLetter(input)) {
+                        Console.WriteLine("\nThe input is a letter.");
+                    } else if (Char.IsNumber(input)) {
+                        Console.WriteLine("\nThe input is a number.");
+                    } else {
+                        Console.WriteLine("\nThe input is other.");
+                    }
                   }
                 }
               }
@@ -868,6 +1118,14 @@
             <summary>IE10. Tee ohjelma, joka tarkastaa, onko annettu kirjain iso vai pieni</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              /// <summary>
+              /// This program uses the Char.IsUpper method and Char.IsLower method to check
+              /// if the input character is an uppercase or lowercase letter respectively.
+              /// If the input is an uppercase letter, the program will output
+              /// "The input is an upper case letter." If the input is a lowercase letter,
+              /// the program will output "The input is a lower case letter."
+              /// Otherwise it will output "The input is not a letter."
+              /// </summary>
               using System;
               namespace MyApplication
               {
@@ -875,7 +1133,15 @@
                 {
                   static void Main(string[] args)
                   {
-
+                    Console.WriteLine("Enter a letter: ");
+                    char input = Console.ReadKey().KeyChar;
+                    if (Char.IsUpper(input)) {
+                        Console.WriteLine("\nThe input is an upper case letter.");
+                    } else if(Char.IsLower(input)) {
+                        Console.WriteLine("\nThe input is a lower case letter.");
+                    } else {
+                        Console.WriteLine("\nThe input is not a letter.");
+                    }
                   }
                 }
               }
@@ -885,6 +1151,15 @@
             <summary>IE11. Tee ohjelma, joka laskee annetuista myynti ja ostoluvuista, saitko voittoa vai tappiota</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              /// <summary>
+              /// This program prompts the user to enter the buying price and the selling price,
+              /// then it uses an if-else statement to check if the selling price is greater
+              /// than the buying price. If the selling price is greater than the buying price,
+              /// a profit can be made, and the program calculates the profit by subtracting
+              /// the buying price from the selling price. The program then outputs the profit.
+              /// If the selling price is not greater than the buying price, no profit can be made,
+              /// and the program outputs "No profit can be made."
+              /// </summary>
               using System;
               namespace MyApplication
               {
@@ -892,7 +1167,17 @@
                 {
                   static void Main(string[] args)
                   {
+                    Console.WriteLine("Enter the buying price: ");
+                    double buyingPrice = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter the selling price: ");
+                    double sellingPrice = double.Parse(Console.ReadLine());
 
+                    if (sellingPrice > buyingPrice) {
+                        double profit = sellingPrice - buyingPrice;
+                        Console.WriteLine("Profit of {0} can be made.", profit);
+                    } else {
+                        Console.WriteLine("No profit can be made.");
+                    }
                   }
                 }
               }
@@ -903,6 +1188,14 @@
             Yli 90 pistettä = K5, yli 80 pistettä = H4, yli 70 pistettä = H3, yli 60 pistettä = T2, yli 50 pistettä = T1, muutoin hylätty</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
+              /// <summary>
+              /// This program first creates an array to store the test points and an array
+              /// to store the names of the tests. It then prompts the user to enter the
+              /// points for each test and stores the points in the corresponding array index.
+              /// It then iterates through the test points array and checks the value against
+              /// the given criteria to determine the grade for each test.
+               The grade is then printed to the console.
+              /// </summary>
               using System;
               namespace MyApplication
               {
@@ -910,7 +1203,31 @@
                 {
                   static void Main(string[] args)
                   {
+                    int[] testPoints = new int[5];
+                    string[] testNames = { "Math", "Physics", "English", "Spanish", "Literature" };
 
+                    for (int i = 0; i < testPoints.Length; i++)
+                    {
+                        Console.WriteLine("Enter points for " + testNames[i] + " test: ");
+                        testPoints[i] = int.Parse(Console.ReadLine());
+                    }
+
+                    for (int i = 0; i < testPoints.Length; i++)
+                    {
+                        if (testPoints[i] >= 90)
+                            Console.WriteLine(testNames[i] + " test grade: K5");
+                        else if (testPoints[i] >= 80)
+                            Console.WriteLine(testNames[i] + " test grade: H4");
+                        else if (testPoints[i] >= 70)
+                            Console.WriteLine(testNames[i] + " test grade: H3");
+                        else if (testPoints[i] >= 60)
+                            Console.WriteLine(testNames[i] + " test grade: T2");
+                        else if (testPoints[i] >= 50)
+                            Console.WriteLine(testNames[i] + " test grade: T1");
+                        else
+                            Console.WriteLine(testNames[i] + " test grade: Failed");
+                    }
+                    Console.ReadLine();
                   }
                 }
               }
@@ -920,7 +1237,7 @@
         <section class="sec2">
           <p class="s6">SILMUKKAHARJOITUKSIA</p>
           <details closed>
-            <summary>S01. Tee ohjelma, laskee, paljonko joudut maksamaan takaisin, kun lainasit 5000€ kahdeksi vuodeksi 2% korolla</summary>
+            <summary>S01. Tee ohjelma, laskee, paljonko joudut maksamaan takaisin, kun lainasit     5000€ kahdeksi vuodeksi 2% korolla</summary>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
               using System;

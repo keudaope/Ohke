@@ -232,3 +232,11 @@ li p
 {
   tab-size: 4;
 }
+summary
+{
+  /* length values */
+text-indent:   -18px;
+padding-left:  18px;
+
+
+}
