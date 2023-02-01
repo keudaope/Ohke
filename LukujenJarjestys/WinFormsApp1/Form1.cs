@@ -30,5 +30,17 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void naytaCB_CheckedChanged(object sender, EventArgs e)
+        {
+            if(naytaCB.Checked) {
+                salasanaTB.PasswordChar = '\0';
+            }
+            else
+            {
+                salasanaTB.PasswordChar = '*';
+            }
+            
+        }
     }
 }
