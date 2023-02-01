@@ -1,0 +1,15 @@
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\bin\Debug\net6.0\Bank.exe
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\bin\Debug\net6.0\Bank.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\bin\Debug\net6.0\Bank.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\bin\Debug\net6.0\Bank.dll
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\bin\Debug\net6.0\Bank.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\Bank.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\Bank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\Bank.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\Bank.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\Bank.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\Bank.dll
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\refint\Bank.dll
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\Bank.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\Bank.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\Bank\Bank\obj\Debug\net6.0\ref\Bank.dll

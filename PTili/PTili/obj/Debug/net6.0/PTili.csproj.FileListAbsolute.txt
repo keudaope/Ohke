@@ -1,0 +1,15 @@
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\bin\Debug\net6.0\PTili.exe
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\bin\Debug\net6.0\PTili.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\bin\Debug\net6.0\PTili.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\bin\Debug\net6.0\PTili.dll
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\bin\Debug\net6.0\PTili.pdb
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\PTili.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\PTili.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\PTili.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\PTili.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\PTili.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\PTili.dll
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\refint\PTili.dll
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\PTili.pdb
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\PTili.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\PTili\PTili\obj\Debug\net6.0\ref\PTili.dll

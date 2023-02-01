@@ -1,0 +1,15 @@
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\bin\Debug\net6.0\Hirsipuu.exe
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\bin\Debug\net6.0\Hirsipuu.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\bin\Debug\net6.0\Hirsipuu.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\bin\Debug\net6.0\Hirsipuu.dll
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\bin\Debug\net6.0\Hirsipuu.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\Hirsipuu.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\Hirsipuu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\Hirsipuu.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\Hirsipuu.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\Hirsipuu.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\Hirsipuu.dll
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\refint\Hirsipuu.dll
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\Hirsipuu.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\Hirsipuu.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\Hirsipuu\Hirsipuu\obj\Debug\net6.0\ref\Hirsipuu.dll

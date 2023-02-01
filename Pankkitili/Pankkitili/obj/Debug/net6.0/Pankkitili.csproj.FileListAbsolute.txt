@@ -1,0 +1,15 @@
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\bin\Debug\net6.0\Pankkitili.exe
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\bin\Debug\net6.0\Pankkitili.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\bin\Debug\net6.0\Pankkitili.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\bin\Debug\net6.0\Pankkitili.dll
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\bin\Debug\net6.0\Pankkitili.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\Pankkitili.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\Pankkitili.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\Pankkitili.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\Pankkitili.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\Pankkitili.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\Pankkitili.dll
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\refint\Pankkitili.dll
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\Pankkitili.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\Pankkitili.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\Pankkitili\Pankkitili\obj\Debug\net6.0\ref\Pankkitili.dll

@@ -1,0 +1,17 @@
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\bin\Debug\net6.0-windows\Tehtava4.exe
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\bin\Debug\net6.0-windows\Tehtava4.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\bin\Debug\net6.0-windows\Tehtava4.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\bin\Debug\net6.0-windows\Tehtava4.dll
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\bin\Debug\net6.0-windows\Tehtava4.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.Form1.resources
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.csproj.GenerateResource.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.dll
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\refint\Tehtava4.dll
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\Tehtava4.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Tehtava4\obj\Debug\net6.0-windows\ref\Tehtava4.dll

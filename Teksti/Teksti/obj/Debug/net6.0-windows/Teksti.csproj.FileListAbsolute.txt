@@ -1,0 +1,17 @@
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\bin\Debug\net6.0-windows\Teksti.exe
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\bin\Debug\net6.0-windows\Teksti.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\bin\Debug\net6.0-windows\Teksti.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\bin\Debug\net6.0-windows\Teksti.dll
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\bin\Debug\net6.0-windows\Teksti.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.Form1.resources
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.csproj.GenerateResource.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.dll
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\refint\Teksti.dll
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\Teksti.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\Teksti\Teksti\obj\Debug\net6.0-windows\ref\Teksti.dll

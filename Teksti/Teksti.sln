@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teksti", "Teksti\Teksti.csproj", "{A84D8789-4551-4053-9566-E1E852EC09FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava3", "Tehtava3\Tehtava3.csproj", "{8AF232FE-536B-454D-A269-F00ED68659B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava4", "Tehtava4\Tehtava4.csproj", "{9EEAFAA1-272E-4174-AB33-99F99A77189A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A84D8789-4551-4053-9566-E1E852EC09FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84D8789-4551-4053-9566-E1E852EC09FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84D8789-4551-4053-9566-E1E852EC09FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84D8789-4551-4053-9566-E1E852EC09FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF232FE-536B-454D-A269-F00ED68659B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF232FE-536B-454D-A269-F00ED68659B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF232FE-536B-454D-A269-F00ED68659B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF232FE-536B-454D-A269-F00ED68659B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEAFAA1-272E-4174-AB33-99F99A77189A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEAFAA1-272E-4174-AB33-99F99A77189A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEAFAA1-272E-4174-AB33-99F99A77189A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEAFAA1-272E-4174-AB33-99F99A77189A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E487CC5-E1A5-4E33-8C19-18E4A8E21987}
+	EndGlobalSection
+EndGlobal

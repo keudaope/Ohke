@@ -1,0 +1,6 @@
+C:\Users\Opiskelija\source\repos\Ohke\Pankki\PankkitiliTesti\bin\Release\net6.0\CoverletSourceRootsMapping
+C:\Users\Opiskelija\source\repos\Ohke\Pankki\PankkitiliTesti\obj\Release\net6.0\PankkitiliTesti.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\Pankki\PankkitiliTesti\obj\Release\net6.0\PankkitiliTesti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\Pankki\PankkitiliTesti\obj\Release\net6.0\PankkitiliTesti.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Pankki\PankkitiliTesti\obj\Release\net6.0\PankkitiliTesti.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\Pankki\PankkitiliTesti\obj\Release\net6.0\PankkitiliTesti.csproj.CoreCompileInputs.cache
