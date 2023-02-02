@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\Tunnistautuminen.csproj",
-      "projectName": "Tunnistautuminen",
-      "projectPath": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\Tunnistautuminen.csproj",
+      "projectUniqueName": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\RoomalaisetNumerot\\RoomalaisetNumerot.csproj",
+      "projectName": "RoomalaisetNumerot",
+      "projectPath": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\RoomalaisetNumerot\\RoomalaisetNumerot.csproj",
       "packagesPath": "C:\\Users\\Opiskelija\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\obj\\",
+      "outputPath": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\RoomalaisetNumerot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

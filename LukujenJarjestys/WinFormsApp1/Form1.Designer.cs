@@ -36,6 +36,7 @@
             this.ktLB = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.terveLB = new System.Windows.Forms.Label();
+            this.naytaCB = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Controls.Add(this.naytaCB);
             this.panel1.Controls.Add(this.virheLB);
             this.panel1.Controls.Add(this.salasanaTB);
             this.panel1.Controls.Add(this.ssLB);
@@ -52,7 +54,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 172);
+            this.panel1.Size = new System.Drawing.Size(818, 160);
             this.panel1.TabIndex = 0;
             // 
             // virheLB
@@ -112,7 +114,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(394, 172);
+            this.panel2.Size = new System.Drawing.Size(818, 160);
             this.panel2.TabIndex = 1;
             // 
             // terveLB
@@ -126,11 +128,22 @@
             this.terveLB.TabIndex = 0;
             this.terveLB.Text = "Tervetuloa kotisivuilleni";
             // 
+            // naytaCB
+            // 
+            this.naytaCB.AutoSize = true;
+            this.naytaCB.Location = new System.Drawing.Point(384, 74);
+            this.naytaCB.Name = "naytaCB";
+            this.naytaCB.Size = new System.Drawing.Size(157, 29);
+            this.naytaCB.TabIndex = 4;
+            this.naytaCB.Text = "Näytä salasana";
+            this.naytaCB.UseVisualStyleBackColor = true;
+            this.naytaCB.CheckedChanged += new System.EventHandler(this.naytaCB_CheckedChanged);
+            // 
             // SalasanaFM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 172);
+            this.ClientSize = new System.Drawing.Size(818, 160);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -155,5 +168,6 @@
         private Label ktLB;
         private Label terveLB;
         private Label virheLB;
+        private CheckBox naytaCB;
     }
 }

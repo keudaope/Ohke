@@ -1,0 +1,17 @@
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\bin\Debug\net6.0-windows\Tunnistautuminen.exe
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\bin\Debug\net6.0-windows\Tunnistautuminen.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\bin\Debug\net6.0-windows\Tunnistautuminen.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\bin\Debug\net6.0-windows\Tunnistautuminen.dll
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\bin\Debug\net6.0-windows\Tunnistautuminen.pdb
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.SalasanaFM.resources
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.csproj.GenerateResource.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.dll
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\refint\Tunnistautuminen.dll
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.pdb
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\Tunnistautuminen.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\WinFormsApp1\obj\Debug\net6.0-windows\ref\Tunnistautuminen.dll
