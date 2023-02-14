@@ -54,7 +54,11 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
+<<<<<<< HEAD
             this.panel1.Size = new System.Drawing.Size(850, 250);
+=======
+            this.panel1.Size = new System.Drawing.Size(818, 160);
+>>>>>>> 061cb6d1642fc0b8cdfafaced434cc047cad4a85
             this.panel1.TabIndex = 0;
             // 
             // virheLB
@@ -114,7 +118,11 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
+<<<<<<< HEAD
             this.panel2.Size = new System.Drawing.Size(850, 250);
+=======
+            this.panel2.Size = new System.Drawing.Size(818, 160);
+>>>>>>> 061cb6d1642fc0b8cdfafaced434cc047cad4a85
             this.panel2.TabIndex = 1;
             // 
             // terveLB
@@ -131,9 +139,15 @@
             // naytaCB
             // 
             this.naytaCB.AutoSize = true;
+<<<<<<< HEAD
             this.naytaCB.Location = new System.Drawing.Point(537, 92);
             this.naytaCB.Name = "naytaCB";
             this.naytaCB.Size = new System.Drawing.Size(300, 55);
+=======
+            this.naytaCB.Location = new System.Drawing.Point(384, 74);
+            this.naytaCB.Name = "naytaCB";
+            this.naytaCB.Size = new System.Drawing.Size(157, 29);
+>>>>>>> 061cb6d1642fc0b8cdfafaced434cc047cad4a85
             this.naytaCB.TabIndex = 4;
             this.naytaCB.Text = "Näytä salasana";
             this.naytaCB.UseVisualStyleBackColor = true;
@@ -143,7 +157,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(21F, 51F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(850, 250);
+=======
+            this.ClientSize = new System.Drawing.Size(818, 160);
+>>>>>>> 061cb6d1642fc0b8cdfafaced434cc047cad4a85
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

@@ -1,0 +1,17 @@
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\bin\Debug\net6.0-windows\RoomalaisetNumerot.exe
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\bin\Debug\net6.0-windows\RoomalaisetNumerot.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\bin\Debug\net6.0-windows\RoomalaisetNumerot.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\bin\Debug\net6.0-windows\RoomalaisetNumerot.dll
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\bin\Debug\net6.0-windows\RoomalaisetNumerot.pdb
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.RoomalaisetFM.resources
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.csproj.GenerateResource.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.dll
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\refint\RoomalaisetNumerot.dll
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.pdb
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\RoomalaisetNumerot.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\LukujenJarjestys\RoomalaisetNumerot\obj\Debug\net6.0-windows\ref\RoomalaisetNumerot.dll

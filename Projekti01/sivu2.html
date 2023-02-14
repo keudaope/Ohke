@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <script type="text/javascript" href="script.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <menu>
+          <p class="s1">SISÄLTÄÄ MM.:</p>
+          <p class="s2">❱<span class="s3">Perusharjoituksia</span></p>
+          <p class="s2">❱<span class="s3">Ehtolauseita</span></p>
+          <p class="s2">❱<span class="s3">Silmukoita</span></p>
+          <p class="s2">❱<span class="s3">Taulukoita</span></p>
+          <p class="s2">❱<span class="s3">Objekteja ... ja paljon muuta</span></p>
+        </menu>
+        <h1 style="">Ohjelmointi <span style=" color: #B30838;">tehtäviä</span></h1>
+        <nav class="navbar">
+          <a href="index.html" class="btn Active" onclick="nykyinenPainike(0)">Sivu 1</a>
+          <a href="sivu2.html" class="btn Active" onclick="nykyinenPainike(1)">Sivu 2</a>
+          <a href="sivu3.html" class="btn Active" onclick="nykyinenPainike(2)">Sivu 3</a>
+          <a href="sivu4.html" class="btn Active" onclick="nykyinenPainike(3)">Sivu 4</a>
+          <a href="sivu5.html" class="btn Active" onclick="nykyinenPainike(4)">Sivu 5</a>
+          <a href="sivu6.html" class="btn Active" onclick="nykyinenPainike(5)">Sivu 6</a>
+        </nav>
+        <p class="s5">Kerätty internetin sivustoilta</p>
+      </header>
+      <article class="grid-container">
+        <section class="sec1">
+          <p class="s6">LUOKKAHARJOITUKSIA</p>
+          <details closed>
+            <summary>C01. Tee Henkiloluokka, jossa on muuttujat: Etu-, sukunimi ja ikä ja tee konstructori, jonka avulla ko. tiedot voi suoraan syöttää. Tee tämän jälkeen risto-olio seuraavilla tiedoilla: Etunimi: Risto, Sukunimi: Reipas, Ikä: 10 ja tulosta sen jälkeen riston tiedot konsoliin</summary>
+            <!--<p class="lihava">Javascript</p>
+            <p class = "lihava">Python</p>
+            <p class="lihava">Java</p>
+            <pre class = "koodi">
+            </pre>-->
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+             using System;
+              class Henkilo
+              {
+                  public string EtuNimi { get; set; }
+                  public string SukuNimi { get; set; }
+                  public int Ika { get; set; }
+                  public Henkilo(string enimi, string snimi, int age)
+                  {
+                      EtuNimi = enimi;
+                      SukuNimi = snimi;
+                      Ika = age;
+                  }
+              }
+
+              class Program
+              {
+                  static void Main(string[] args)
+                  {
+                      Henkilo risto = new Henkilo("Risto", "Reipas", 10);
+                      Console.WriteLine("Etunimi: " + risto.EtuNimi);
+                      Console.WriteLine("Sukunimi: " + risto.SukuNimi);
+                      Console.WriteLine("Ikä: " + risto.Ika);
+                  }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>C02. Muuta nyt edellisen tehtävän sukunimeksi Reippaampi ja iäksi 11 </summary>
+            <!--<p class="lihava">Javascript</p>
+            <pre class = "koodi">
+              
+            </pre>
+            <p class = "lihava">Python</p>
+            <pre class = "koodi">
+              
+            </pre>
+            <p class="lihava">Java</p>
+            <pre class = "koodi">
+              
+            </pre>-->
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              // ... alku sama kuin edellisessä tehtävässä 
+              class Program
+              {
+                  static void Main(string[] args)
+                  {
+                      Henkilo risto = new Henkilo("Risto", "Reipas", 10);
+                      risto.SukuNimi = "Reippaampi";
+                      risto.Ika = 11;
+                      Console.WriteLine("Etunimi: " + risto.EtuNimi);
+                      Console.WriteLine("Sukunimi: " + risto.SukuNimi);
+                      Console.WriteLine("Ikä: " + risto.Ika);
+                  }
+              }
+             </pre>
+          </details>
+          <details closed>
+            <summary>C03. Jatka edellistä tehtävää siten, että tulostus tapahtuu luokan funktiolla NaytaTiedot() </summary>
+            <!--<p class="lihava">Javascript</p>
+            <pre class = "koodi">
+              
+            </pre>
+            <p class = "lihava">Python</p>
+            <pre class = "koodi">
+              
+            </pre>
+            <p class="lihava">Java</p>
+            <pre class = "koodi">
+              
+            </pre>-->
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              class Henkilo
+              {
+                  public string EtuNimi { get; set; }
+                  public string SukuNimi { get; set; }
+                  public int Ika { get; set; }
+                  public Henkilo(string enimi, string snimi, int age)
+                  {
+                      EtuNimi = enimi;
+                      SukuNimi = snimi;
+                      Ika = age;
+                  }
+                  public void NaytaTiedot()
+                  {
+                      Console.WriteLine("Etunimi: {0}, Sukunimi: {1} ja ikä: {2}", 
+                      EtuNimi, SukuNimi, Ika); // Jaettu riveille näkyvyyssyistä
+                  }
+              }
+
+              class Program
+              {
+                  static void Main(string[] args)
+                  {
+                      Henkilo risto = new Henkilo("Risto", "Reipas", 10);
+                      risto.SukuNimi = "Reippaampi";
+                      risto.Ika = 11;
+                      risto.NaytaTiedot();
+                  }
+              }
+             </pre>
+          </details>
+          <details closed>
+            <summary>C04. Tee kuvakirja -niminen luokka, jossa privaatti muuttuja SivujenLukumäärä ja oletuskonsturi, jossa sivumääräksi määritellään 16 sivua sekä konstruktori, jolla voi antaa itse sivumäärän  </summary>
+            <!--<p class="lihava">Javascript</p>
+            <pre class = "koodi">
+              
+            </pre>
+            <p class = "lihava">Python</p>
+            <pre class = "koodi">
+              
+            </pre>
+            <p class="lihava">Java</p>
+            <pre class = "koodi">
+              
+            </pre>-->
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              class Kuvakirja
+              {
+                  private int sivujenLukumaara;
+
+                  public Kuvakirja()
+                  {
+                      sivujenLukumaara = 16;
+                  }
+
+                  public Kuvakirja(int sivut)
+                  {
+                      sivujenLukumaara = sivut;
+                  }
+
+                  public int SivujenLukumaara
+                  {
+                      get { return sivujenLukumaara; }
+                  }
+              }
+
+              class Program
+              {
+                  static void Main(string[] args)
+                  {
+                      //luodaan olio oletuskonstruktorin avulla
+                      var minunKuvat = new Kuvakirja();
+                      Console.WriteLine(minunKuvat.SivujenLukumaara); //tulostaa 16
+                      
+                      //luodaan olio ylikuormitetulla konstruktorilla
+                      var minunToisetKuvat = new Kuvakirja(32);
+                      Console.WriteLine(minunToisetKuvat.SivujenLukumaara); //tulostaas 32
+                  }
+              }
+             </pre>
+          </details>
+          <details closed>
+            <summary>C04. Tee Elain -niminen luokka, jossa on yksi muuttuja: nimi. Tee nimelle getterit ja setterit sekä oletuskonstruktori sekä ylikuormitettu konstruktori, jossa nimen voi antaa. Tee lisäksi Syo-metodi, joka tulostaa nimen ja 'syö - mumm mumm mumm'. Luo tämän jälkeen kana-niminen olio oletuskonstruktorilla ja muuta nimi sen jälkeen 'kaakattaja':ksi ja kutsu sen jälkeen Syo-metodia </summary>
+            <!--<p class="lihava">Javascript</p>
+            <pre class = "koodi">
+              
+            </pre>
+            <p class = "lihava">Python</p>
+            <pre class = "koodi">
+              
+            </pre>
+            <p class="lihava">Java</p>
+            <pre class = "koodi">
+              
+            </pre>-->
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              class Elain
+              {
+                  private string nimi;
+                  public string Nimi 
+                  {
+                      get
+                      {
+                          return nimi;
+                      }
+                      set
+                      {
+                          nimi = value;
+                      }
+                  }
+                  public Elain() {}
+                  public Elain(string knimi)
+                  {
+                      nimi = knimi;
+                  }
+                  public void Syo()
+                  {
+                      Console.WriteLine("{0} syö - mumm mumm mumm", nimi);
+                  }
+
+              }
+
+              class Program
+              {
+                  static void Main(string[] args)
+                  {
+                      Elain kana = new Elain();
+                      kana.Nimi = "Kaakattaja";
+                      kana.Syo();
+                  }
+              }
+             </pre>
+          </details>
+          <details closed>
+            <summary>C05. Jatka edellistä tehtävää siten, että luot Koira-luokan, joka perii Eläin -luokan (class Koira: Elain). Lisää Koira luokkaan tassut (määrä) ja turkki (väri) -muuttujat. Tee getterit, setterit, konstruktorit) sekä Aantelehtii-Metodi, joka tulostaa: nimi "haukkuu", kun metodille antaa tuon stringinä. Koiralle voi antaa oletuskonstruktorissa tassujen määräksi 4  </summary>
+
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              ... // Kuten edellä
+              class Koira : Elain
+              {
+                private int tassut;
+                private string turkki;
+                
+                public Koira() : base()
+                {
+                    tassut = 4;
+                    turkki = "";
+                }
+                
+                public Koira(string nimi, int tassut, string turkki) : base(nimi)
+                {
+                    this.tassut = tassut;
+                    this.turkki = turkki;
+                }
+                
+                public int Tassut
+                {
+                    get { return tassut; }
+                    set { tassut = value; }
+                }
+                
+                public string Turkki
+                {
+                    get { return turkki; }
+                    set { turkki = value; }
+                }
+                
+                public void Aantelehtii(string haukku)
+                {
+                    Console.WriteLine(nimi + " haukkuu: " + haukku);
+                }
+              }
+              
+              class Testi
+              {
+                  public static void Main(string[] args)
+                  {
+                  Elain kana = new Elain();
+                  kana.Nimi = "kaakattaja";
+                  kana.Syo();
+                  
+                      Koira koira = new Koira("Rex", 4, "ruskea");
+                      koira.Aantelehtii("vuh vuh");
+                  }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>C06. Tee luokka ajoneuvo, jossa on kolme muuttujaa: merkki, malli, vuosimalli. Tee konstruktorit, getterit ja setterit luokkaan.Lisää metodit aja, kiihdyta, jarruta, kaynnista ja sammuta. Tee sitten luokka auto, joka perii luokan ajoneuvo. Tee sitten luokka TestiAjo, jossa luot uuden olion nimeltä mersu ja kutsut metodia aja tuolle mersu oliolle.
+            </summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              using System;
+              class Ajoneuvo
+              {
+                  private string merkki;
+                  private string malli;
+                  private int vuosimalli;
+                  
+                  public Ajoneuvo(string merkki, string malli, int vuosimalli)
+                  {
+                      this.merkki = merkki;
+                      this.malli = malli;
+                      this.vuosimalli = vuosimalli;
+                  }
+
+                  public string Merkki
+                  {
+                      get { return merkki; }
+                      set { merkki = value; }
+                  }
+
+                  public string Malli
+                  {
+                      get { return malli; }
+                      set { malli = value; }
+                  }
+
+                  public int Vuosimalli
+                  {
+                      get { return vuosimalli; }
+                      set { vuosimalli = value; }
+                  }
+
+                  public void Aja()
+                  {
+                      Console.WriteLine("Ajetaan...");
+                  }
+
+                  public void Kiihdyta()
+                  {
+                      Console.WriteLine("Kiihdytetään...");
+                  }
+
+                  public void Jarruta()
+                  {
+                      Console.WriteLine("Jarrutetaan...");
+                  }
+
+                  public void Kaynnista()
+                  {
+                      Console.WriteLine("Käynnistetään...");
+                  }
+
+                  public void Sammuta()
+                  {
+                      Console.WriteLine("Sammutetaan...");
+                  }
+              }
+
+              class Auto : Ajoneuvo
+              {
+                  public Auto(string merkki, string malli, int vuosimalli) : base(merkki, malli, vuosimalli) {}
+              }
+
+              class TestiAjo
+              {
+                  static void Main(string[] args)
+                  {
+                      Auto mersu = new Auto("Mercedes-Benz", "S-Class", 2020);
+                      mersu.Aja();
+                  }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>C07. Jatka edellistä tehtävää siten, että lisäät Auto-luokkaan pyorat muuttujan ja oletuskonstruktorissa annat pyorat muuttujalle oletusarvon 4. Tee sitten luokka Moottoripyora, joka perii luokan Auto, mutta pyorat muuttujan oletusarvo on 2.
+            </summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              ... // Kuten edellä, alla muutokset
+              class Auto : Ajoneuvo
+              {
+                  private int pyorat;
+                  public Auto(string merkki, string malli, int vuosimalli) : base(merkki, malli, vuosimalli)
+                  {
+                      pyorat = 4;
+                  }
+                  public int Pyorat
+                  {
+                      get { return pyorat; }
+                      set { pyorat = value; }
+                  }
+              }
+
+              class Moottoripyora : Auto
+              {
+                  public Moottoripyora(string merkki, string malli, int vuosimalli) : base(merkki, malli, vuosimalli)
+                  {
+                      Pyorat = 2;
+                  }
+              }
+
+              class TestiAjo
+              {
+                  static void Main(string[] args)
+                  {
+                      Auto mersu = new Auto("Mercedes-Benz", "S-Class", 2020);
+                      mersu.Aja();
+                      Console.WriteLine(mersu.Pyorat); // tulostaa 4
+                      
+                      Moottoripyora pyora = new Moottoripyora("Suzuki","Hayabusa",2022);
+                      pyora.Aja();
+                      Console.WriteLine(pyora.Pyorat); // tulostaa 2
+                  }
+              }
+            </pre>
+          </details>
+        </section>
+        <section class="sec2">
+          
+
+        </section>
+
+      </article>
+    </main>
+  </body>
+</html>      

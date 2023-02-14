@@ -65,16 +65,35 @@ nav
 }
 nav a {
   padding: 8px;
-  background-color: blue;
-  color: white;
+  /*background-color: blue;
+  color: white;*/
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-.av
+/* Tässä välissä kokeilua */
+.btn
 {
-  background-color: green;
+    display: inline-block;
+    padding: 10px 30px ;
+    background-color: #eee;
+    margin: 0 10px;
+    border-radius: 5px ;
+    user-select: none;
+    transition: 0.5s;
 }
+.btn:hover
+{
+    background-color: maroon;
+}
+.Active{
+    background-color: navy;
+    color: #fff;
+}
+.Active:hover{
+  background-color: maroon;
+}
+/* Kokeilu loppuu */
 .s5
 {
   clear: both;

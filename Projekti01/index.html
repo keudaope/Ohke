@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="master.css">
+    <script type="text/javascript" href="script.js"></script>
     <title></title>
   </head>
   <body>
@@ -19,12 +20,12 @@
         </menu>
         <h1 style="">Ohjelmointi <span style=" color: #B30838;">tehtäviä</span></h1>
         <nav>
-          <a href="index.html" class="av">Sivu 1</a>
-          <a href="sivu2.html">Sivu 2</a>
-          <a href="sivu3.html">Sivu 3</a>
-          <a href="sivu4.html">Sivu 4</a>
-          <a href="sivu5.html">Sivu 5</a>
-          <a href="sivu6.html">Sivu 6</a>
+          <a href="index.html" class="btn" onclick="fuck()">Sivu 1</a>
+          <a href="sivu2.html" class="btn" onclick="nykyinenPainike(1)">Sivu 2</a>
+          <a href="sivu3.html" class="btn" onclick="nykyinenPainike(2)">Sivu 3</a>
+          <a href="sivu4.html" class="btn" onclick="nykyinenPainike(3)">Sivu 4</a>
+          <a href="sivu5.html" class="btn" onclick="nykyinenPainike(4)">Sivu 5</a>
+          <a href="sivu6.html" class="btn" onclick="nykyinenPainike(5)">Sivu 6</a>
 
         </nav>
         <p class="s5">Kerätty internetin sivustoilta</p>
@@ -1227,6 +1228,332 @@
                         else
                             Console.WriteLine(testNames[i] + " test grade: Failed");
                     }
+                    Console.ReadLine();
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>IE13. Tee ohjelma, joka tulostaa viikonpäivät, kun annetaan vkpnumero (malli if-else, voit myös tehdä switch-case)</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int week;
+
+                    Console.WriteLine("Enter week number (1-7): ");
+                    week = Convert.ToInt32(Console.ReadLine());
+
+                    if (week == 1)
+                    {
+                        Console.WriteLine("Monday");
+                    }
+                    else if (week == 2)
+                    {
+                        Console.WriteLine("Tuesday");
+                    }
+                    else if (week == 3)
+                    {
+                        Console.WriteLine("Wednesday");
+                    }
+                    else if (week == 4)
+                    {
+                        Console.WriteLine("Thursday");
+                    }
+                    else if (week == 5)
+                    {
+                        Console.WriteLine("Friday");
+                    }
+                    else if (week == 6)
+                    {
+                        Console.WriteLine("Saturday");
+                    }
+                    else if (week == 7)
+                    {
+                        Console.WriteLine("Sunday");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid Input! Please enter week in between 1-7.");
+                    }
+
+                    Console.ReadLine();
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>IE14. Tee ohjelma, joka kysyy kahta kokonaislukua ja tarkastaa, ovatko ne samat</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int num1, num2;
+
+                    Console.WriteLine("Input the values for Number1 and Number2 : ");
+                    num1 = Convert.ToInt32(Console.ReadLine());
+                    num2 = Convert.ToInt32(Console.ReadLine());
+
+                    if (num1 == num2)
+                    {
+                        Console.WriteLine("Number1 and Number2 are equal\n");
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Number1 and Number2 are not equal\n");
+                    }
+
+                    Console.ReadLine();
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>IE15. Tee ohjelma, joka pyytää käyttäjältä ikää ja varmistaa, voiko tämä äänestää (18->)</summary>
+            <p class = "lihava">C#</p>
+              <pre class = "koodi">
+                /// <summary>
+                ///
+                /// </summary>
+                using System;
+                namespace MyApplication
+                {
+                  class Program
+                  {
+                    static void Main(string[] args)
+                    {
+                      int Candiateage;
+
+                      Console.WriteLine("Input the age of the candidate : ");
+                      Candiateage = Convert.ToInt32(Console.ReadLine());
+
+                      if (Candiateage < 18)
+                      {
+                          Console.WriteLine("Sorry, You are not eligible to caste your vote.\n");
+                          Console.WriteLine(18 - Candiateage + "You would be able to caste your vote after %d year.\n");
+                      }
+
+                      else
+                      {
+                          Console.WriteLine("Congratulation! You are eligible for casting your vote.\n");
+                      }
+
+                      Console.ReadLine();
+                    }
+                  }
+                }
+              </pre>
+          </details>
+          <details closed>
+            <summary>IE16. Tee ohjelma, joka pyytää kuukauden numeroa ja tulostaa sen jälkeen paljonko kuukaudessa on päiviä (malli vastaus on if-else, mutta tähän soveltuu paremmin switch-case)</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int month;
+
+                    Console.WriteLine("Enter month number (1-12): ");
+                    month = Convert.ToInt32(Console.ReadLine());
+
+                    if (month == 1)
+                    {
+                        Console.WriteLine("Enter month : January \nNo. of days : 31 days");
+                    }
+                    else if (month == 2)
+                    {
+                        Console.WriteLine("Enter month : February \nNo. of days : 28 or 29 days");
+                    }
+                    else if (month == 3)
+                    {
+                        Console.WriteLine("Enter month : March \nNo. of days : 31 days");
+                    }
+                    else if (month == 4)
+                    {
+                        Console.WriteLine("Enter month : April \nNo. of days : 30 days");
+                    }
+                    else if (month == 5)
+                    {
+                        Console.WriteLine("Enter month : May \nNo. of days : 31 days");
+                    }
+                    else if (month == 6)
+                    {
+                        Console.WriteLine("Enter month : June \nNo. of days : 30 days");
+                    }
+                    else if (month == 7)
+                    {
+                        Console.WriteLine("Enter month : July \nNo. of days : 31 days");
+                    }
+                    else if (month == 8)
+                    {
+                        Console.WriteLine("Enter month : August \nNo. of days : 31 days");
+                    }
+                    else if (month == 9)
+                    {
+                        Console.WriteLine("Enter month : September \nNo. of days : 30 days");
+                    }
+                    else if (month == 10)
+                    {
+                        Console.WriteLine("Enter month : October \nNo. of days : 31 days");
+                    }
+                    else if (month == 11)
+                    {
+                        Console.WriteLine("Enter month : November \nNo. of days : 30 days");
+                    }
+                    else if (month == 12)
+                    {
+                        Console.WriteLine("Enter month : December \nNo. of days : 31 days"); ;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input! Please enter month number between (1-12).");
+                    }
+                    Console.ReadLine();
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>IE17. Tee ohjelma, joka muuttaa annetun arvon rahaksi siten, että se ottaa huomioon setelien arvot. Esim. 1295 = 500 x 2 + 100 x 2 + 50 x 1 + 20 x 2 + 5 x 1</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int amount;
+
+                     int note1, note2, note5, note10, note20, note50, note100, note500;
+
+                     note1 = note2 = note5 = note10 = note20 = note50 = note100 = note500 = 0;
+
+                     Console.WriteLine("Enter amount: ");
+                     amount = Convert.ToInt32(Console.ReadLine());
+
+                     if (amount >= 500)
+                     {
+                         note500 = amount / 500;
+                         amount -= note500 * 500;
+                     }
+                     if (amount >= 100)
+                     {
+                         note100 = amount / 100;
+                         amount -= note100 * 100;
+                     }
+                     if (amount >= 50)
+                     {
+                         note50 = amount / 50;
+                         amount -= note50 * 50;
+                     }
+                     if (amount >= 20)
+                     {
+                         note20 = amount / 20;
+                         amount -= note20 * 20;
+                     }
+                     if (amount >= 10)
+                     {
+                         note10 = amount / 10;
+                         amount -= note10 * 10;
+                     }
+                     if (amount >= 5)
+                     {
+                         note5 = amount / 5;
+                         amount -= note5 * 5;
+                     }
+                     if (amount >= 2)
+                     {
+                         note2 = amount / 2;
+                         amount -= note2 * 2;
+                     }
+                     if (amount >= 1)
+                     {
+                         note1 = amount;
+                     }
+
+                     Console.WriteLine("Total number of notes = \n");
+                     Console.WriteLine("500 = "+ note500);
+                     Console.WriteLine("100 = "+ note100);
+                     Console.WriteLine("50 = "+ note50);
+                     Console.WriteLine("20 = "+ note20);
+                     Console.WriteLine("10 = "+ note10);
+                     Console.WriteLine("5 = "+ note5);
+                     Console.WriteLine("2 = "+ note2);
+                     Console.WriteLine("1 = "+ note1);
+
+                     Console.ReadLine();
+                  }
+                }
+              }
+            </pre>
+          </details>
+          <details closed>
+            <summary>IE18. Tee ohjelma, joka laskee, onko mahdollista piirtää kolmio annettujen kulma-astelukujen perusteella</summary>
+            <p class = "lihava">C#</p>
+            <pre class = "koodi">
+              /// <summary>
+              ///
+              /// </summary>
+              using System;
+              namespace MyApplication
+              {
+                class Program
+                {
+                  static void Main(string[] args)
+                  {
+                    int anglea, angleb, anglec, sum;
+
+                   Console.WriteLine("Input three angles of triangle : ");
+                   anglea = Convert.ToInt32(Console.ReadLine());
+                   angleb = Convert.ToInt32(Console.ReadLine());
+                   anglec = Convert.ToInt32(Console.ReadLine());
+
+                    // Calculate the sum of all angles of triangle
+                    sum = anglea + angleb + anglec;
+
+                    // Check whether sum=180 then its a valid triangle otherwise invalid triangle
+                    if (sum == 180)
+                    {
+                        Console.WriteLine("It is a valid triangle.\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("It is a invalid triangle.\n");
+                    }
+
                     Console.ReadLine();
                   }
                 }

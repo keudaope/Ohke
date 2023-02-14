@@ -1,0 +1,15 @@
+/Users/jyrilindroos/source/repos/Ohke/code/bin/Debug/net5.0/code.deps.json
+/Users/jyrilindroos/source/repos/Ohke/code/bin/Debug/net5.0/code.runtimeconfig.json
+/Users/jyrilindroos/source/repos/Ohke/code/bin/Debug/net5.0/code.runtimeconfig.dev.json
+/Users/jyrilindroos/source/repos/Ohke/code/bin/Debug/net5.0/code.dll
+/Users/jyrilindroos/source/repos/Ohke/code/bin/Debug/net5.0/ref/code.dll
+/Users/jyrilindroos/source/repos/Ohke/code/bin/Debug/net5.0/code.pdb
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/code.csproj.AssemblyReference.cache
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/code.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/code.AssemblyInfoInputs.cache
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/code.AssemblyInfo.cs
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/code.csproj.CoreCompileInputs.cache
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/code.dll
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/ref/code.dll
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/code.pdb
+/Users/jyrilindroos/source/repos/Ohke/code/obj/Debug/net5.0/code.genruntimeconfig.cache

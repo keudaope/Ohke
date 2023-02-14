@@ -14,11 +14,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\jyrili\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\Kirjautuminen.csproj",
       "projectName": "Kirjautuminen",
       "projectPath": "C:\\Users\\jyrili\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\Kirjautuminen.csproj",
       "packagesPath": "C:\\Users\\jyrili\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jyrili\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\Tunnistautuminen.csproj",
+      "projectName": "Tunnistautuminen",
+      "projectPath": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\Tunnistautuminen.csproj",
+      "packagesPath": "C:\\Users\\Opiskelija\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\obj\\",
+>>>>>>> 061cb6d1642fc0b8cdfafaced434cc047cad4a85
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

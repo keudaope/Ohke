@@ -5,9 +5,15 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LukujenJarjestys", "LukujenJarjestys\LukujenJarjestys.csproj", "{325CE48F-92BC-4829-8C39-A3C3F8C8883C}"
 EndProject
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kirjautuminen", "WinFormsApp1\Kirjautuminen.csproj", "{146CFC5E-9FDE-4B49-86DE-C82CDEBA5C45}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutonKustannuslaskuri", "AutonKustannuslaskuri\AutonKustannuslaskuri.csproj", "{3E57D45B-2EFE-460E-AE06-A46E21F0349C}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tunnistautuminen", "WinFormsApp1\Tunnistautuminen.csproj", "{146CFC5E-9FDE-4B49-86DE-C82CDEBA5C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomalaisetNumerot", "RoomalaisetNumerot\RoomalaisetNumerot.csproj", "{42BC8763-42D9-4822-83FB-98C39584A6EF}"
+>>>>>>> 061cb6d1642fc0b8cdfafaced434cc047cad4a85
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +29,17 @@ Global
 		{146CFC5E-9FDE-4B49-86DE-C82CDEBA5C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{146CFC5E-9FDE-4B49-86DE-C82CDEBA5C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{146CFC5E-9FDE-4B49-86DE-C82CDEBA5C45}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{3E57D45B-2EFE-460E-AE06-A46E21F0349C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3E57D45B-2EFE-460E-AE06-A46E21F0349C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E57D45B-2EFE-460E-AE06-A46E21F0349C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E57D45B-2EFE-460E-AE06-A46E21F0349C}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{42BC8763-42D9-4822-83FB-98C39584A6EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BC8763-42D9-4822-83FB-98C39584A6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BC8763-42D9-4822-83FB-98C39584A6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BC8763-42D9-4822-83FB-98C39584A6EF}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 061cb6d1642fc0b8cdfafaced434cc047cad4a85
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
