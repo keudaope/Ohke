@@ -21,7 +21,8 @@ namespace Notepad
         private void avaaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Koodi txt-tiedoston avaamiseen
-            using (OpenFileDialog atk = new OpenFileDialog() { Filter = "Rikastekstiformaatti|*.rtf", ValidateNames = true, Multiselect = false })
+            using (OpenFileDialog atk = new OpenFileDialog() 
+            { Filter = "Rikastekstiformaatti|*.rtf", ValidateNames = true, Multiselect = false })
             {
                 if (atk.ShowDialog() == DialogResult.OK)
                 {
@@ -30,33 +31,24 @@ namespace Notepad
                         tiedostoPolku = atk.FileName;
                         Task<string> teksti = vl.ReadToEndAsync();
                         rikasTB.Rtf = teksti.Result;
-
                     }
-                   
                 }
             }
-            
         }
     
 
         private void tallennaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(string.IsNullOrEmpty(tiedostoPolku))
-            {
-                
-                
-                using (SaveFileDialog ttk = new SaveFileDialog() { Filter = "Rikastekstiformaatti|*.rtf", ValidateNames = true })
+            {              
+                using (SaveFileDialog ttk = new SaveFileDialog() 
+                { Filter = "Rikastekstiformaatti|*.rtf", ValidateNames = true })
                 {
                     if(ttk.ShowDialog()==DialogResult.OK) 
                     {
                         StreamWriter tiedosto = new StreamWriter(ttk.FileName);
                         tiedosto.WriteLine(this.rikasTB.Rtf);
                         tiedosto.Close();
-                        /*using (StreamWriter vk = new StreamWriter(ttk.FileName))
-                        {
-
-                            vk.WriteLineAsync(rikasTB.Rtf);
-                        }    */
                     }
                 }
             }
@@ -66,8 +58,7 @@ namespace Notepad
                 {
                     vk.WriteLineAsync(rikasTB.Rtf);
                 }
-            }
-            
+            }         
         }
 
         private void tallennaNimell‰ToolStripMenuItem_Click(object sender, EventArgs e)

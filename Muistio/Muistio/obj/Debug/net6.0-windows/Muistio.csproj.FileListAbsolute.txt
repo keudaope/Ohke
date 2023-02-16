@@ -1,0 +1,17 @@
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\bin\Debug\net6.0-windows\Muistio.exe
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\bin\Debug\net6.0-windows\Muistio.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\bin\Debug\net6.0-windows\Muistio.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\bin\Debug\net6.0-windows\Muistio.dll
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\bin\Debug\net6.0-windows\Muistio.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.muistioFM.resources
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.csproj.GenerateResource.cache
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.dll
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\refint\Muistio.dll
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.pdb
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\Muistio.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\Muistio\Muistio\obj\Debug\net6.0-windows\ref\Muistio.dll
