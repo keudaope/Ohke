@@ -928,101 +928,188 @@ console.log(laskeKeskiarvo([1, 2, 3, 4, 5])); // Tulostaa 3
             </pre>
             </details> 
           <details closed>
-            <summary>F07. </summary>
+            <summary>F07. Kirjoita funktio onkoMerkkijonoTyhja, joka ottaa merkkijonon parametrina ja palauttaa true, jos merkkijono on tyhjä, muuten false. Testaa sekä tyhjällä, että 'täydellä' merkkijonolla tulostaen konsoliin vastaukset</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function onkoMerkkijonoTyhja(merkkijono) {
+                return merkkijono === "";
+                }
 
+                console.log(onkoMerkkijonoTyhja("Terve")); // Tulostaa false
+                console.log(onkoMerkkijonoTyhja("")); // Tulostaa true
             </pre>
             </details> 
           <details closed>
-            <summary>F08. </summary>
+            <summary>F08. Kirjoita funktio laskeSuurin, joka ottaa taulukon numeroparametrina ja palauttaa siinä olevan suurimman arvon konsoliin. Testaa tällä taulukolla: [2, 7, 1, 9, 3]</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function laskeSuurin(taulukko) {
+                return Math.max(...taulukko);
+                }
 
+                console.log(laskeSuurin([2, 7, 1, 9, 3])); // Tulostaa 9
             </pre>
             </details> 
           <details closed>
-            <summary>F09. </summary>
+            <summary>F09. Kirjoita funktio laskePienin, joka ottaa taulukon numeroparametrina ja palauttaa siinä olevan pienimmän arvon konsoliin. Testaa tällä taulukolla: [2, 7, 1, 9, 3]</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function laskePienin(taulukko) {
+                return Math.min(...taulukko);
+                }
 
+                console.log(laskePienin([2, 7, 1, 9, 3])); // Tulostaa 1
             </pre>
             </details> 
           <details closed>
-            <summary>F10. </summary>
+            <summary>F10. Kirjoita funktio laskeTaulukonSumma, joka ottaa taulukon numeroparametrina ja palauttaa niiden summan konsoliin. Testaa tällä taulukolla: [1, 2, 3, 4, 5].</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function laskeTaulukonSumma(taulukko) {
+                return taulukko.reduce((acc, numero) => acc + numero, 0);
+                }
 
+                console.log(laskeTaulukonSumma([1, 2, 3, 4, 5])); // Tulostaa 15
             </pre>
             </details> 
           <details closed>
-            <summary>F11. </summary>
+            <summary>F11. Kirjoita funktio laskePotenssi, joka ottaa kaksi numeroparametria: kantaluvun ja eksponentin, ja palauttaa kantaluvun eksponentin potenssina konsoliin</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function laskePotenssi(kantaluku, eksponentti) {
+                return Math.pow(kantaluku, eksponentti);
+                }
 
+                console.log(laskePotenssi(2, 3)); // Tulostaa 8
             </pre>
             </details> 
           <details closed>
-            <summary>F12. </summary>
+            <summary>F12. Kirjoita funktio onkoAlkuluku, joka ottaa numeron parametrina ja palauttaa true, jos luku on alkuluku, muuten false konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function onkoAlkuluku(luku) {
+                if (luku <= 1) return false;
+                if (luku <= 3) return true;
+                if (luku % 2 === 0 || luku % 3 === 0) return false;
+                let i = 5;
+                while (i * i <= luku) {
+                    if (luku % i === 0 || luku % (i + 2) === 0) return false;
+                    i += 6;
+                }
+                return true;
+                }
 
+                console.log(onkoAlkuluku(17)); // Tulostaa true
+                console.log(onkoAlkuluku(12)); // Tulostaa false
             </pre>
             </details> 
           <details closed>
-            <summary>F13. </summary>
+            <summary>F13. Kirjoita funktio kaannaMerkkijono, joka ottaa merkkijonon parametrina ja palauttaa sen käänteisenä konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function kaannaMerkkijono(merkkijono) {
+                return merkkijono.split('').reverse().join('');
+                }
 
+                console.log(kaannaMerkkijono("Terve")); // Tulostaa "evreT"
             </pre>
             </details> 
           <details closed>
-            <summary>F14. </summary>
+            <summary>F14. Kirjoita funktio onkoPalindromi, joka ottaa merkkijonon parametrina ja palauttaa true, jos se on palindromi (luetaan samalla tavalla eteen- ja taaksepäin), muuten false konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function onkoPalindromi(sana) {
+                const kaannettySana = sana.split('').reverse().join('');
+                return sana === kaannettySana;
+                }
 
+                console.log(onkoPalindromi("anna")); // Tulostaa true
+                console.log(onkoPalindromi("hello")); // Tulostaa false
             </pre>
             </details> 
           <details closed>
-            <summary>F15. </summary>
+            <summary>F15. Kirjoita funktio onkoAnagrammi, joka ottaa kaksi merkkijonoa parametreina ja palauttaa true, jos ne ovat toistensa anagrammeja (sisältävät samat kirjaimet eri järjestyksessä), muuten false konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function onkoAnagrammi(sana1, sana2) {
+                const sana1Jarjestetty = sana1.split('').sort().join('');
+                const sana2Jarjestetty = sana2.split('').sort().join('');
+                return sana1Jarjestetty === sana2Jarjestetty;
+                }
 
+                console.log(onkoAnagrammi("listen", "silent")); // Tulostaa true
+                console.log(onkoAnagrammi("hello", "world")); // Tulostaa false
             </pre>
             </details> 
           <details closed>
-            <summary>F16. </summary>
+            <summary>F16. Kirjoita funktio laskeTaulukonKeskiarvo, joka ottaa taulukon numeroparametrina ja palauttaa niiden keskiarvon konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function laskeTaulukonKeskiarvo(taulukko) {
+                const summa = taulukko.reduce((acc, numero) => acc + numero, 0);
+                return summa / taulukko.length;
+                }
 
+                console.log(laskeTaulukonKeskiarvo([1, 2, 3, 4, 5])); // Tulostaa 3
             </pre>
             </details> 
           <details closed>
-            <summary>F17. </summary>
+            <summary>F17. Kirjoita funktio onkoKarkausvuosi, joka ottaa vuosiluvun parametrina ja palauttaa true, jos se on karkausvuosi (divisio neljällä ilman jakojäännöstä, mutta ei sadalla), muuten false konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function onkoKarkausvuosi(vuosi) {
+                return (vuosi % 4 === 0 && vuosi % 100 !== 0) || (vuosi % 400 === 0);
+                }
 
+                console.log(onkoKarkausvuosi(2020)); // Tulostaa true
+                console.log(onkoKarkausvuosi(2022)); // Tulostaa false
             </pre>
             </details> 
           <details closed>
-            <summary>F18. </summary>
+            <summary>F18. Kirjoita funktio onkoTaulukkoJarjestetty, joka ottaa taulukon numeroparametrina ja palauttaa true, jos taulukko on järjestetty nousevaan järjestykseen, muuten false konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function onkoTaulukkoJarjestetty(taulukko) {
+                for (let i = 0; i < taulukko.length - 1; i++) {
+                    if (taulukko[i] > taulukko[i + 1]) {
+                    return false;
+                    }
+                }
+                return true;
+                }
 
+                console.log(onkoTaulukkoJarjestetty([1, 2, 3, 4, 5])); // Tulostaa true
+                console.log(onkoTaulukkoJarjestetty([5, 4, 3, 2, 1])); // Tulostaa false
             </pre>
             </details> 
           <details closed>
-            <summary>F19. </summary>
+            <summary>F19. Kirjoita funktio muutaEkaKirjainIsoksi, joka ottaa merkkijonon parametrina ja palauttaa saman merkkijonon, mutta ensimmäinen kirjain isona konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function muutaEkaKirjainIsoksi(merkkijono) {
+                return merkkijono.charAt(0).toUpperCase() + merkkijono.slice(1);
+                }
 
+                console.log(muutaEkaKirjainIsoksi("terve")); // Tulostaa "Terve"
             </pre>
             </details> 
           <details closed>
-            <summary>F20. </summary>
+            <summary>F20. Kirjoita funktio laskeFibonacci, joka ottaa kokonaisluvun n parametrina ja palauttaa Fibonacci-sarjan n-s jäsenen konsoliin.</summary>
             <p class="lihava">Javascript</p>
             <pre class = "koodi">
+                function laskeFibonacci(n) {
+                if (n <= 0) return 0;
+                if (n === 1) return 1;
+                let a = 0, b = 1;
+                for (let i = 2; i <= n; i++) {
+                    const temp = a + b;
+                    a = b;
+                    b = temp;
+                }
+                return b;
+                }
 
+                console.log(laskeFibonacci(6)); // Tulostaa 8
             </pre>
             </details> 
         </section>
