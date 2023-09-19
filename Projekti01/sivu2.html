@@ -30,6 +30,246 @@
       </header>
       <article class="grid-container">
         <section class="sec1">
+          <p class="s6">TAULUKKOHARJOITUKSIA</p>
+          <details closed>
+            <summary>T01. Luo taulukko nimeltä 'kauppalista' ja lisää siihen joitakin ostettavia tuotteita (esim. 'maito', 'leipä', 'omenat'). Tulosta koko kauppalista konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                // Luo tyhjä taulukko nimeltä 'kauppalista'
+                var kauppalista = [];
+
+                // Lisää ostettavia tuotteita kauppalistaan
+                kauppalista.push('maito');
+                kauppalista.push('leipä');
+                kauppalista.push('omenat');
+
+                // Tulosta koko kauppalista konsoliin
+                console.log('Kauppalista:');
+                for (var i = 0; i < kauppalista.length; i++) {
+                console.log(kauppalista[i]);
+                }
+            </pre>
+            </details>
+            <details closed>
+            <summary>T02. Luo taulukko, joka sisältää viisi eri nimeä ja tulosta taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const nimet = ["Matti", "Anna", "Eeva", "Jussi", "Liisa"];
+                console.log(nimet);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T03. Laske taulukon pituus, kun taulukko = [1, 2, 3, 4, 5]. Tulosta pituus konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const taulukko = [1, 2, 3, 4, 5];
+                const pituus = taulukko.length;
+                console.log(pituus);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T04. Lisää uusi nimi taulukkoon (["Matti", "Anna", "Eeva"]) ja tulosta taulukko</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const nimet = ["Matti", "Anna", "Eeva"];
+                nimet.push("Jussi");
+                console.log(nimet);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T05. Yhdistä seuraavat taulukot (taul1 = [1, 2, 3] ja taul2 = [4, 5, 6]) ja tulosta yhdistetty taulukko consoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+            const taulukko1 = [1, 2, 3];
+            const taulukko2 = [4, 5, 6];
+            const yhdistettyTaulukko = taulukko1.concat(taulukko2);
+            console.log(yhdistettyTaulukko);    
+            </pre>
+            </details>
+            <details closed>
+            <summary>T06. Luo uusi taulukko, joka sisältää vain parilliset numerot alkuperäisestä taulukosta ([1, 2, 3, 4, 5, 6 7, 8, 9, 10] ja tulosta uusi taulukko konsoliin.</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                const parillisetNumerot = numerot.filter(numero => numero % 2 === 0);
+                console.log(parillisetNumerot);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T07. Lajittele taulukko ([5, 2, 9, 1, 5, 8, 3])nousevaan järjestykseen ja tulosta lajiteltu taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [5, 2, 9, 1, 5, 8, 3];
+                numerot.sort((a, b) => a - b);
+                console.log(numerot);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T08. Käännä taulukko ([1, 2, 3, 4, 5]) ympäri niin, että viimeisestä alkiosta tulee ensimmäinen ja päinvastoin ja tulosta käännetty taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [1, 2, 3, 4, 5];
+                const kaannettyTaulukko = numerot.reverse();
+                console.log(kaannettyTaulukko);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T09. Muuta taulukko (["Matti", "Anna", "Eeva"]) merkkijonoksi, jossa alkiot ovat pilkuilla eroteltuja ja tulosta merkkijono konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const nimet = ["Matti", "Anna", "Eeva"];
+                const merkkijono = nimet.join(", ");
+                console.log(merkkijono);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T10. Poista taulukosta ([1, 2, 3, 4, 5]) kolmas alkio ja tulosta taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [1, 2, 3, 4, 5];
+                const poistettava = 3;
+                const indeksi = numerot.indexOf(poistettava);
+                if (indeksi !== -1) {
+                numerot.splice(indeksi, 1);
+                }
+                console.log(numerot);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T11. Etsi taulukosta tietty alkio ja palauta sen indeksi consoliin. Palauta myös viesti, jos alkiota ei löytynyt</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const nimet = ["Matti", "Anna", "Eeva"];
+                const etsittavaNimi = "Anna";
+                const indeksi = nimet.indexOf(etsittavaNimi);
+                if (indeksi !== -1) {
+                console.log(`Nimi "${etsittavaNimi}" löytyy indeksistä ${indeksi}.`);
+                } else {
+                console.log(`Nimeä "${etsittavaNimi}" ei löytynyt.`);
+                }
+            </pre>
+            </details>
+            <details closed>
+            <summary>T12. Kopioi taulukosta ([1, 2, 3, 4, 5]) kaksi viimeisintä uuteen taulukkoon ja tulosta uusi taulukko consoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const alkuperainenTaulukko = [1, 2, 3, 4, 5];
+                const kopio = alkuperainenTaulukko.slice(3);
+                console.log(kopio);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T13. Muuta taulukon ([1, 2, 3, 4, 5]) keskimmäinen jäsen 6:ksi ja tulosta taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [1, 2, 3, 4, 5];
+                numerot[2] = 6;
+                console.log(numerot);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T14. Laske taulukon ([1, 2, 3, 4, 5]) arvot yhteen ja tulosta summa konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [1, 2, 3, 4, 5];
+                var summa = 0;
+                for(var i = 0; i < taulukko.length - 1; i++)
+                {
+                    summa += numerot[i];
+                }
+                console.log(summa);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T15. Laske taulukon ([1, 2, 3, 4, 5]) arvojen keskiarvo ja tulosta se konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [1, 2, 3, 4, 5];
+                var summa = 0;
+                for (var i = 0; i < taulukko.length - 1; i++) {
+                    summa += numerot[i];
+                }
+                var keskiarvo = summa / taulukko.length;
+                console.log(keskiarvo);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T16. Luo uusi taulukko, jossa on alkuperäisen taulukon ([1, 2, 3]) arvot monistettu 3 kertaa ja tulosta uusi taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const alkuperainenTaulukko = [1, 2, 3];
+                const monistettuTaulukko = [...alkuperainenTaulukko, ...alkuperainenTaulukko, ...alkuperainenTaulukko];
+                console.log(monistettuTaulukko);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T17. Luo uusi taulukko, joka sisältää uniikit arvot alkuperäisestä taulukosta ([1, 2, 2, 3, 4, 4, 5]) ja tulosta uusi taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const taulukko = [1, 2, 2, 3, 4, 4, 5];
+                const uniikitArvot = [...new Set(taulukko)];
+                console.log(uniikitArvot);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T18. Vaihda taulukon ([1, 2, 3, 4, 5]) ensimmäisen ja viimeisen alkion paikkoja ja tulosta taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [1, 2, 3, 4, 5];
+                [numerot[0], numerot[numerot.length - 1]] = [numerot[numerot.length - 1], numerot[0]];
+                console.log(numerot);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T19. Muunna taulukon (["Matti", "Anna", "Eeva"]) merkkijonojen kaikki kirjaimet isoiksi ja tulosta taulukko konsoliin.</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const nimet = ["Matti", "Anna", "Eeva"];
+                const isoiksiKirjaimiksi = nimet.map(nimi => nimi.toUpperCase());
+                console.log(isoiksiKirjaimiksi);
+            </pre>
+            </details>
+            <details closed>
+            <summary>T20. Poista taulukosta ([1, 2, 3, 4, 5]) kaikki neljää pienemmät numerot ja tulosta taulukko konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const numerot = [1, 2, 3, 4, 5];
+                const suuretNumerot = numerot.filter(numero => numero > 3);
+                console.log(suuretNumerot);
+            </pre>
+            </details>
+            <!--<p class = "lihava">Python</p>
+            <p class="lihava">Java</p>
+            <pre class = "koodi">
+            </pre>-->
+            <!--<p class = "lihava">C#</p>
+            <pre class = "koodi">
+             using System;
+              class Henkilo
+              {
+                  public string EtuNimi { get; set; }
+                  public string SukuNimi { get; set; }
+                  public int Ika { get; set; }
+                  public Henkilo(string enimi, string snimi, int age)
+                  {
+                      EtuNimi = enimi;
+                      SukuNimi = snimi;
+                      Ika = age;
+                  }
+              }
+
+              class Program
+              {
+                  static void Main(string[] args)
+                  {
+                      Henkilo risto = new Henkilo("Risto", "Reipas", 10);
+                      Console.WriteLine("Etunimi: " + risto.EtuNimi);
+                      Console.WriteLine("Sukunimi: " + risto.SukuNimi);
+                      Console.WriteLine("Ikä: " + risto.Ika);
+                  }
+              }
+            </pre>-->
+          </details>
           <p class="s6">LUOKKAHARJOITUKSIA</p>
           <details closed>
             <summary>C01. Tee Henkiloluokka, jossa on muuttujat: Etu-, sukunimi ja ikä ja tee konstructori, jonka avulla ko. tiedot voi suoraan syöttää. Tee tämän jälkeen risto-olio seuraavilla tiedoilla: Etunimi: Risto, Sukunimi: Reipas, Ikä: 10 ja tulosta sen jälkeen riston tiedot konsoliin</summary>
@@ -428,8 +668,363 @@
           </details>
         </section>
         <section class="sec2">
-          
+        <p class="s6">SÄÄNNÖLLISET LAUSEKKEET</p>  
+          <details closed>
+            <summary>SL01. Tarkista, onko merkkijono "kissa", annetussa tekstissä ("Minulla on tili pankissa")</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Minulla on tili pankissa.";
+                const regex = /kissa/;
+                console.log(regex.test(teksti)); // tulostaa true
+            </pre>
+            </details> 
+           <details closed>
+            <summary>SL02. Tarkista, onko merkkijono "kissa" (kirjainkoolla ei ole merkitystä), annetussa tekstissä ("Poliiseja kutsutaan KISSALANpojiksi")</summary></summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Poliiseja kutsutaan KISSALANpojiksi.";
+                const regex = /kissa/i;
+                console.log(regex.test(teksti)); // tulostaa true
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL03. Tarkista, onko merkkijono "kissa" (kirjainkoolla ei ole merkitystä), annetussa tekstissä ("Opiskelen HAMKissa ja omistan kissan.") riippumatta siitä, missä se esiintyy</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Opiskelen HAMKissa ja omistan kissan.";
+                const regex = /kissa/gi;
+                console.log(teksti.match(regex)); // Tulostaa ["Kissa", "kissa"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL04. Kirjoita säännöllinen lauseke, joka tarkistaa, onko annettu merkkijono ("12345") kokonaisluku</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const merkkijono = "12345";
+                const regex = /^\d+$/;
+                console.log(regex.test(merkkijono)); // Tulostaa true
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL05. Kirjoita säännöllinen lauseke, joka etsii kaikki puhelinnumerot annetusta tekstistä ("Ota yhteyttä (123) 456-7890 tai (987) 654-3210."). Oletetaan, että puhelinnumerot ovat muodossa "(123) 456-7890".</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Ota yhteyttä (123) 456-7890 tai (987) 654-3210.";
+                const regex = /\(\d{3}\) \d{3}-\d{4}/g;
+                console.log(teksti.match(regex)); // Tulostaa ["(123) 456-7890", "(987) 654-3210"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL06. Kirjoita säännöllinen lauseke, joka etsii kaikki sähköpostiosoitteet annetusta tekstistä("Lähetä sähköpostia osoitteeseen esimerkki@example.com tai toiseen osoitteeseen: testi@testi.fi.").</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Lähetä sähköpostia osoitteeseen esimerkki@example.com tai toiseen osoitteeseen: testi@testi.fi.";
+                const regex = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
+                console.log(teksti.match(regex)); // Tulostaa ["esimerkki@example.com", "testi@testi.fi"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL07. Kirjoita säännöllinen lauseke, joka etsii kaikki URL-osoitteet annetusta tekstistä ("Käy sivustolla https://www.esimerkki.com/ tai lue lisää osoitteessa: www.testi.fi").</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Käy sivustolla https://www.esimerkki.com/ tai lue lisää osoitteessa: www.testi.fi";
+                const regex = /https?:\/\/\S+|www\.\S+/g;
+                console.log(teksti.match(regex)); // Tulostaa ["https://www.esimerkki.com/", "www.testi.fi"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL08. Kirjoita säännöllinen lauseke, joka tarkistaa, onko annettu merkkijono ("15.09.2023") päivämäärä muodossa "dd.mm.yyyy".</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const merkkijono = "15.09.2023";
+                const regex = /^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[0-2])\.\d{4}$/;
+                console.log(regex.test(merkkijono)); // Tulostaa true
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL09. Kirjoita säännöllinen lauseke, joka etsii kaikki HTML-tunnisteet annetusta HTML-tekstistä ("&lt;p&gt;Tämä on &lt;b&gt;HTML&lt;/b&gt;-teksti&lt;/p&gt;").</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const htmlTeksti = "<p>Tämä on <b>HTML</b>-teksti</p>";
+                const regex = /<[^>]+>/g;
+                console.log(htmlTeksti.match(regex)); // Tulostaa ["<p>", "<b>", "</b>", "</p>"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL10. Kirjoita säännöllinen lauseke, joka tarkistaa, onko annettu merkkijono ("04200") Suomen postinumeron muodossa (viisi numeroa).</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const merkkijono = "04200";
+                const regex = /^\d{5}$/;
+                console.log(regex.test(merkkijono)); // Tulostaa true
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL11. Kirjoita säännöllinen lauseke, joka etsii kaikki "esimerkki" ja "testi" alimerkkijonot annetusta tekstistä ("Tämä on esimerkki. Toinen esimerkki. Kolmas testi.").</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Tämä on esimerkki. Toinen esimerkki. Kolmas testi.";
+                const regex = /(esimerkki|testi)/g;
+                console.log(teksti.match(regex)); // Tulostaa ["esimerkki", "esimerkki", "testi"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL12. Kirjoita säännöllinen lauseke, joka tarkistaa, onko annettu merkkijono ("Abc123") yhdistelmä kirjaimia ja numeroita</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const merkkijono = "Abc123";
+                const regex = /^[a-zA-Z0-9]+$/;
+                console.log(regex.test(merkkijono)); // Tulostaa true
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL13. Kirjoita säännöllinen lauseke, joka etsii kaikki XML-tunnisteet annetusta XML-tekstistä ("&lt;elementti1&gt;sisältö1&lt;/elementti1&gt;&lt;elementti2&gt;sisältö2&lt;/elementti2&gt;").</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const xmlTeksti = "<elementti1>sisältö1</elementti1><elementti2>sisältö2</elementti2>";
+                const regex = /<[^>]+>/g;
+                console.log(xmlTeksti.match(regex)); // Tulostaa ["<elementti1>", "</elementti1>", "<elementti2>", "</elementti2>"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL14. Kirjoita säännöllinen lauseke, joka tarkistaa, onko annettu merkkijono ("14:30:00") kellonaika muodossa "hh:mm:ss".</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const merkkijono = "14:30:00";
+                const regex = /^([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/;
+                console.log(regex.test(merkkijono)); // Tulostaa true
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL15. Kirjoita säännöllinen lauseke, joka etsii kaikki rivinvaihdot postitusosoitteessa ("Katuosoite\nPostinumero\nKaupunki"), joka voi sisältää useita rivejä.</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const osoite = "Katuosoite\nPostinumero\nKaupunki";
+                const regex = /[\r\n]+/g;
+                console.log(osoite.split(regex)); // Tulostaa ["Katuosoite", "Postinumero", "Kaupunki"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL16. Kirjoita säännöllinen lauseke, joka etsii kaikki HTML-kuvatunnisteet (img) annetusta HTML-tekstistä ('&lt;img src="kuva1.jpg" alt="Kuva 1"&gt;&lt;img src="kuva2.jpg" alt="Kuva 2"&gt;') ja palauttaa niiden src-attribuutit.</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const htmlTeksti = '<img src="kuva1.jpg" alt="Kuva 1"><img src="kuva2.jpg" alt="Kuva 2">';
+                const regex = /<img[^>]*src="([^"]*)"[^>]*>/g;
+                const kuvat = [];
+                let match;
+                while ((match = regex.exec(htmlTeksti))) {
+                kuvat.push(match[1]);
+                }
+                console.log(kuvat); // Tulostaa ["kuva1.jpg", "kuva2.jpg"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL17. Kirjoita säännöllinen lauseke, joka etsii kaikki aikavyöhykkeet annetusta tekstistä ("Aikavyöhykkeet: GMT+02:00, UTC-08:00 ja EST-05:00."), esimerkiksi "GMT+02:00" tai "UTC-08:00".</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Aikavyöhykkeet: GMT+02:00, UTC-08:00 ja EST-05:00.";
+                const regex = /[A-Z]{3}[+-]\d{2}:\d{2}/g;
+                console.log(teksti.match(regex)); // Tulostaa ["GMT+02:00", "UTC-08:00", "EST-05:00"]
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL18. Kirjoita säännöllinen lauseke, joka tarkistaa, onko annettu merkkijono ("0451526538") ISBN-10-koodin muodossa.</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const merkkijono = "0451526538";
+                const regex = /^(?:\d{9}X|\d{10})$/;
+                console.log(regex.test(merkkijono)); // Tulostaa true
+            </pre>
+            </details> 
+          <details closed>
+            <summary>SL19. Kirjoita säännöllinen lauseke, joka etsii kaikki erityismerkit (esim. !, @, #) annetusta tekstistä ("Tämä on erityismerkkejä: !@#$%^&*()"). </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const teksti = "Tämä on erityismerkkejä: !@#$%^&*()";
+                const regex = /[!@#$%^&*()]/g;
+                console.log(teksti.match(regex)); // Tulostaa ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
+            </pre>
+            </details> 
+            <details closed>
+            <summary>SL20. Kirjoita säännöllinen lauseke, joka tarkistaa, onko annettu merkkijono IPv4-osoitteen muodossa (esim. "192.168.0.1").</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                const merkkijono = "192.168.0.1";
+                const regex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+                console.log(regex.test(merkkijono)); // Tulostaa true
+            </pre>
+            </details> 
+        <p class="s6">FUNKTIOT</p>  
+          <details closed>
+            <summary>F01. Kirjoita funktio laskeSumma, joka ottaa kaksi numeroparametria ja palauttaa niiden summan. Testaa funktiota tulostamalla lukujen 3 ja 5 summa konsoliin </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                function laskeSumma(a, b) {
+                return a + b;
+                }
 
+                console.log(laskeSumma(5, 3)); // Tulostaa 8
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F02. Kirjoita funktio laskeNelionPintaAla, joka ottaa neliön sivun pituuden parametrina ja palauttaa sen pinta-alan. Testaa funktiota tulostamalla lopputulos konsoliin </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                function laskeNelionPintaAla(sivunPituus) {
+                return sivunPituus * sivunPituus;
+                }
+
+                console.log(laskeNelionPintaAla(4)); // Tulostaa 16
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F03. Kirjoita funktio laskeYmpyranPintaAla, joka ottaa ympyrän säteen parametrina ja palauttaa sen pinta-alan. Käytä Math.PI -vakioita piin arvona. Kaava on Pii * säde<sup>2</sup>. Testaa funktiota tulostamalla lopputulos konsoliin.</sup></summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                function laskeYmpyranPintaAla(sade) {
+                return Math.PI * sade * sade;
+                }
+
+                console.log(laskeYmpyranPintaAla(3)); // Tulostaa noin 28.27
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F04. Kirjoita funktio laskeKeskiarvo, joka ottaa taulukon numeroparametrina ja palauttaa niiden keskiarvon. Testaa funktiota tällä taulukolla: [1, 2, 3, 4, 5] ja tulosta keskiarvo konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                function laskeKeskiarvo(taulukko) {
+                const summa = 0;
+                for(var i = 0; i < taulukko.length-1; i++)
+                {
+                    summa += i;
+                }
+                return summa / taulukko.length;
+                }
+
+console.log(laskeKeskiarvo([1, 2, 3, 4, 5])); // Tulostaa 3
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F05. Kirjoita funktio onkoParillinen, joka ottaa numeron parametrina ja palauttaa true, jos luku on parillinen, muuten false. Testaa funktiota sekä parillisella, että parittomalla luvulla tulostamalla lopputulokset konsoliin.</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                function onkoParillinen(luku) {
+                return luku % 2 === 0;
+                }
+
+                console.log(onkoParillinen(4)); // Tulostaa true
+                console.log(onkoParillinen(3)); // Tulostaa false
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F06. Kirjoita funktio laskeMerkkijononPituus, joka ottaa merkkijonon parametrina ja palauttaa sen pituuden. Testaa funktiota tulostamalla lopputulos konsoliin</summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+                function laskeMerkkijononPituus(merkkijono) {
+                return merkkijono.length;
+                }
+
+                console.log(laskeMerkkijononPituus("Terve")); // Tulostaa 5
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F07. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F08. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F09. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F10. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F11. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F12. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F13. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F14. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F15. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F16. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F17. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F18. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F19. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
+          <details closed>
+            <summary>F20. </summary>
+            <p class="lihava">Javascript</p>
+            <pre class = "koodi">
+
+            </pre>
+            </details> 
         </section>
 
       </article>
