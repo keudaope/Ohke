@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "NvjEAf+uFA/AtB1LQYE6Se5Vuvs827R/BB04kOj+bHijBKNngL/s2QWn92HG6GQwKMXLXzMJSnK0cvkHLymmZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jyrili\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\Kirjautuminen.csproj",
+=======
   "dgSpecHash": "mzrP2k+T/UN8YBr9j/RwafzVR/oW3X1RbIitF7mOXeqNa0cA5w2PrbdukDAV6VQm3hMJj4kLcXwb3H9SNqdVcQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Opiskelija\\source\\repos\\Ohke\\LukujenJarjestys\\WinFormsApp1\\Tunnistautuminen.csproj",
+>>>>>>> 061cb6d1642fc0b8cdfafaced434cc047cad4a85
   "expectedPackageFiles": [],
   "logs": []
 }

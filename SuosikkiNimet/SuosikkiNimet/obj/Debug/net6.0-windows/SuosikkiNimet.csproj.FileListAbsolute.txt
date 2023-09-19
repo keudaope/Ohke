@@ -1,0 +1,17 @@
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\bin\Debug\net6.0-windows\SuosikkiNimet.exe
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\bin\Debug\net6.0-windows\SuosikkiNimet.deps.json
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\bin\Debug\net6.0-windows\SuosikkiNimet.runtimeconfig.json
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\bin\Debug\net6.0-windows\SuosikkiNimet.dll
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\bin\Debug\net6.0-windows\SuosikkiNimet.pdb
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.csproj.AssemblyReference.cache
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.suosikkiFM.resources
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.csproj.GenerateResource.cache
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.AssemblyInfoInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.AssemblyInfo.cs
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.csproj.CoreCompileInputs.cache
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.dll
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\refint\SuosikkiNimet.dll
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.pdb
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\SuosikkiNimet.genruntimeconfig.cache
+C:\Users\Opiskelija\source\repos\Ohke\SuosikkiNimet\SuosikkiNimet\obj\Debug\net6.0-windows\ref\SuosikkiNimet.dll
