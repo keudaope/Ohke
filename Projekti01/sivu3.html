@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <script type="text/javascript" href="script.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <menu>
+          <p class="s1">SISÄLTÄÄ MM.:</p>
+          <p class="s2">❱<span class="s3">Perusharjoituksia</span></p>
+          <p class="s2">❱<span class="s3">Ehtolauseita</span></p>
+          <p class="s2">❱<span class="s3">Silmukoita</span></p>
+          <p class="s2">❱<span class="s3">Taulukoita</span></p>
+          <p class="s2">❱<span class="s3">Objekteja ... ja paljon muuta</span></p>
+        </menu>
+        <h1 style="">Ohjelmointi <span style=" color: #B30838;">tehtäviä</span></h1>
+        <nav class="navbar">
+          <a href="index.html" class="btn Active" onclick="nykyinenPainike(0)">Sivu 1</a>
+          <a href="sivu2.html" class="btn Active" onclick="nykyinenPainike(1)">Sivu 2</a>
+          <a href="sivu3.html" class="btn Active" onclick="nykyinenPainike(2)">Sivu 3</a>
+        </nav>
+        <p class="s5">Kerätty internetin sivustoilta</p>
+      </header>
+      <article class="grid-container">
+          <section class="sec1">
+              <p class="s6">VIRHEEN ETSINTÄ -HARJOITUKSIA</p>
+              <details closed>
+                  <summary>
+                      VE01. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        function addNumbers(a, b {
+                          return a + b;
+                        }
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Lisää b:n jälkeen puuttuva sulku
+                  <pre class="koodi">
+                        function addNumbers(a, b) {
+                          return a + b;
+                        }
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE02. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        function printMessage() {
+                          console.log(message);
+                        }
+
+                        printMessage();
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Määrittele message-muuttuja ennen käyttöä
+                  <pre class="koodi">
+                        function printMessage() {
+                          const message = "Hello, world!";
+                          console.log(message);
+                        }
+
+                        printMessage();
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE03. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        for (let i = 0; i < 5; i++ {
+                          console.log(i);
+                        }
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Lisää i++:n jälkeen puuttuva sulku
+                  <pre class="koodi">
+                        for (let i = 0; i < 5; i++) {
+                          console.log(i);
+                        }
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE04. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const num1 = 5;
+                        const num2 = "3";
+
+                        const sum = num1 + num2;
+                        console.log(sum);
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Muuta num2 tekstistä numeroksi esim. parseInt()-komennolla
+                  <pre class="koodi">
+                        const num1 = 5;
+                        const num2 = "3";
+
+                        const sum = num1 + parseInt(num2);
+                        console.log(sum);
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE05. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        function divideNumbers(a, b) {
+                          if (b === 0) {
+                            throw new Error("Division by zero.");
+                          }
+                          return a / b;
+                        }
+
+                        try {
+                          const result = divide(10, 2);
+                          console.log(result);
+                        } catch (error) {
+                          console.error(error.message);
+                        }
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Funktion nimi on devideNumbers, ei divide
+                  <pre class="koodi">
+                        function divideNumbers(a, b) {
+                          if (b === 0) {
+                            throw new Error("Division by zero.");
+                          }
+                          return a / b;
+                        }
+
+                        try {
+                          const result = divideNumbers(10, 2);
+                          console.log(result);
+                        } catch (error) {
+                          console.error(error.message);
+                        }
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE06. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        let count = 0;
+
+                        while (count < 5) {
+                          console.log(count);
+                        }
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Kyseessä on loputon silmukka. Korjaa kasvattamalla count-arvoa
+                  <pre class="koodi">
+                        let count = 0;
+
+                        while (count < 5) {
+                          console.log(count);
+                          count++;
+                        }
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE07. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        for (let i = 0; i < 0; i++) {
+                          console.log(i);
+                        }
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Virheellinen silmukan ehto. Korjaa ehtoa.
+                  <pre class="koodi">
+                        for (let i = 0; i < 5; i++) {
+                          console.log(i);
+                        }
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE08. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const message = "Hello, world!"
+                        console.log(message)
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Lauseiden lopusta puuttuu puolipisteet
+                  <pre class="koodi">
+                        const message = "Hello, world!";
+                        console.log(message);
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE09. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        function greet(name) {
+                          console.log("Hello, " + names);
+                        }
+
+                        greet("Alice");
+                                              </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Muuttuja, joka on console.log-komennossa, ei ole names, vaan name
+                  <pre class="koodi">
+                        function greet(name) {
+                          console.log("Hello, " + name);
+                        }
+
+                        greet("Alice");
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE10. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const numbers = [1, 2, 3];
+                        console.log(numbers[3]);
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Taulukon alkiot ovat [0] = 1, [1] = 2 ja [2] = 3, taulukolla ei ole [3] alkiota
+                  <pre class="koodi">
+                        const numbers = [1, 2, 3];
+                        console.log(numbers[2]);
+                  </pre>
+              </details>
+          </section>
+          <section class="sec2">
+              <details closed>
+                  <summary>
+                      VE11. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const person = {
+                          name: "Alice",
+                          age: 30,
+                        };
+
+                        console.log(person.address.street);
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Objektilla person, ei ole address, eikä street -attribuutteja, lisää ne
+                  <pre class="koodi">
+                        const person = {
+                          name: "Alice",
+                          age: 30,
+                          address: {
+                            street: "123 Main St",
+                            city: "Anytown",
+                          },
+                        };
+
+                        console.log(person.address.street);
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE12. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        function add(a, b) {
+                          const result = a + b;
+                        }
+
+                        const sum = add(3, 4);
+                        console.log(sum);
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Funktio ei palauta mitään, joten muuttuja sum ei saa arvoa. Lisää return -komento
+                  <pre class="koodi">
+                        function add(a, b) {
+                          const result = a + b;
+                          return result;
+                        }
+
+                        const sum = add(3, 4);
+                        console.log(sum);
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE13. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const temperature = 25;
+                        console.log(temprature);
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  console.log -lauseessa muuttujan nimi kirjoitettu väärin. Korjaa.
+                  <pre class="koodi">
+                        const temperature = 25;
+                        console.log(temperature);
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE14. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const x = 5;
+                        const y = x;
+
+                        console.log(y);
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Poista x ja anna y:lle suoraan arvo
+                  <pre class="koodi">
+                        const y = 5;
+                        console.log(y);
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE15. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        function greet(name) {
+                          console.log("Hello, " + name);
+                          return;
+                          console.log("Goodbye, " + name);
+                        }
+
+                        greet("Alice");
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Funktiossa turhia lauseita, poista ne.
+                  <pre class="koodi">
+                        function greet(name) {
+                          console.log("Hello, " + name);
+                        }
+
+                        greet("Alice");
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE16. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const day = "Monday";
+
+                        switch (day) {
+                          case "Monday":
+                            console.log("It's Monday.");
+                          case "Tuesday":
+                            console.log("It's Tuesday.");
+                            break;
+                          case "Wednesday":
+                            console.log("It's Wednesday.");
+                            break;
+                          default:
+                            console.log("It's another day.");
+                        }
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  break-komento puuttuu "Monday" -casesta.
+                  <pre class="koodi">
+                        const day = "Monday";
+
+                        switch (day) {
+                          case "Monday":
+                            console.log("It's Monday.");
+                            break;
+                          case "Tuesday":
+                            console.log("It's Tuesday.");
+                            break;
+                          case "Wednesday":
+                            console.log("It's Wednesday.");
+                            break;
+                          default:
+                            console.log("It's another day.");
+                        }
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE17. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const x = 10;
+                        if (x = 5) {
+                          console.log("x is equal to 5.");
+                        } else {
+                          console.log("x is not equal to 5.");
+                        }
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  if-lauseessa väärä koodi, nyt sijoituskoodi, eli x:lle annetaan arvo 5. Korjaa
+                  <pre class="koodi">
+                        const x = 10;
+                        if (x === 5) {
+                          console.log("x is equal to 5.");
+                        } else {
+                          console.log("x is not equal to 5.");
+                        }
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE18. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        function multiply(a, b) {
+                          return a * b;
+                        }
+
+                        const result = multiply(3 4);
+                        console.log(result);
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Funktion kutsusta unohtunut pilkku arvojen välistä
+                  <pre class="koodi">
+                        function multiply(a, b) {
+                          return a * b;
+                        }
+
+                        const result = multiply(3, 4);
+                        console.log(result);
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE19. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const numbers = [1, 2, 3];
+
+                        for (let i = numbers.length - 1; i > 0; i--) {
+                          console.log(numbers[i]);
+}
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Nolla ei ole mukana loopissa. Korjaa.
+                  <pre class="koodi">
+                        const numbers = [1, 2, 3];
+
+                        for (let i = numbers.length - 1; i >= 0; i--) {
+                          console.log(numbers[i]);
+                        }
+                  </pre>
+              </details>
+              <details closed>
+                  <summary>
+                      VE20. Etsi virhe koodista ja korjaa se
+                      <pre class="koodi">
+                        const person = {
+                          name: "Bob",
+                        };
+
+                        console.log(person.age);
+                      </pre>
+                  </summary>
+                  <p class="lihava">JavaScript</p>
+                  Person objektilla ei ole age-attribuuttia. Lisää se.
+                  <pre class="koodi">
+                        const person = {
+                          name: "Bob",
+                          age: 30,
+                        };
+
+                        console.log(person.age);
+                  </pre>
+              </details>
+
+          </section>
+
+      </article>
+    </main>
+  </body>
+</html>      

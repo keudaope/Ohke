@@ -19,22 +19,19 @@
         </menu>
         <h1 style="">Ohjelmointi <span style=" color: #B30838;">tehtäviä</span></h1>
         <nav class="navbar">
-          <a href="index.html" class="btn Active" onclick="nykyinenPainike(0)">Sivu 1</a>
-          <a href="sivu2.html" class="btn Active" onclick="nykyinenPainike(1)">Sivu 2</a>
-          <a href="sivu3.html" class="btn Active" onclick="nykyinenPainike(2)">Sivu 3</a>
-          <a href="sivu4.html" class="btn Active" onclick="nykyinenPainike(3)">Sivu 4</a>
-          <a href="sivu5.html" class="btn Active" onclick="nykyinenPainike(4)">Sivu 5</a>
-          <a href="sivu6.html" class="btn Active" onclick="nykyinenPainike(5)">Sivu 6</a>
+            <a href="index.html" class="btn Active" onclick="nykyinenPainike(0)">Sivu 1</a>
+            <a href="sivu2.html" class="btn Active" onclick="nykyinenPainike(1)">Sivu 2</a>
+            <a href="sivu3.html" class="btn Active" onclick="nykyinenPainike(2)">Sivu 3</a>
         </nav>
         <p class="s5">Kerätty internetin sivustoilta</p>
       </header>
       <article class="grid-container">
-        <section class="sec1">
-          <p class="s6">TAULUKKOHARJOITUKSIA</p>
-          <details closed>
-            <summary>T01. Luo taulukko nimeltä 'kauppalista' ja lisää siihen joitakin ostettavia tuotteita (esim. 'maito', 'leipä', 'omenat'). Tulosta koko kauppalista konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+          <section class="sec1">
+              <p class="s6">TAULUKKOHARJOITUKSIA</p>
+              <details closed>
+                  <summary>T01. Luo taulukko nimeltä 'kauppalista' ja lisää siihen joitakin ostettavia tuotteita (esim. 'maito', 'leipä', 'omenat'). Tulosta koko kauppalista konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 // Luo tyhjä taulukko nimeltä 'kauppalista'
                 var kauppalista = [];
 
@@ -49,83 +46,83 @@
                 console.log(kauppalista[i]);
                 }
             </pre>
-            </details>
-            <details closed>
-            <summary>T02. Luo taulukko, joka sisältää viisi eri nimeä ja tulosta taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T02. Luo taulukko, joka sisältää viisi eri nimeä ja tulosta taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const nimet = ["Matti", "Anna", "Eeva", "Jussi", "Liisa"];
                 console.log(nimet);
             </pre>
-            </details>
-            <details closed>
-            <summary>T03. Laske taulukon pituus, kun taulukko = [1, 2, 3, 4, 5]. Tulosta pituus konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T03. Laske taulukon pituus, kun taulukko = [1, 2, 3, 4, 5]. Tulosta pituus konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const taulukko = [1, 2, 3, 4, 5];
                 const pituus = taulukko.length;
                 console.log(pituus);
             </pre>
-            </details>
-            <details closed>
-            <summary>T04. Lisää uusi nimi taulukkoon (["Matti", "Anna", "Eeva"]) ja tulosta taulukko</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T04. Lisää uusi nimi taulukkoon (["Matti", "Anna", "Eeva"]) ja tulosta taulukko</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const nimet = ["Matti", "Anna", "Eeva"];
                 nimet.push("Jussi");
                 console.log(nimet);
             </pre>
-            </details>
-            <details closed>
-            <summary>T05. Yhdistä seuraavat taulukot (taul1 = [1, 2, 3] ja taul2 = [4, 5, 6]) ja tulosta yhdistetty taulukko consoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T05. Yhdistä seuraavat taulukot (taul1 = [1, 2, 3] ja taul2 = [4, 5, 6]) ja tulosta yhdistetty taulukko consoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
             const taulukko1 = [1, 2, 3];
             const taulukko2 = [4, 5, 6];
             const yhdistettyTaulukko = taulukko1.concat(taulukko2);
             console.log(yhdistettyTaulukko);    
             </pre>
-            </details>
-            <details closed>
-            <summary>T06. Luo uusi taulukko, joka sisältää vain parilliset numerot alkuperäisestä taulukosta ([1, 2, 3, 4, 5, 6 7, 8, 9, 10] ja tulosta uusi taulukko konsoliin.</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T06. Luo uusi taulukko, joka sisältää vain parilliset numerot alkuperäisestä taulukosta ([1, 2, 3, 4, 5, 6 7, 8, 9, 10] ja tulosta uusi taulukko konsoliin.</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
                 const parillisetNumerot = numerot.filter(numero => numero % 2 === 0);
                 console.log(parillisetNumerot);
             </pre>
-            </details>
-            <details closed>
-            <summary>T07. Lajittele taulukko ([5, 2, 9, 1, 5, 8, 3])nousevaan järjestykseen ja tulosta lajiteltu taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T07. Lajittele taulukko ([5, 2, 9, 1, 5, 8, 3])nousevaan järjestykseen ja tulosta lajiteltu taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [5, 2, 9, 1, 5, 8, 3];
                 numerot.sort((a, b) => a - b);
                 console.log(numerot);
             </pre>
-            </details>
-            <details closed>
-            <summary>T08. Käännä taulukko ([1, 2, 3, 4, 5]) ympäri niin, että viimeisestä alkiosta tulee ensimmäinen ja päinvastoin ja tulosta käännetty taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T08. Käännä taulukko ([1, 2, 3, 4, 5]) ympäri niin, että viimeisestä alkiosta tulee ensimmäinen ja päinvastoin ja tulosta käännetty taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [1, 2, 3, 4, 5];
                 const kaannettyTaulukko = numerot.reverse();
                 console.log(kaannettyTaulukko);
             </pre>
-            </details>
-            <details closed>
-            <summary>T09. Muuta taulukko (["Matti", "Anna", "Eeva"]) merkkijonoksi, jossa alkiot ovat pilkuilla eroteltuja ja tulosta merkkijono konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T09. Muuta taulukko (["Matti", "Anna", "Eeva"]) merkkijonoksi, jossa alkiot ovat pilkuilla eroteltuja ja tulosta merkkijono konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const nimet = ["Matti", "Anna", "Eeva"];
                 const merkkijono = nimet.join(", ");
                 console.log(merkkijono);
             </pre>
-            </details>
-            <details closed>
-            <summary>T10. Poista taulukosta ([1, 2, 3, 4, 5]) kolmas alkio ja tulosta taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T10. Poista taulukosta ([1, 2, 3, 4, 5]) kolmas alkio ja tulosta taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [1, 2, 3, 4, 5];
                 const poistettava = 3;
                 const indeksi = numerot.indexOf(poistettava);
@@ -134,11 +131,11 @@
                 }
                 console.log(numerot);
             </pre>
-            </details>
-            <details closed>
-            <summary>T11. Etsi taulukosta tietty alkio ja palauta sen indeksi consoliin. Palauta myös viesti, jos alkiota ei löytynyt</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T11. Etsi taulukosta tietty alkio ja palauta sen indeksi consoliin. Palauta myös viesti, jos alkiota ei löytynyt</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const nimet = ["Matti", "Anna", "Eeva"];
                 const etsittavaNimi = "Anna";
                 const indeksi = nimet.indexOf(etsittavaNimi);
@@ -148,29 +145,29 @@
                 console.log(`Nimeä "${etsittavaNimi}" ei löytynyt.`);
                 }
             </pre>
-            </details>
-            <details closed>
-            <summary>T12. Kopioi taulukosta ([1, 2, 3, 4, 5]) kaksi viimeisintä uuteen taulukkoon ja tulosta uusi taulukko consoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T12. Kopioi taulukosta ([1, 2, 3, 4, 5]) kaksi viimeisintä uuteen taulukkoon ja tulosta uusi taulukko consoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const alkuperainenTaulukko = [1, 2, 3, 4, 5];
                 const kopio = alkuperainenTaulukko.slice(3);
                 console.log(kopio);
             </pre>
-            </details>
-            <details closed>
-            <summary>T13. Muuta taulukon ([1, 2, 3, 4, 5]) keskimmäinen jäsen 6:ksi ja tulosta taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T13. Muuta taulukon ([1, 2, 3, 4, 5]) keskimmäinen jäsen 6:ksi ja tulosta taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [1, 2, 3, 4, 5];
                 numerot[2] = 6;
                 console.log(numerot);
             </pre>
-            </details>
-            <details closed>
-            <summary>T14. Laske taulukon ([1, 2, 3, 4, 5]) arvot yhteen ja tulosta summa konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T14. Laske taulukon ([1, 2, 3, 4, 5]) arvot yhteen ja tulosta summa konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [1, 2, 3, 4, 5];
                 var summa = 0;
                 for(var i = 0; i < taulukko.length - 1; i++)
@@ -179,11 +176,11 @@
                 }
                 console.log(summa);
             </pre>
-            </details>
-            <details closed>
-            <summary>T15. Laske taulukon ([1, 2, 3, 4, 5]) arvojen keskiarvo ja tulosta se konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T15. Laske taulukon ([1, 2, 3, 4, 5]) arvojen keskiarvo ja tulosta se konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [1, 2, 3, 4, 5];
                 var summa = 0;
                 for (var i = 0; i < taulukko.length - 1; i++) {
@@ -192,58 +189,94 @@
                 var keskiarvo = summa / taulukko.length;
                 console.log(keskiarvo);
             </pre>
-            </details>
-            <details closed>
-            <summary>T16. Luo uusi taulukko, jossa on alkuperäisen taulukon ([1, 2, 3]) arvot monistettu 3 kertaa ja tulosta uusi taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T16. Luo uusi taulukko, jossa on alkuperäisen taulukon ([1, 2, 3]) arvot monistettu 3 kertaa ja tulosta uusi taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const alkuperainenTaulukko = [1, 2, 3];
                 const monistettuTaulukko = [...alkuperainenTaulukko, ...alkuperainenTaulukko, ...alkuperainenTaulukko];
                 console.log(monistettuTaulukko);
             </pre>
-            </details>
-            <details closed>
-            <summary>T17. Luo uusi taulukko, joka sisältää uniikit arvot alkuperäisestä taulukosta ([1, 2, 2, 3, 4, 4, 5]) ja tulosta uusi taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T17. Luo uusi taulukko, joka sisältää uniikit arvot alkuperäisestä taulukosta ([1, 2, 2, 3, 4, 4, 5]) ja tulosta uusi taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const taulukko = [1, 2, 2, 3, 4, 4, 5];
                 const uniikitArvot = [...new Set(taulukko)];
                 console.log(uniikitArvot);
             </pre>
-            </details>
-            <details closed>
-            <summary>T18. Vaihda taulukon ([1, 2, 3, 4, 5]) ensimmäisen ja viimeisen alkion paikkoja ja tulosta taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T18. Vaihda taulukon ([1, 2, 3, 4, 5]) ensimmäisen ja viimeisen alkion paikkoja ja tulosta taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [1, 2, 3, 4, 5];
                 [numerot[0], numerot[numerot.length - 1]] = [numerot[numerot.length - 1], numerot[0]];
                 console.log(numerot);
             </pre>
-            </details>
-            <details closed>
-            <summary>T19. Muunna taulukon (["Matti", "Anna", "Eeva"]) merkkijonojen kaikki kirjaimet isoiksi ja tulosta taulukko konsoliin.</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T19. Muunna taulukon (["Matti", "Anna", "Eeva"]) merkkijonojen kaikki kirjaimet isoiksi ja tulosta taulukko konsoliin.</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const nimet = ["Matti", "Anna", "Eeva"];
                 const isoiksiKirjaimiksi = nimet.map(nimi => nimi.toUpperCase());
                 console.log(isoiksiKirjaimiksi);
             </pre>
-            </details>
-            <details closed>
-            <summary>T20. Poista taulukosta ([1, 2, 3, 4, 5]) kaikki neljää pienemmät numerot ja tulosta taulukko konsoliin</summary>
-            <p class="lihava">Javascript</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>T20. Poista taulukosta ([1, 2, 3, 4, 5]) kaikki neljää pienemmät numerot ja tulosta taulukko konsoliin</summary>
+                  <p class="lihava">Javascript</p>
+                  <pre class="koodi">
                 const numerot = [1, 2, 3, 4, 5];
                 const suuretNumerot = numerot.filter(numero => numero > 3);
                 console.log(suuretNumerot);
             </pre>
-            </details>
-            <!--<p class = "lihava">Python</p>
-            <p class="lihava">Java</p>
-            <pre class = "koodi">
-            </pre>-->
-            <!--<p class = "lihava">C#</p>
-            <pre class = "koodi">
+              </details>
+              <!--<p class = "lihava">Python</p>
+    <p class="lihava">Java</p>
+    <pre class = "koodi">
+    </pre>-->
+              <!--<p class = "lihava">C#</p>
+    <pre class = "koodi">
+     using System;
+      class Henkilo
+      {
+          public string EtuNimi { get; set; }
+          public string SukuNimi { get; set; }
+          public int Ika { get; set; }
+          public Henkilo(string enimi, string snimi, int age)
+          {
+              EtuNimi = enimi;
+              SukuNimi = snimi;
+              Ika = age;
+          }
+      }
+
+      class Program
+      {
+          static void Main(string[] args)
+          {
+              Henkilo risto = new Henkilo("Risto", "Reipas", 10);
+              Console.WriteLine("Etunimi: " + risto.EtuNimi);
+              Console.WriteLine("Sukunimi: " + risto.SukuNimi);
+              Console.WriteLine("Ikä: " + risto.Ika);
+          }
+      }
+    </pre>-->
+              </details>
+              <p class="s6">LUOKKAHARJOITUKSIA</p>
+              <details closed>
+                  <summary>C01. Tee Henkiloluokka, jossa on muuttujat: Etu-, sukunimi ja ikä ja tee konstructori, jonka avulla ko. tiedot voi suoraan syöttää. Tee tämän jälkeen risto-olio seuraavilla tiedoilla: Etunimi: Risto, Sukunimi: Reipas, Ikä: 10 ja tulosta sen jälkeen riston tiedot konsoliin</summary>
+                  <!--<p class="lihava">Javascript</p>
+        <p class = "lihava">Python</p>
+        <p class="lihava">Java</p>
+        <pre class = "koodi">
+        </pre>-->
+                  <p class="lihava">C#</p>
+                  <pre class="koodi">
              using System;
               class Henkilo
               {
@@ -268,60 +301,24 @@
                       Console.WriteLine("Ikä: " + risto.Ika);
                   }
               }
-            </pre>-->
-          </details>
-          <p class="s6">LUOKKAHARJOITUKSIA</p>
-          <details closed>
-            <summary>C01. Tee Henkiloluokka, jossa on muuttujat: Etu-, sukunimi ja ikä ja tee konstructori, jonka avulla ko. tiedot voi suoraan syöttää. Tee tämän jälkeen risto-olio seuraavilla tiedoilla: Etunimi: Risto, Sukunimi: Reipas, Ikä: 10 ja tulosta sen jälkeen riston tiedot konsoliin</summary>
-            <!--<p class="lihava">Javascript</p>
-            <p class = "lihava">Python</p>
-            <p class="lihava">Java</p>
-            <pre class = "koodi">
-            </pre>-->
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
-             using System;
-              class Henkilo
-              {
-                  public string EtuNimi { get; set; }
-                  public string SukuNimi { get; set; }
-                  public int Ika { get; set; }
-                  public Henkilo(string enimi, string snimi, int age)
-                  {
-                      EtuNimi = enimi;
-                      SukuNimi = snimi;
-                      Ika = age;
-                  }
-              }
+            </pre>
+              </details>
+              <details closed>
+                  <summary>C02. Muuta nyt edellisen tehtävän sukunimeksi Reippaampi ja iäksi 11 </summary>
+                  <!--<p class="lihava">Javascript</p>
+        <pre class = "koodi">
 
-              class Program
-              {
-                  static void Main(string[] args)
-                  {
-                      Henkilo risto = new Henkilo("Risto", "Reipas", 10);
-                      Console.WriteLine("Etunimi: " + risto.EtuNimi);
-                      Console.WriteLine("Sukunimi: " + risto.SukuNimi);
-                      Console.WriteLine("Ikä: " + risto.Ika);
-                  }
-              }
-            </pre>
-          </details>
-          <details closed>
-            <summary>C02. Muuta nyt edellisen tehtävän sukunimeksi Reippaampi ja iäksi 11 </summary>
-            <!--<p class="lihava">Javascript</p>
-            <pre class = "koodi">
-              
-            </pre>
-            <p class = "lihava">Python</p>
-            <pre class = "koodi">
-              
-            </pre>
-            <p class="lihava">Java</p>
-            <pre class = "koodi">
-              
-            </pre>-->
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+        </pre>
+        <p class = "lihava">Python</p>
+        <pre class = "koodi">
+
+        </pre>
+        <p class="lihava">Java</p>
+        <pre class = "koodi">
+
+        </pre>-->
+                  <p class="lihava">C#</p>
+                  <pre class="koodi">
               // ... alku sama kuin edellisessä tehtävässä 
               class Program
               {
@@ -336,23 +333,23 @@
                   }
               }
              </pre>
-          </details>
-          <details closed>
-            <summary>C03. Jatka edellistä tehtävää siten, että tulostus tapahtuu luokan funktiolla NaytaTiedot() </summary>
-            <!--<p class="lihava">Javascript</p>
-            <pre class = "koodi">
-              
-            </pre>
-            <p class = "lihava">Python</p>
-            <pre class = "koodi">
-              
-            </pre>
-            <p class="lihava">Java</p>
-            <pre class = "koodi">
-              
-            </pre>-->
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>C03. Jatka edellistä tehtävää siten, että tulostus tapahtuu luokan funktiolla NaytaTiedot() </summary>
+                  <!--<p class="lihava">Javascript</p>
+        <pre class = "koodi">
+
+        </pre>
+        <p class = "lihava">Python</p>
+        <pre class = "koodi">
+
+        </pre>
+        <p class="lihava">Java</p>
+        <pre class = "koodi">
+
+        </pre>-->
+                  <p class="lihava">C#</p>
+                  <pre class="koodi">
               using System;
               class Henkilo
               {
@@ -383,23 +380,23 @@
                   }
               }
              </pre>
-          </details>
-          <details closed>
-            <summary>C04. Tee kuvakirja -niminen luokka, jossa privaatti muuttuja SivujenLukumäärä ja oletuskonsturi, jossa sivumääräksi määritellään 16 sivua sekä konstruktori, jolla voi antaa itse sivumäärän  </summary>
-            <!--<p class="lihava">Javascript</p>
-            <pre class = "koodi">
-              
-            </pre>
-            <p class = "lihava">Python</p>
-            <pre class = "koodi">
-              
-            </pre>
-            <p class="lihava">Java</p>
-            <pre class = "koodi">
-              
-            </pre>-->
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>C04. Tee kuvakirja -niminen luokka, jossa privaatti muuttuja SivujenLukumäärä ja oletuskonsturi, jossa sivumääräksi määritellään 16 sivua sekä konstruktori, jolla voi antaa itse sivumäärän  </summary>
+                  <!--<p class="lihava">Javascript</p>
+        <pre class = "koodi">
+
+        </pre>
+        <p class = "lihava">Python</p>
+        <pre class = "koodi">
+
+        </pre>
+        <p class="lihava">Java</p>
+        <pre class = "koodi">
+
+        </pre>-->
+                  <p class="lihava">C#</p>
+                  <pre class="koodi">
               using System;
               class Kuvakirja
               {
@@ -435,23 +432,23 @@
                   }
               }
              </pre>
-          </details>
-          <details closed>
-            <summary>C04. Tee Elain -niminen luokka, jossa on yksi muuttuja: nimi. Tee nimelle getterit ja setterit sekä oletuskonstruktori sekä ylikuormitettu konstruktori, jossa nimen voi antaa. Tee lisäksi Syo-metodi, joka tulostaa nimen ja 'syö - mumm mumm mumm'. Luo tämän jälkeen kana-niminen olio oletuskonstruktorilla ja muuta nimi sen jälkeen 'kaakattaja':ksi ja kutsu sen jälkeen Syo-metodia </summary>
-            <!--<p class="lihava">Javascript</p>
-            <pre class = "koodi">
-              
-            </pre>
-            <p class = "lihava">Python</p>
-            <pre class = "koodi">
-              
-            </pre>
-            <p class="lihava">Java</p>
-            <pre class = "koodi">
-              
-            </pre>-->
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>C04. Tee Elain -niminen luokka, jossa on yksi muuttuja: nimi. Tee nimelle getterit ja setterit sekä oletuskonstruktori sekä ylikuormitettu konstruktori, jossa nimen voi antaa. Tee lisäksi Syo-metodi, joka tulostaa nimen ja 'syö - mumm mumm mumm'. Luo tämän jälkeen kana-niminen olio oletuskonstruktorilla ja muuta nimi sen jälkeen 'kaakattaja':ksi ja kutsu sen jälkeen Syo-metodia </summary>
+                  <!--<p class="lihava">Javascript</p>
+        <pre class = "koodi">
+
+        </pre>
+        <p class = "lihava">Python</p>
+        <pre class = "koodi">
+
+        </pre>
+        <p class="lihava">Java</p>
+        <pre class = "koodi">
+
+        </pre>-->
+                  <p class="lihava">C#</p>
+                  <pre class="koodi">
               using System;
               class Elain
               {
@@ -489,12 +486,12 @@
                   }
               }
              </pre>
-          </details>
-          <details closed>
-            <summary>C05. Jatka edellistä tehtävää siten, että luot Koira-luokan, joka perii Eläin -luokan (class Koira: Elain). Lisää Koira luokkaan tassut (määrä) ja turkki (väri) -muuttujat. Tee getterit, setterit, konstruktorit) sekä Aantelehtii-Metodi, joka tulostaa: nimi "haukkuu", kun metodille antaa tuon stringinä. Koiralle voi antaa oletuskonstruktorissa tassujen määräksi 4  </summary>
+              </details>
+              <details closed>
+                  <summary>C05. Jatka edellistä tehtävää siten, että luot Koira-luokan, joka perii Eläin -luokan (class Koira: Elain). Lisää Koira luokkaan tassut (määrä) ja turkki (väri) -muuttujat. Tee getterit, setterit, konstruktorit) sekä Aantelehtii-Metodi, joka tulostaa: nimi "haukkuu", kun metodille antaa tuon stringinä. Koiralle voi antaa oletuskonstruktorissa tassujen määräksi 4  </summary>
 
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+                  <p class="lihava">C#</p>
+                  <pre class="koodi">
               ... // Kuten edellä
               class Koira : Elain
               {
@@ -544,12 +541,13 @@
                   }
               }
             </pre>
-          </details>
-          <details closed>
-            <summary>C06. Tee luokka ajoneuvo, jossa on kolme muuttujaa: merkki, malli, vuosimalli. Tee konstruktorit, getterit ja setterit luokkaan.Lisää metodit aja, kiihdyta, jarruta, kaynnista ja sammuta. Tee sitten luokka auto, joka perii luokan ajoneuvo. Tee sitten luokka TestiAjo, jossa luot uuden olion nimeltä mersu ja kutsut metodia aja tuolle mersu oliolle.
-            </summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>
+                      C06. Tee luokka ajoneuvo, jossa on kolme muuttujaa: merkki, malli, vuosimalli. Tee konstruktorit, getterit ja setterit luokkaan.Lisää metodit aja, kiihdyta, jarruta, kaynnista ja sammuta. Tee sitten luokka auto, joka perii luokan ajoneuvo. Tee sitten luokka TestiAjo, jossa luot uuden olion nimeltä mersu ja kutsut metodia aja tuolle mersu oliolle.
+                  </summary>
+                  <p class="lihava">C#</p>
+                  <pre class="koodi">
               using System;
               class Ajoneuvo
               {
@@ -622,12 +620,13 @@
                   }
               }
             </pre>
-          </details>
-          <details closed>
-            <summary>C07. Jatka edellistä tehtävää siten, että lisäät Auto-luokkaan pyorat muuttujan ja oletuskonstruktorissa annat pyorat muuttujalle oletusarvon 4. Tee sitten luokka Moottoripyora, joka perii luokan Auto, mutta pyorat muuttujan oletusarvo on 2.
-            </summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              </details>
+              <details closed>
+                  <summary>
+                      C07. Jatka edellistä tehtävää siten, että lisäät Auto-luokkaan pyorat muuttujan ja oletuskonstruktorissa annat pyorat muuttujalle oletusarvon 4. Tee sitten luokka Moottoripyora, joka perii luokan Auto, mutta pyorat muuttujan oletusarvo on 2.
+                  </summary>
+                  <p class="lihava">C#</p>
+                  <pre class="koodi">
               ... // Kuten edellä, alla muutokset
               class Auto : Ajoneuvo
               {
@@ -665,8 +664,129 @@
                   }
               }
             </pre>
-          </details>
-        </section>
+              </details>
+              <details closed>
+                  <summary>C08. Luo luokka Pankkitili, joka sisältää yksityisen ominaisuuden saldo. Lisää metodi talleta ja nosta, jotka mahdollistavat saldon tallettamisen ja nostamisen. Varmista, että saldo ei voi mennä negatiiviseksi.</summary>
+                  <p class="lihava">JavaScript</p>
+                  <pre class="koodi">
+                class Pankkitili {
+                constructor() {
+                this.saldo = 0;
+                }
+
+                talleta(maara) {
+                if (maara > 0) {
+                    this.saldo += maara;
+                    console.log(`Talletettu ${maara} euroa. Uusi saldo: ${this.saldo} euroa.`);
+                } else {
+                    console.log("Talletettava määrä on virheellinen.");
+                }
+                }
+
+                nosta(maara) {
+                if (maara > 0) {
+                    if (maara <= this.saldo) {
+                    this.saldo -= maara;
+                    console.log(`Nostettu ${maara} euroa. Uusi saldo: ${this.saldo} euroa.`);
+                    } else {
+                    console.log("Nostettava määrä ylittää tilin saldon.");
+                    }
+                } else {
+                    console.log("Nostettava määrä on virheellinen.");
+                }
+                }
+                }
+
+                // Käytetään Pankkitili-luokkaa
+                const tili = new Pankkitili();
+                tili.talleta(100); // Talletettu 100 euroa. Uusi saldo: 100 euroa.
+                tili.nosta(50);   // Nostettu 50 euroa. Uusi saldo: 50 euroa.
+                tili.nosta(70);   // Nostettava määrä ylittää tilin saldon.
+                tili.talleta(-20); // Talletettava määrä on virheellinen.
+                  </pre>
+              </details>
+
+              <details closed>
+                  <summary>C09. Luo useita erilaisia eläinluokkia (kuten Koira, Lintu, Kala) ja anna niille kaikille oma aanesta-metodi. Käytä näitä erilaisia eläinolioita ja kutsu niiden aanesta-metodeja nähdäksesi, miten ne käyttäytyvät eri tavoin.</summary>
+                  <p class="lihava">JavaScript</p>
+                  <pre class="koodi">
+                // Eläinluokka
+                class Elain {
+                  constructor(nimi) {
+                    this.nimi = nimi;
+                  }
+
+                  aanesta() {
+                    console.log(`${this.nimi} tekee ääntä.`);
+                  }
+                }
+
+                // Koira-luokka perii Elain-luokan ominaisuudet ja metodit
+                class Koira extends Elain {
+                  aanesta() {
+                    console.log(`${this.nimi} haukkuu: Woof woof!`);
+                  }
+                }
+
+                // Lintu-luokka perii Elain-luokan ominaisuudet ja metodit
+                class Lintu extends Elain {
+                  aanesta() {
+                    console.log(`${this.nimi} laulaa: La la la!`);
+                  }
+                }
+
+                // Kala-luokka perii Elain-luokan ominaisuudet ja metodit
+                class Kala extends Elain {
+                  aanesta() {
+                    console.log(`${this.nimi} kuplii vedessä.`);
+                  }
+                }
+
+                // Luodaan erilaisia eläinolioita ja kutsutaan niiden "aanesta" -metodeja
+                const fido = new Koira("Fido");
+                const tweety = new Lintu("Tweety");
+                const nemo = new Kala("Nemo");
+
+                fido.aanesta();    // Fido haukkuu: Woof woof!
+                tweety.aanesta();  // Tweety laulaa: La la la!
+                nemo.aanesta();    // Nemo kuplii vedessä.
+                </pre>
+              </details>
+              <details closed>
+                  <summary>C10. Luo Kirja-luokka, joka sisältää ominaisuudet nimi ja kirjailija. Luo sitten Kirjasto-luokka, joka voi sisältää useita kirjoja. Lisää Kirjasto-luokalle metodi lisaaKirja(kirja), joka lisää kirjan kirjaston kokoelmaan, ja metodi haeKirjat(kirjailija), joka palauttaa taulukon kirjoista, jotka ovat tietyn kirjailijan kirjoittamia.</summary>
+                  <p class="lihava">JavaScript</p>
+                  <pre class="koodi">
+                class Kirja {
+                  constructor(nimi, kirjailija) {
+                    this.nimi = nimi;
+                    this.kirjailija = kirjailija;
+                  }
+                }
+
+                class Kirjasto {
+                  constructor() {
+                    this.kirjat = [];
+                  }
+
+                  lisaaKirja(kirja) {
+                    this.kirjat.push(kirja);
+                  }
+
+                  haeKirjat(kirjailija) {
+                    return this.kirjat.filter(kirja => kirja.kirjailija === kirjailija);
+                  }
+                }
+
+                const kirjasto1 = new Kirjasto();
+                const kirja1 = new Kirja("Harry Potter", "J.K. Rowling");
+                const kirja2 = new Kirja("Game of Thrones", "George R.R. Martin");
+                kirjasto1.lisaaKirja(kirja1);
+                kirjasto1.lisaaKirja(kirja2);
+                console.log(kirjasto1.haeKirjat("J.K. Rowling")); // Tulostaa [{ nimi: 'Harry Potter', kirjailija: 'J.K. Rowling' }]
+
+                  </pre>
+              </details>
+          </section>
         <section class="sec2">
         <p class="s6">SÄÄNNÖLLISET LAUSEKKEET</p>  
           <details closed>
