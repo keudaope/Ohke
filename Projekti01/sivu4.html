@@ -81,6 +81,208 @@
 
       </pre>
                 </details>
+                <details closed>
+                    <summary>DOM03. Kirjoita JavaScript-koodi, joka vaihtaa kappaleen taustavärin</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                      &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p>Vaihda tämän kappaleen tausta&lt;/p>
+                        &lt;button onclick="vaihdaTausta()">vaihda tausta&lt;/button>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function vaihdaTausta() {
+                        var teksti = document.getElementById("vaihda");
+                        teksti.style.backgroundColor = "Yellow";
+                    }
+
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM04. Kirjoita JavaScript-koodi, joka hakee seuraavat tiedot annetusta linkistä (&lt;a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">Hae tämän linkin tiedot&lt;/a>):
+                        <ul>
+                            <li>href</li>
+                            <li>hreflang</li>
+                            <li>rel</li>
+                            <li>target</li>
+                            <li>type</li>
+                        </ul>
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                      &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" 
+                        target="_self" href="https://www.w3resource.com/">
+                        Hae tämän linkin tiedot&lt;/a>
+                        &lt;button onclick="linkitTiedot()">Hae linkin tiedot&lt;/button>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function linkinTiedot() {
+                        var u = document.getElementById("w3r").href;
+                        alert('The value of the href attribute of the link is : ' + u);
+                        var v = document.getElementById("w3r").hreflang;
+                        alert('The value of the hreflang attribute of the link is : ' + v);
+                        var w = document.getElementById("w3r").rel;
+                        alert('The value of the rel attribute of the link is : ' + w);
+                        var x = document.getElementById("w3r").target;
+                        alert('The value of the taget attribute of the link is : ' + x);
+                        var y = document.getElementById("w3r").type;
+                        alert('The value of the type attribute of the link is : ' + y);
+                    }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM05. Kirjoita JavaScript-koodi, joka lisää olemassa olevaan taulukkoon rivin
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                      &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;table id="sampleTable" border="1">
+                        &lt;tr>&lt;td>Row1 cell1&lt;/td>
+                        &lt;td>Row1 cell2&lt;/td>&lt;/tr>
+                        &lt;tr>&lt;td>Row2 cell1&lt;/td>
+                        &lt;td>Row2 cell2&lt;/td>&lt;/tr>
+                        &lt;/table>&lt;br>
+                        &lt;input type="button" onclick="lisaaRivi()" value="Lisää rivi">
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function lisaaRivi() {
+                        var x = document.getElementById('sampleTable').insertRow(0);
+                        var y = x.insertCell(0);
+                        var z = x.insertCell(1);
+                        y.innerHTML = "Uusi solu 1";
+                        z.innerHTML = "Uusi solu 2";
+                    }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM06. Kirjoita JavaScript-koodi, joka pyytää rivin ja solun, jonka sisältö muutetaan
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                      &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;table id="taulukko" border="1">
+                        &lt;tr>&lt;td>Row1 cell1&lt;/td>
+                        &lt;td>Row1 cell2&lt;/td>&lt;/tr>
+                        &lt;tr>&lt;td>Row2 cell1&lt;/td>
+                        &lt;td>Row2 cell2&lt;/td>&lt;/tr>
+                        &lt;tr>&lt;td>Row3 cell1&lt;/td>
+                        &lt;td>Row3 cell2&lt;/td>&lt;/tr>
+                        &lt;/table>&lt;br>
+                        &lt;label>Anna muutettava rivi&lt;/label>&lt;br />
+                        &lt;input type="text" id="rivi">&lt;br />
+                        &lt;label>Anna muutettava rivi&lt;/label>&lt;br />
+                        &lt;input type="text" id="solu">&lt;br />
+                        &lt;label>Anna muutettava sisältö&lt;/label>&lt;br />
+                        &lt;input type="text" id="sisalto">&lt;br />
+                        &lt;input type="button" onclick="muutaSolu()" value="Muuta solun arvo">
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                        function muutaSolu() {
+                            rivi = document.getElementById("rivi").value;
+                            solu = document.getElementById("solu").value;
+                            sisalto = document.getElementById("sisalto").value;
+                            document.getElementById("taulukko").rows[rivi].cells[solu].innerHTML = sisalto;
+                        }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM07. Kirjoita JavaScript-koodi, joka pyytää rivi- ja sarakemäärän ja laittaa sen jälkeen sisällöksi kyseisen rivin- ja sarakenumeron (esim. Rivi0 Sarake0)
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;label>Anna rivien määrä&lt;/label>&lt;br />
+                        &lt;input type="text" id="rivi">&lt;br />
+                        &lt;label>Anna sarakkeiden määrä&lt;/label>&lt;br />
+                        &lt;input type="text" id="solu">&lt;br />
+                        &lt;input type="button" onclick="luoTaulukko()" value="Luo taulukko">
+                        &lt;table id="taulukko" border="1">
+                        &lt;/table>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                        function luoTaulukko() {
+                            rivimaara = document.getElementById("rivi").value;
+                            sarakemaara = document.getElementById("solu").value;
+
+                            for (var r = 0; r < parseInt(rivimaara); r++) {
+                                var x = document.getElementById('taulukko').insertRow(r);
+                                for (var s = 0; s < parseInt(sarakemaara); s++) {
+                                    var y = x.insertCell(s);
+                                    y.innerHTML = "Rivi" + r + " Sarake" + s;
+                                }
+                            }
+                        }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM08. Kirjoita JavaScript ohjelma, joka poistaa valitun valinnan alasvetovalikosta.
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;select id="varit">
+                            &lt;option value="punainen">Punainen&lt;/option>
+                            &lt;option value="sininen">Sininen&lt;/option>
+                            &lt;option value="vihreä">Vihreä&lt;/option>
+                            &lt;option value="keltainen">Keltainen&lt;/option>
+                            &lt;option value="oranssi">Oranssi&lt;/option>
+                            &lt;input type="button" onclick="poistaValinta()" value="Poista valinta">
+                        &lt;/select>
+                    &lt;/body>
+                    &lt;/html>
+                    <b>JavaScript</b>
+                        function poistaValinta() {
+                            var poista = document.getElementById("varit");
+                            poista.remove(poista.selectedIndex);
+                        }
+                    </pre>
+                </details>
+
             </section>
           <section class="sec2">
 
