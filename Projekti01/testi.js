@@ -1,4 +1,4 @@
-function muokkaa() {
+﻿function muokkaa() {
     var teksti = document.getElementById("muokattava");
     teksti.style.fontFamily = "Courier";
     teksti.style.color = "red";
@@ -56,3 +56,48 @@ function poistaValinta() {
     var poista = document.getElementById("varit");
     poista.remove(poista.selectedIndex);
 }
+
+function laskeElementit() {
+    var x = document.getElementById("varit");
+    var txt1 = "No. of items : ";
+    var i;
+    l = document.getElementById("varit").length;
+    txt1 = txt1 + l;
+    for (i = 0; i < x.length; i++) {
+        txt1 = txt1 + "\n" + x.options[i].text;
+    }
+    alert(txt1);
+}
+
+//Ensiksi haetaan kaikki lihavoidut tekstit 
+var lihavoidut;
+window.onload = haeLihavoidut();
+
+// Kerää kaikki <strong> tagit
+function haeLihavoidut() {
+    lihavoidut = document.getElementsByTagName('strong');
+}
+// Käy läpi kaikki lihavoidut tagit ja muuta niiden väriä  
+function korosta() {
+    for (var i = 0; i < lihavoidut.length; i++) {
+        lihavoidut[i].style.color = "green";
+        lihavoidut[i].style.fontSize = "2em";
+    }
+}
+
+// Kun hiiri poistuu sanan päältä, sana muuttuu mustaksi jälleen
+function palaaNormaaliin() {
+    for (var i = 0; i < lihavoidut.length; i++) {
+        lihavoidut[i].style.color = "black";
+        lihavoidut[i].style.fontSize = "1em";
+    }
+}
+
+function haeKoko() {
+    var leveys = document.documentElement.clientWidth;
+    var korkeus = document.documentElement.clientHeight;
+
+    // Laitetaan vastaus <h1>-tägien sisään
+    document.getElementById('wh').innerHTML = "<h1>Leveys: " + leveys + " ja korkeus: " + korkeus + "</h1>";
+}
+

@@ -282,11 +282,127 @@
                         }
                     </pre>
                 </details>
+                <details closed>
+                    <summary>
+                        DOM09. Tee JavaScript koodi, joka laskee alaspudotusvalikon elementit.
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;select id="varit">
+                            &lt;option value="punainen">Punainen&lt;/option>
+                            &lt;option value="sininen">Sininen&lt;/option>
+                            &lt;option value="vihreä">Vihreä&lt;/option>
+                            &lt;option value="keltainen">Keltainen&lt;/option>
+                            &lt;option value="oranssi">Oranssi&lt;/option>
+                            &lt;input type="button" onclick="laskeElementit()" value="Laske elementit">
+                        &lt;/select>
+                    &lt;/body>
+                    &lt;/html>
+                    <b>JavaScript</b>
+                        function laskeElementit() {
+                            var x = document.getElementById("varit");
+                            var txt1 = "No. of items : ";
+                            var i;
+                            l = document.getElementById("varit").length;
+                            txt1 = txt1 + l;
+                            for (i = 0; i < x.length; i++) {
+                            txt1 = txt1 + "\n" + x.options[i].text;
+                            }
+                        alert(txt1);
+                        }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM10. Kirjoita javaScript ohjelma, joka muuttaa lihavoidun sanan vihreäksi ja fontin koon 2em:ksi, kun linkkilauseen päälle menee ja tavalliseksi, kun siitä poistuu. Lauseet ovat seuraavat:<br />
+                        "Linkkilause"<br />
+                        "<strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who <strong>want</strong> to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>."
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p>
+                            &lt;a href="#" onMouseOver="korosta()" onMouseOut="palaaNormaaliin()">
+                                Linkkilause
+                            &lt;/a>
+                        &lt;/p>
+                        &lt;p>
+                            &lt;strong>We&lt;/strong> have just started &lt;strong>this&lt;/strong>
+                            section for the users (&lt;strong>beginner&lt;/strong> to intermediate) who
+                            &lt;strong>want&lt;/strong> to work with &lt;strong>various&lt;/strong>
+                            JavaScript &lt;strong>problems&lt;/strong> and write scripts online
+                            to &lt;strong>test&lt;/strong> their JavaScript &lt;strong>skill&lt;/strong>.
+                        &lt;/p>
+
+                    &lt;/body>
+                    &lt;/html>
+                    <b>JavaScript</b>
+                        //Ensiksi haetaan kaikki lihavoidut tekstit 
+                        var lihavoidut;
+                        window.onload = haeLihavoidut();
+
+                        // Kerää kaikki &lt;strong> tagit
+                        function haeLihavoidut() {
+                            lihavoidut = document.getElementsByTagName('strong');
+                        }
+                        // Käy läpi kaikki lihavoidut tagit ja muuta niiden väriä  
+                        function korosta() {
+                            for (var i = 0; i < lihavoidut.length; i++) {
+                                lihavoidut[i].style.color = "green";
+                            }
+                        }
+
+                        // Kun hiiri poistuu sanan päältä, sana muuttuu mustaksi jälleen
+                        function palaaNormaaliin() {
+                            for (var i = 0; i < lihavoidut.length; i++) {
+                                lihavoidut[i].style.color = "black";
+                            }
+                        }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM11. Kirjoita JavaScript ohjelma, joka tulostaa selainikkunan leveyden ja korkeuden joka kerta, kun ikkunan kokoa muutetaan.
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="haeKoko()" onresize="haeKoko()">
+                        &lt;div id="wh">
+                            &lt;!-- Tulosta leveys ja korkeus tänne -->
+                        &lt;/div>
+                    &lt;/body>
+                    &lt;/html>
+                    <b>JavaScript</b>
+                        function haeKoko() {
+                            var leveys = document.documentElement.clientWidth;
+                            var korkeus = document.documentElement.clientHeight;
+
+                            // Laitetaan vastaus &lt;h1>-tägien sisään
+                            document.getElementById('wh').innerHTML = "&lt;h1>Leveys: " 
+                            + leveys + " ja korkeus: " + korkeus + "&lt;/h1>";
+                        }
+                    </pre>
+                </details>
+            </section>
+            <section class="sec2">
 
             </section>
-          <section class="sec2">
-
-          </section>
 
       </article>
     </main>
