@@ -101,20 +101,21 @@ function haeKoko() {
     document.getElementById('wh').innerHTML = "<h1>Leveys: " + leveys + " ja korkeus: " + korkeus + "</h1>";
 }
 
-<<<<<<< HEAD
-function laskePaivat() {
-    synttarit = document.getElementById("synttarit").value;
+function laskePaivat(synttarit) {
+    //let synttarit = document.getElementById("synttarit").value;
     let paivat = synttarit.slice(0, 2);
-    paivat = 29 - paivat;
+    paivat = 25 - paivat;
     let kkdet = synttarit.slice(3, 5);
-    kkdet = 4 - kkdet;
+    kkdet = 9 - kkdet;
     let vuodet = synttarit.slice(6, 10);
-    vuodet = 2020 - vuodet;
+    vuodet = 2023 - vuodet;
     let ikaPaivina = (vuodet * 365.25) + kkdet * (365 / 12) + paivat;
-    alert(Math.ceil(ikaPaivina));
+    
 } 
+console.log(laskePaivat('22.05.1965'));
 
-=======
+
+
 function luoElementti()
 {
     const uusiElementti = document.createElement('p');
@@ -169,5 +170,5 @@ function tapahtumanKasittelija()
         alert('Painoit nappia!');
     });
 }
->>>>>>> b73061997b3d1fcf15e972768f31d8de4b9b38aa
+
 
