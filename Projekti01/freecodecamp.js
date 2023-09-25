@@ -1,12 +1,12 @@
 // Freecodecamp Basic Algorithm Scripting
-// Tehtävä 1
+// Tehtï¿½vï¿½ 1
 
 function convertCtoF(celsius) {
     let fahrenheit = celsius * 9 / 5 + 32;
     return fahrenheit;
 }
 //console.log(convertCtoF(30));
-// Tehtävä 2
+// Tehtï¿½vï¿½ 2
 
 function reverseString(str) {
     var temp = "";
@@ -18,7 +18,7 @@ function reverseString(str) {
 }
 
 //console.log(reverseString("hello"));
-// Tehtävä 3
+// Tehtï¿½vï¿½ 3
 
 function factorialize(num) {
     var temp = 1;
@@ -31,7 +31,7 @@ function factorialize(num) {
 
 //console.log(factorialize(5));
 
-// Tehtävä 4
+// Tehtï¿½vï¿½ 4
 function findLongestWordLength(str) {
     var temp = "";
     str = str.split(' ');
@@ -48,7 +48,7 @@ function findLongestWordLength(str) {
 }
 
 //console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
-// Tehtävä 5
+// Tehtï¿½vï¿½ 5
 function largestOfFour(arr) {
     const results = [];
     for (let i = 0; i < arr.length; i++) {
@@ -64,7 +64,7 @@ function largestOfFour(arr) {
 }
 
 //console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
-// Tehtävä 6
+// Tehtï¿½vï¿½ 6
 function confirmEnding(str, target) {
     if (str.substring(str.length - target.length, str.length) == target) {
         str = true;
@@ -76,9 +76,9 @@ function confirmEnding(str, target) {
 }
 
 //console.log(confirmEnding("Bastian", "on"));
-// Tehtävä 7
+// Tehtï¿½vï¿½ 7
 function repeatStringNumTimes(str, num) {
-    temp = "";
+    var temp = "";
     for (var i = 0; i < num; i++) {
         temp += str;
     }
@@ -86,8 +86,22 @@ function repeatStringNumTimes(str, num) {
     return str;
 }
 
-console.log(repeatStringNumTimes("abc", 0));
+//console.log(repeatStringNumTimes("abc", 0));
+// TehtÃ¤vÃ¤ 8
+function truncateString(str, num) {
+  if(str.length > num)
+  {
+    str = str.substring(0, num) + "...";
+  }
+  else
+  {
+    str = str;
+  }
+  return str;
+}
 
+//truncateString("A-tisket a-tasket A green and yellow basket", 8);
+//TehtÃ¤vÃ¤ 9
 function findElement(arr, func) {
     let num = 0;
     for (var i = 0; i < arr.length; i++) {
@@ -104,3 +118,95 @@ function findElement(arr, func) {
 }
 
 //console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
+//TehtÃ¤vÃ¤ 10
+function booWho(bool) {
+  if(typeof(bool) == 'boolean')
+  {
+    bool = true;
+  }
+  else
+  {
+    bool = false;
+  }
+  return bool;
+}
+
+//console.log(booWho(false));
+//TehtÃ¤vÃ¤ 11
+function titleCase(str) {
+    var temp = [];
+    var splitattu = str.split(' ');
+    for (var i = 0; i < splitattu.length; i++) {
+        temp[i] = splitattu[i][0].toUpperCase() + splitattu[i].slice(1).toLowerCase();
+
+    }
+    str = temp.join(" ");
+    return str;
+}
+
+//console.log(titleCase("sHoRt AnD sToUt"));
+//TehtÃ¤vÃ¤ 12
+function frankenSplice(arr1, arr2, n) {
+    // Tekee uuden arrayn, ei kopiota
+    let localArr = arr2.slice();
+    // Kohdasta n poista 0 elementtiÃ¤ ja lisÃ¤Ã¤ ...arr1
+    localArr.splice(n, 0, ...arr1);
+    return localArr;
+}
+
+//console.log(frankenSplice([1, 2, 3, 4], [], 0));
+//TehtÃ¤vÃ¤ 13
+function bouncer(arr) {
+    const filteredArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i])
+        {
+            filteredArr.push(arr[i]);
+        } 
+    }
+    return filteredArr;
+}
+
+//console.log(bouncer([7, "ate", "", false, 9, NaN, undefined, 0, null]));
+// TehtÃ¤vÃ¤ 14
+function getIndexToIns(arr, num) {
+    arr.sort();
+    var temp = 0;
+    for (var i = 1; i <= arr.length; i++) {
+        if (num > arr[i - 1]) {
+            temp++;
+        }
+    }
+    return temp;
+}
+
+//console.log(getIndexToIns([10, 20, 30, 40, 50], 35));
+// TehtÃ¤vÃ¤ 15
+function mutation(arr) {
+    var chekattava = arr[0].toLowerCase();
+    var kohde = arr[1].toLowerCase();
+    var laskuri = 0;
+    for (var i = 0; i < kohde.length; i++) {
+        if (chekattava.includes(kohde[i])) {
+            laskuri++;
+        }
+    }
+    if (kohde.length == laskuri) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+//console.log(mutation(["hello", "heo"]));
+// TehtÃ¤vÃ¤ 16
+function chunkArrayInGroups(arr, size) {
+    var temp = [];
+    for (var i = 0; i < arr.length; i + size) {
+        temp.push(arr.splice(0, size));
+    }
+    return temp;
+}
+
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3));
