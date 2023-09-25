@@ -399,9 +399,249 @@
                         }
                     </pre>
                 </details>
+                <details closed>
+                    <summary>
+                        DOM12. Kirjoita JavaScript ohjelma, joka hakee elementin id:n avulla ja muuttaa sen sisältöä</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;!DOCTYPE html>
+                    &lt;html>
+                    &lt;head>
+                       &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p id="muutettava">Tämä teksti muuttuu.&lt;/p>
+                        &lt;input type="button" onclick="muutaSisalto()" value="Muuta sisältö">     
+
+                        &lt;/script>
+                    &lt;/body>
+                    &lt;/html> 
+
+                    <b>JavaScript</b>
+                        function muutaSisalto()
+                        {
+                            const elementti = document.getElementById('muutettava');
+                            elementti.textContent = 'Uusi teksti';
+                        }
+                    </pre>
+                </details>
+                                <details closed>
+                    <summary>
+                        DOM13. Kirjoita JavaScript ohjelma, joka luo uuden paragraph-elementin teksteineen sivulle</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;div id="container">&lt;/div>
+                    &lt;input type="button" onclick="luoElementti()" value="Luo elementti"> 
+                    &lt;/div>
+                    &lt;/body>
+                    &lt;/html>  
+
+                    <b>JavaScript</b>
+                        function luoElementti()
+                        {
+                            const uusiElementti = document.createElement('p');
+                            uusiElementti.textContent = 'Uusi teksti';
+                            document.getElementById('container').appendChild(uusiElementti);  
+                        }                        
+                    </pre>
+                </details>
+                                <details closed>
+                    <summary>
+                        DOM14. Kirjoita JavaScript ohjelma, joka poistaa p-elementin sivulta</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p id="poistettava">Tämä poistetaan.&lt;/p>
+                    &lt;input type="button" onclick="poistaElementti()" value="Poista elementti"> 
+                    &lt;/div>
+                    &lt;/body>
+                    &lt;/html> 
+
+                    <b>JavaScript</b>
+                        function poistaElementti()
+                        {
+                            const elementti = document.getElementById('poistettava');
+                            elementti.parentNode.removeChild(elementti); 
+                        }                       
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM15. Kirjoita JavaScript ohjelma, joka lisää luokkamääritteen p-elementille</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p id="muokattava">Tämä saa luokan.&lt;/p>
+                    &lt;input type="button" onclick="lisaaLuokka()" value="Lisaa luokka"> 
+                    &lt;/div>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                        function lisaaLuokka()
+                        {
+                            const elementti = document.getElementById('muokattava');
+                            elementti.classList.add('uusi-luokka'); 
+                        }                        
+                    </pre>
+                </details>
             </section>
             <section class="sec2">
+                <details closed>
+                    <summary>
+                        DOM16. Kirjoita JavaScript ohjelma, joka käyttää querySelectoria valitsemaan elementti ja vaihda elementin teksti</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p class="valittava">Valitse minut&lt;/p>
+                    &lt;input type="button" onclick="qs()" value="Query Selector"> 
+                    &lt;/div>
+                    &lt;/body>
+                    &lt;/html>
 
+                    <b>JavaScript</b>
+                    function qs()
+                    {
+                        const elementti = document.querySelector('.valittava');
+                        elementti.textContent = 'Valittu!';
+                    }                       
+                    </pre>
+                </details>
+                                <details closed>
+                    <summary>
+                        DOM17. Kirjoita JavaScript ohjelma, joka käyttää querySelectorAll-komentoa valitsemaan kaikki li-elementit ja muuttamaan elementtien sisältöä</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;ul>
+                        &lt;li>Kohta 1&lt;/li>
+                        &lt;li>Kohta 2&lt;/li>
+                        &lt;li>Kohta 3&lt;/li>
+                        &lt;/ul>
+                    &lt;input type="button" onclick="qsa()" value="Query Selector All"> 
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                        function qsa()
+                        {
+                            const kaikkiKohdat = document.querySelectorAll('li');
+                            kaikkiKohdat.forEach((kohta, indeksi) => {
+                                kohta.textContent = `Kohta ${indeksi + 1} muokattu`;
+                            });
+                        }                       
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM18. Kirjoita JavaScript ohjelma, joka muuttaa p-elementin (id="tyylittava") fontin väriä punaiseksi ja fontin kokoa 24px:ään</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p id="tyylittava">Muuta tyyliä&lt;/p>
+                        &lt;input type="button" onclick="muutaTyyli()" value="Muuta tyyliä"> 
+                    &lt;/body>
+                    &lt;/html>  
+
+                    <b>JavaScript</b>
+                    function muutaTyyli()
+                    {
+                        const elementti = document.getElementById('tyylittava');
+                        elementti.style.color = 'red';
+                        elementti.style.fontSize = '24px'; 
+                    }                        
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM19. Kirjoita JavaScript ohjelma, joka käyttää querySelector ja getAttribute -komentoja hakeakseen div-elementin data-arvo attribuutin arvon</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;div data-arvo="123">Data-arvo&lt;/div>
+                        &lt;input type="button" onclick="haeArvo()" value="Hae arvo"> 
+                    &lt;/body>
+                    &lt;/html>    
+
+                    <b>JavaScript</b>
+                    function haeArvo()
+                    {
+                        const elementti = document.querySelector('div');
+                        const dataArvo = elementti.getAttribute('data-arvo');
+                        alert(dataArvo); // Tulostaa "123"
+                    }                        
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM20. Kirjoita JavaScript ohjelma, joka lisää tapahtuman käsittelijän painikkeeseen</summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body onload="tapahtumanKasittelija()">
+                        &lt;button id="painike">Klikkaa minua&lt;/button>
+                    &lt;/body>
+                    &lt;/html>   
+                                    
+                    <b>JavaScript</b>
+                    function tapahtumanKasittelija()
+                    {
+                        const painike = document.getElementById('painike');
+                        painike.addEventListener('click', () => {
+                            alert('Painoit nappia!');
+                        });
+                    }                        
+                    </pre>
+                </details>                                
             </section>
 
       </article>
