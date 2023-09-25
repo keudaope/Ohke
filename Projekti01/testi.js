@@ -101,3 +101,16 @@ function haeKoko() {
     document.getElementById('wh').innerHTML = "<h1>Leveys: " + leveys + " ja korkeus: " + korkeus + "</h1>";
 }
 
+function laskePaivat() {
+    synttarit = document.getElementById("synttarit").value;
+    let paivat = synttarit.slice(0, 2);
+    paivat = 29 - paivat;
+    let kkdet = synttarit.slice(3, 5);
+    kkdet = 4 - kkdet;
+    let vuodet = synttarit.slice(6, 10);
+    vuodet = 2020 - vuodet;
+    let ikaPaivina = (vuodet * 365.25) + kkdet * (365 / 12) + paivat;
+    alert(Math.ceil(ikaPaivina));
+} 
+
+
