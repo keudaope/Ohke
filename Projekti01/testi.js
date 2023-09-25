@@ -101,6 +101,7 @@ function haeKoko() {
     document.getElementById('wh').innerHTML = "<h1>Leveys: " + leveys + " ja korkeus: " + korkeus + "</h1>";
 }
 
+<<<<<<< HEAD
 function laskePaivat() {
     synttarit = document.getElementById("synttarit").value;
     let paivat = synttarit.slice(0, 2);
@@ -113,4 +114,60 @@ function laskePaivat() {
     alert(Math.ceil(ikaPaivina));
 } 
 
+=======
+function luoElementti()
+{
+    const uusiElementti = document.createElement('p');
+    uusiElementti.textContent = 'Uusi teksti';
+    document.getElementById('container').appendChild(uusiElementti);  
+}
+
+function poistaElementti()
+{
+    const elementti = document.getElementById('poistettava');
+    elementti.parentNode.removeChild(elementti); 
+}
+
+function lisaaLuokka()
+{
+    const elementti = document.getElementById('muokattava');
+    elementti.classList.add('uusi-luokka'); 
+}
+
+function qs()
+{
+    const elementti = document.querySelector('.valittava');
+    elementti.textContent = 'Valittu!';
+}
+
+function qsa()
+{
+    const kaikkiKohdat = document.querySelectorAll('li');
+    kaikkiKohdat.forEach((kohta, indeksi) => {
+        kohta.textContent = `Kohta ${indeksi + 1} muokattu`;
+    });
+}
+
+function muutaTyyli()
+{
+    const elementti = document.getElementById('tyylittava');
+    elementti.style.color = 'red';
+    elementti.style.fontSize = '24px'; 
+}
+
+function haeArvo()
+{
+    const elementti = document.querySelector('div');
+    const dataArvo = elementti.getAttribute('data-arvo');
+    alert(dataArvo); // Tulostaa "123"
+}
+
+function tapahtumanKasittelija()
+{
+    const painike = document.getElementById('painike');
+    painike.addEventListener('click', () => {
+        alert('Painoit nappia!');
+    });
+}
+>>>>>>> b73061997b3d1fcf15e972768f31d8de4b9b38aa
 
