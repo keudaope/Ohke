@@ -101,6 +101,21 @@ function haeKoko() {
     document.getElementById('wh').innerHTML = "<h1>Leveys: " + leveys + " ja korkeus: " + korkeus + "</h1>";
 }
 
+function laskePaivat(synttarit) {
+    //let synttarit = document.getElementById("synttarit").value;
+    let paivat = synttarit.slice(0, 2);
+    paivat = 25 - paivat;
+    let kkdet = synttarit.slice(3, 5);
+    kkdet = 9 - kkdet;
+    let vuodet = synttarit.slice(6, 10);
+    vuodet = 2023 - vuodet;
+    let ikaPaivina = (vuodet * 365.25) + kkdet * (365 / 12) + paivat;
+    
+} 
+//console.log(laskePaivat('22.05.1965'));
+
+
+
 function luoElementti()
 {
     const uusiElementti = document.createElement('p');
@@ -156,3 +171,46 @@ function tapahtumanKasittelija()
     });
 }
 
+function luoLista() {
+    const lista = document.getElementById('lista');
+    const elementit = ['Kohta 1', 'Kohta 2', 'Kohta 3'];
+    elementit.forEach((teksti) => {
+        const uusiLi = document.createElement('li');
+        uusiLi.textContent = teksti;
+        lista.appendChild(uusiLi);
+    });
+}
+
+function muutaArvot()
+{
+    const muutaArvotButton = document.getElementById('muutaArvot');
+    muutaArvotButton.addEventListener('click', () => {
+        const nimiKentta = document.getElementById('nimi');
+        const sahkopostiKentta = document.getElementById('sahkoposti');
+        nimiKentta.value = 'Jane Doe';
+        sahkopostiKentta.value = 'jane@example.com';
+    });
+}
+
+function avaaAlertIkkuna()
+{
+    const avaaValintaikkunaButton = document.getElementById('avaaValintaikkuna');
+    avaaValintaikkunaButton.addEventListener('click', () => {
+        const valinta = confirm('Haluatko jatkaa?');
+        if (valinta) {
+            alert('Jatka painamalla OK.');
+        } else {
+            alert('Peruutettu.');
+        }
+    });
+}
+
+function naytaIlmoitus()
+{
+    const naytaIlmoitusButton = document.getElementById('naytaIlmoitus');
+    naytaIlmoitusButton.addEventListener('click', () => {
+        setTimeout(() => {
+            alert('Aikarajoitettu ilmoitus!');
+        }, 3000); // Ilmoitus näkyy 3 sekuntia
+    });
+}
