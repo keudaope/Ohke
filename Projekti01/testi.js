@@ -1,4 +1,4 @@
-function muokkaa() {
+﻿function muokkaa() {
     var teksti = document.getElementById("muokattava");
     teksti.style.fontFamily = "Courier";
     teksti.style.color = "red";
@@ -56,3 +56,103 @@ function poistaValinta() {
     var poista = document.getElementById("varit");
     poista.remove(poista.selectedIndex);
 }
+
+function laskeElementit() {
+    var x = document.getElementById("varit");
+    var txt1 = "No. of items : ";
+    var i;
+    l = document.getElementById("varit").length;
+    txt1 = txt1 + l;
+    for (i = 0; i < x.length; i++) {
+        txt1 = txt1 + "\n" + x.options[i].text;
+    }
+    alert(txt1);
+}
+
+//Ensiksi haetaan kaikki lihavoidut tekstit 
+var lihavoidut;
+window.onload = haeLihavoidut();
+
+// Kerää kaikki <strong> tagit
+function haeLihavoidut() {
+    lihavoidut = document.getElementsByTagName('strong');
+}
+// Käy läpi kaikki lihavoidut tagit ja muuta niiden väriä  
+function korosta() {
+    for (var i = 0; i < lihavoidut.length; i++) {
+        lihavoidut[i].style.color = "green";
+        lihavoidut[i].style.fontSize = "2em";
+    }
+}
+
+// Kun hiiri poistuu sanan päältä, sana muuttuu mustaksi jälleen
+function palaaNormaaliin() {
+    for (var i = 0; i < lihavoidut.length; i++) {
+        lihavoidut[i].style.color = "black";
+        lihavoidut[i].style.fontSize = "1em";
+    }
+}
+
+function haeKoko() {
+    var leveys = document.documentElement.clientWidth;
+    var korkeus = document.documentElement.clientHeight;
+
+    // Laitetaan vastaus <h1>-tägien sisään
+    document.getElementById('wh').innerHTML = "<h1>Leveys: " + leveys + " ja korkeus: " + korkeus + "</h1>";
+}
+
+function luoElementti()
+{
+    const uusiElementti = document.createElement('p');
+    uusiElementti.textContent = 'Uusi teksti';
+    document.getElementById('container').appendChild(uusiElementti);  
+}
+
+function poistaElementti()
+{
+    const elementti = document.getElementById('poistettava');
+    elementti.parentNode.removeChild(elementti); 
+}
+
+function lisaaLuokka()
+{
+    const elementti = document.getElementById('muokattava');
+    elementti.classList.add('uusi-luokka'); 
+}
+
+function qs()
+{
+    const elementti = document.querySelector('.valittava');
+    elementti.textContent = 'Valittu!';
+}
+
+function qsa()
+{
+    const kaikkiKohdat = document.querySelectorAll('li');
+    kaikkiKohdat.forEach((kohta, indeksi) => {
+        kohta.textContent = `Kohta ${indeksi + 1} muokattu`;
+    });
+}
+
+function muutaTyyli()
+{
+    const elementti = document.getElementById('tyylittava');
+    elementti.style.color = 'red';
+    elementti.style.fontSize = '24px'; 
+}
+
+function haeArvo()
+{
+    const elementti = document.querySelector('div');
+    const dataArvo = elementti.getAttribute('data-arvo');
+    alert(dataArvo); // Tulostaa "123"
+}
+
+function tapahtumanKasittelija()
+{
+    const painike = document.getElementById('painike');
+    painike.addEventListener('click', () => {
+        alert('Painoit nappia!');
+    });
+}
+
