@@ -649,50 +649,122 @@
                 </details>
                 <details closed>
                     <summary>
-                        DOM21.
+                        DOM21. Luo listaelementtejä dynaamisesti
                     </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="luoLista()">
+                        &lt;ul id="lista">&lt;/ul>
+                    &lt;/body>
+                    &lt;/html> 
 
                     <b>JavaScript</b>
-
+                    function luoLista()
+                    {
+                    const lista = document.getElementById('lista');
+                    const elementit = ['Kohta 1', 'Kohta 2', 'Kohta 3'];
+                    elementit.forEach((teksti) => {
+                        const uusiLi = document.createElement('li');
+                        uusiLi.textContent = teksti;
+                        lista.appendChild(uusiLi);
+                    });                        
                     </pre>
                 </details>
                 <details closed>
                     <summary>
-                        DOM22.
+                        DOM22. Tee lomake, jossa on kohdat nimelle ja sähköpostille ja muuta niiden sisältö JavaScriptillä
                     </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="muutaArvot()">
+                        &lt;form id="lomake">
+                        &lt;input type="text" id="nimi" value="John Doe">
+                        &lt;input type="email" id="sahkoposti" value="john@example.com">
+                        &lt;button type="button" id="muutaArvot">Muuta arvot&lt;/button>
+                        &lt;/form>
+                    &lt;/body>
+                    &lt;/html>
 
                     <b>JavaScript</b>
-
+                    function muutaArvot()
+                    {
+                        const muutaArvotButton = document.getElementById('muutaArvot');
+                        muutaArvotButton.addEventListener('click', () => {
+                            const nimiKentta = document.getElementById('nimi');
+                            const sahkopostiKentta = document.getElementById('sahkoposti');
+                            nimiKentta.value = 'Jane Doe';
+                            sahkopostiKentta.value = 'jane@example.com';
+                        });
+                    }
                     </pre>
                 </details>
                 <details closed>
                     <summary>
-                        DOM23.
+                        DOM23. Tee JavaScript koodi, joka avaa Alert-ikkunan ja antaa siellä viestin
                     </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="avaaAlertIkkuna()">
+                        &lt;button id="avaaValintaikkuna">Avaa Alert-ikkuna&lt;/button>
+                    &lt;/body>
+                    &lt;/html>
 
                     <b>JavaScript</b>
-
+                    function avaaAlertIkkuna()
+                    {
+                        const avaaValintaikkunaButton = document.getElementById('avaaValintaikkuna');
+                        avaaValintaikkunaButton.addEventListener('click', () => {
+                            const valinta = confirm('Haluatko jatkaa?');
+                            if (valinta) {
+                                alert('Jatka painamalla OK.');
+                            } else {
+                                alert('Peruutettu.');
+                            }
+                        });
+                    }
                     </pre>
                 </details>
                 <details closed>
                     <summary>
-                        DOM24.
+                        DOM24. Tee JavaScript koodi, joka näyttää Alert-ikkunan vasta 3 sekunnin kuluttua napin painalluksesta
                     </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="naytaIlmoitus()">
+                        &lt;button id="naytaIlmoitus">Nayta ilmoitus&lt;/button>
+                    &lt;/body>
+                    &lt;/html>
 
                     <b>JavaScript</b>
-
+                    function naytaIlmoitus()
+                    {
+                        const naytaIlmoitusButton = document.getElementById('naytaIlmoitus');
+                        naytaIlmoitusButton.addEventListener('click', () => {
+                            setTimeout(() => {
+                                alert('Aikarajoitettu ilmoitus!');
+                            }, 3000); // Ilmoitus näkyy 3 sekuntia
+                        });
+                    }
                     </pre>
                 </details>
                 <details closed>
