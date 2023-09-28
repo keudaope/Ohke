@@ -143,7 +143,7 @@ function frankenSplice(arr1, arr2, n) {
     localArr.splice(n, 0, ...arr1);
     return localArr;
 }
-//console.log(frankenSplice([1, 2, 3, 4], [], 0));
+//console.log(frankenSplice([1, 2, 3], [4, 5], 1));
 //Tehtävä 13 - Poista False-arvot
 function bouncer(arr) {
     const filteredArr = [];
@@ -186,7 +186,7 @@ function mutation(arr) {
         return false;
     }
 }
-//console.log(mutation(["hello", "heo"]));
+//console.log(mutation(["hello", "hei"]));
 // Tehtävä 16 Hajoittaa taulukon annetun kokoisiksi
 // taulukoiksi
 function chunkArrayInGroups(arr, size) {
@@ -196,4 +196,4 @@ function chunkArrayInGroups(arr, size) {
     }
     return temp;
 }
-//console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3));
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2));
