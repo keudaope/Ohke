@@ -189,7 +189,6 @@ function mutation(arr) {
 //console.log(mutation(["hello", "heo"]));
 // Tehtävä 16 Hajoittaa taulukon annetun kokoisiksi
 // taulukoiksi
-
 function chunkArrayInGroups(arr, size) {
     var temp = [];
     for (var i = 0; i < arr.length; i + size) {
