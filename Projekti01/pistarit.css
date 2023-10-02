@@ -1,0 +1,33 @@
+body{
+    margin: 0 auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+#f1, #f2, #f3, #f4, #f5{
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.one, .two, .three, .four, .five {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+
+}
+.one {
+    background-color: aqua;
+}
+.two {
+    background-color: gold;
+}
+.three {
+    background-color: cornsilk;
+}
+.four {
+    background-color: blanchedalmond;
+}
+.five {
+    background-color: aquamarine;
+}
