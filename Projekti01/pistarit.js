@@ -1,5 +1,6 @@
 function posNeg() {
     let luku = document.getElementById("luku").value;
+    console.log(typeof (luku));
     let vastaus = document.getElementById("v1");
     if (luku >= 0) {
         vastaus.innerHTML = "Luku on positiivinen";
