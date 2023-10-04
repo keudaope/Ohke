@@ -214,3 +214,47 @@ function naytaIlmoitus()
         }, 3000); // Ilmoitus näkyy 3 sekuntia
     });
 }
+
+function kuvausLista() {
+    const lista = document.querySelector('dl');
+    const uusiTermi = document.createElement('dt');
+    uusiTermi.textContent = 'Uusi termi';
+    const uusiKuvaus = document.createElement('dd');
+    uusiKuvaus.textContent = 'Uusi kuvaus';
+    lista.appendChild(uusiTermi);
+    lista.appendChild(uusiKuvaus);
+}
+
+function piilotaNayta() {
+    const piilotaButton = document.getElementById('piilota');
+    const naytaButton = document.getElementById('nayta');
+    const piilotettava = document.getElementById('piilotettava');
+    piilotaButton.addEventListener('click', () => {
+        piilotettava.style.display = 'none';
+    });
+    naytaButton.addEventListener('click', () => {
+        piilotettava.style.display = 'block';
+    });
+}
+
+function lataaKuva() {
+    const lataaKuvaButton = document.getElementById('lataaKuva');
+    const kuva = document.getElementById('kuva');
+    lataaKuvaButton.addEventListener('click', () => {
+        kuva.src = 'kuva.jpg'; // Korvaa 'kuva.jpg' halutulla kuvan URL:llä
+    });
+}
+
+function laskeYhteen() {
+    const luku1Kentta = document.getElementById('luku1');
+    const luku2Kentta = document.getElementById('luku2');
+    const laskeButton = document.getElementById('laske');
+    const tulosElementti = document.getElementById('tulos');
+
+    laskeButton.addEventListener('click', () => {
+        const luku1 = parseFloat(luku1Kentta.value);
+        const luku2 = parseFloat(luku2Kentta.value);
+        const tulos = luku1 + luku2;
+        tulosElementti.textContent = tulos;
+    });
+}

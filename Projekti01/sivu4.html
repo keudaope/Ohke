@@ -371,6 +371,8 @@
                         }
                     </pre>
                 </details>
+            </section>
+            <section class="sec2">
                 <details closed>
                     <summary>
                         DOM11. Kirjoita JavaScript ohjelma, joka tulostaa selainikkunan leveyden ja korkeuden joka kerta, kun ikkunan kokoa muutetaan.
@@ -401,7 +403,8 @@
                 </details>
                 <details closed>
                     <summary>
-                        DOM12. Kirjoita JavaScript ohjelma, joka hakee elementin id:n avulla ja muuttaa sen sisältöä</summary>
+                        DOM12. Kirjoita JavaScript ohjelma, joka hakee elementin id:n avulla ja muuttaa sen sisältöä
+                    </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
@@ -426,9 +429,10 @@
                         }
                     </pre>
                 </details>
-                                <details closed>
+                <details closed>
                     <summary>
-                        DOM13. Kirjoita JavaScript ohjelma, joka luo uuden paragraph-elementin teksteineen sivulle</summary>
+                        DOM13. Kirjoita JavaScript ohjelma, joka luo uuden paragraph-elementin teksteineen sivulle
+                    </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
@@ -453,9 +457,10 @@
                         }                        
                     </pre>
                 </details>
-                                <details closed>
+                <details closed>
                     <summary>
-                        DOM14. Kirjoita JavaScript ohjelma, joka poistaa p-elementin sivulta</summary>
+                        DOM14. Kirjoita JavaScript ohjelma, joka poistaa p-elementin sivulta
+                    </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
@@ -481,7 +486,8 @@
                 </details>
                 <details closed>
                     <summary>
-                        DOM15. Kirjoita JavaScript ohjelma, joka lisää luokkamääritteen p-elementille</summary>
+                        DOM15. Kirjoita JavaScript ohjelma, joka lisää luokkamääritteen p-elementille
+                    </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
@@ -505,8 +511,6 @@
                         }                        
                     </pre>
                 </details>
-            </section>
-            <section class="sec2">
                 <details closed>
                     <summary>
                         DOM16. Kirjoita JavaScript ohjelma, joka käyttää querySelectoria valitsemaan elementti ja vaihda elementin teksti
@@ -769,74 +773,130 @@
                 </details>
                 <details closed>
                     <summary>
-                        DOM25.
+                        DOM25. Kirjoita JavaScript koodi, joka lisää kuvauslistaan (dl) uusi jäsen ja sen kuvaus
                     </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;dl>
+                            &lt;dt>Termi 1&lt;/dt>
+                            &lt;dd>Kuvaus 1&lt;/dd>
+                            &lt;dt>Termi 2&lt;/dt>
+                            &lt;dd>Kuvaus 2&lt;/dd>
+                        &lt;/dl>
+                        &lt;button onclick="kuvausLista()">Lisää jäsen ja sen kuvaus&lt;/button>
+                    &lt;/body>
+                    &lt;/html>
 
                     <b>JavaScript</b>
-
+                    function kuvausLista() {
+                        const lista = document.querySelector('dl');
+                        const uusiTermi = document.createElement('dt');
+                        uusiTermi.textContent = 'Uusi termi';
+                        const uusiKuvaus = document.createElement('dd');
+                        uusiKuvaus.textContent = 'Uusi kuvaus';
+                        lista.appendChild(uusiTermi);
+                        lista.appendChild(uusiKuvaus);
+                    }
                     </pre>
                 </details>
                 <details closed>
                     <summary>
-                        DOM26.
+                        DOM26. Kirjoita JavaScript koodi, joka piilottaa ja tuo esiin elementin (esim. p)
                     </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="piilotaNayta()">
+                        &lt;button id="piilota">Piilota&lt;/button>
+                        &lt;button id="nayta">Näytä&lt;/button>
+                        &lt;div id="piilotettava">Tämä voidaan piilottaa&lt;/div>
+                    &lt;/body>
+                    &lt;/html>
 
                     <b>JavaScript</b>
-
+                    function piilotaNayta() {
+                        const piilotaButton = document.getElementById('piilota');
+                        const naytaButton = document.getElementById('nayta');
+                        const piilotettava = document.getElementById('piilotettava');
+                        piilotaButton.addEventListener('click', () => {
+                            piilotettava.style.display = 'none';
+                        });
+                        naytaButton.addEventListener('click', () => {
+                            piilotettava.style.display = 'block';
+                        });
+                    }
                     </pre>
                 </details>
                 <details closed>
                     <summary>
-                        DOM27.
+                        DOM27. Kirjoita JavaScript koodi, joka tuo kuvan näkyviin nappia painettaessa.
                     </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="lataaKuva()">
+                        &lt;button id="lataaKuva">Lataa kuva&lt;/button>
+                        &lt;img id="kuva" src="" alt="Kuva">
+                    &lt;/body>
+                    &lt;/html>
 
                     <b>JavaScript</b>
-
+                    function lataaKuva() {
+                        const lataaKuvaButton = document.getElementById('lataaKuva');
+                        const kuva = document.getElementById('kuva');
+                        lataaKuvaButton.addEventListener('click', () => {
+                            kuva.src = 'kuva.jpg'; // Korvaa 'kuva.jpg' halutulla kuvan URL:llä
+                        });
+                    }
                     </pre>
                 </details>
                 <details closed>
                     <summary>
-                        DOM28.
+                        DOM28. Tee JavaScript koodi, joka hakee lomakkeelta kaksi lukua ja laskee ne yhteen
                     </summary>
                     <p class="lihava">HTML + JavaScript</p>
                     <pre class="koodi">
                     <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="laskeYhteen()">
+                        &lt;input type="number" id="luku1" placeholder="Luku 1">
+                        &lt;input type="number" id="luku2" placeholder="Luku 2">
+                        &lt;button id="laske">Laske&lt;/button>
+                        &lt;p>Tulos: &lt;span id="tulos">&lt;/span>&lt;/p>
+                    &lt;/body>
+                    &lt;/html>
 
                     <b>JavaScript</b>
+                    function laskeYhteen() {
+                        const luku1Kentta = document.getElementById('luku1');
+                        const luku2Kentta = document.getElementById('luku2');
+                        const laskeButton = document.getElementById('laske');
+                        const tulosElementti = document.getElementById('tulos');
 
-                    </pre>
-                </details>
-                <details closed>
-                    <summary>
-                        DOM29.
-                    </summary>
-                    <p class="lihava">HTML + JavaScript</p>
-                    <pre class="koodi">
-                    <b>HTML:</b>
-
-                    <b>JavaScript</b>
-
-                    </pre>
-                </details>
-                <details closed>
-                    <summary>
-                        DOM30. 
-                    </summary>
-                    <p class="lihava">HTML + JavaScript</p>
-                    <pre class="koodi">
-                    <b>HTML:</b>
-
-                    <b>JavaScript</b>
-
+                        laskeButton.addEventListener('click', () => {
+                            const luku1 = parseFloat(luku1Kentta.value);
+                            const luku2 = parseFloat(luku2Kentta.value);
+                            const tulos = luku1 + luku2;
+                            tulosElementti.textContent = tulos;
+                        });
+                    }
                     </pre>
                 </details>
             </section>
