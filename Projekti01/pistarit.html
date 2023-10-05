@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pistarit</title>
+    <script src="pistarit.js"></script>
+    <link href="pistarit.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="one">
+            <h1>Tehtävä 1</h1>
+            <form id="f1">
+                <label>Anna lukuarvo:</label>
+                <input type="number" id="luku" />
+                <input type="button" onclick="posNeg()" value="Tarkista etumerkki" />
+                <p id="v1"></p>
+            </form>
+        </div>
+        <div class="two">
+            <h1>Tehtävä 2</h1>
+            <form id="f2">
+                <label>Anna viikonpäivän nro:</label>
+                <input type="number" id="vkp" min="1" max="7" />
+                <input type="button" onclick="viikonp()" value="Näytä, mikä viikonpäivä valittiin" />
+                <p id="v2"></p>
+            </form>
+        </div>
+        <div class="three">
+            <h1>Tehtävä 3</h1>
+            <form id="f3">
+                <label>Anna vuosiluku:</label>
+                <input type="number" id="vuosi" min="1" max="9999" />
+                <input type="button" onclick="karkaus()" value="Näytä, onko karkausvuosi" />
+                <p id="v3"></p>
+            </form>
+        </div>
+        <div class="four">
+            <h1>Tehtävä 4</h1>
+            <form id="f4">
+                <label>Anna 1. luku:</label>
+                <input type="number" id="l1" min="1" max="9999" /><br />
+                <label>Anna 2. luku:</label>
+                <input type="number" id="l2" min="1" max="9999" /><br />
+                <label>Anna 3. luku:</label>
+                <input type="number" id="l3" min="1" max="9999" /><br />
+                <label>Anna 4. luku:</label>
+                <input type="number" id="l4" min="1" max="9999" /><br />
+                <label>Anna 5. luku:</label>
+                <input type="number" id="l5" min="1" max="9999" /><br />
+                <input type="button" onclick="keskiarvo()" value="Laske lukujen keskiarvo" />
+                <p id="v4"></p>
+            </form>
+        </div>
+        <div class="five">
+            <h1>Tehtävä 5</h1>
+            <form id="f5">
+                <label>Anna luku välillä 1 - 10:</label>
+                <input type="number" id="kerrottava" min="1" max="10" />
+                <input type="button" onclick="kertotaulu()" value="Näytä, luvun kertotaulu" />
+                <p id="v5"></p>
+            </form>
+            </div>
+        </div>
+</body>
+</html>
