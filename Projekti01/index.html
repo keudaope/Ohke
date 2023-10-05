@@ -605,7 +605,7 @@
           <details closed>
             <summary>P14. Tee ohjelma, joka kysyy käyttäjältä Fahrenheit arvoa ja muuntaa sen Celsiuksiksi </summary>
             <p class="lihava">Javascript</p>
-            <!--<pre class = "koodi">
+            <pre class = "koodi">
               var cel, fah;
               fah = 74;
               cel = (fah - 32) * 5 / 9;
@@ -628,7 +628,7 @@
                   System.out.println(cel);
                 }
               }
-            </pre>-->
+            </pre>
             <p class = "lihava">C#</p>
             <pre class = "koodi">
               using System;
@@ -649,7 +649,7 @@
           </details>
           <details closed>
             <summary>P15. Kirjoita laskutehtävät (2-5) uudestaan siten, että käyttäjä voi antaa molemmat arvot (a, b) </summary>
-            <!--<p class="lihava">Javascript</p>
+            <p class="lihava">Javascript</p>
             <pre class = "koodi">
               var cel, fah;
               fah = 74;
@@ -689,7 +689,6 @@
                   }
                 }
               }
-              -->
           </details>
           <details closed>
             <summary>P16. Tee ohjelma, joka etsii datatyyppien (int, float, double, decimal, string, boolean...) koot (sizeof)  </summary>
@@ -715,12 +714,18 @@
                   }
                 }
               }
-              -->
           </details>
           <details closed>
-            <summary>P17. Tee ohjelma, joka tulostaa annetun kirjaimen ASCII arvon (esim. A --> 65) </summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>P17. Tee ohjelma, joka tulostaa annetun kirjaimen ASCII arvon (esim. A --> 65) </summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function asciiToChar(ascii) {
+                    console.log(String.fromCharCode(ascii));
+                }
+                asciiToChar(65);
+              </pre>            
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -739,12 +744,19 @@
                   }
                 }
               }
-              -->
+            </pre>
           </details>
           <details closed>
-            <summary>P18. Laske ympyrän ala, kun käyttäjä antaa säteen (pituuden) </summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>P18. Laske ympyrän ala, kun käyttäjä antaa säteen (pituuden) </summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function ympyranAla(sade) {
+                    console.log(sade * sade * 3.14);
+                }
+                //ympyranAla(2);
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -764,12 +776,19 @@
                   }
                 }
               }
-              -->
+              </pre>
           </details>
           <details closed>
-            <summary>P19. Laske neliön ala, kun käyttäjä antaa sivun mitan </summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>P19. Laske neliön ala, kun käyttäjä antaa sivun mitan </summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function nelionAla(sivu) {
+                    console.log(sivu * sivu);
+                }
+                //nelionAla(2);
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -789,12 +808,19 @@
                   }
                 }
               }
-              -->
+              </pre>
           </details>
           <details closed>
-            <summary>P20. Laske suorakulmion ala, kun käyttäjä antaa pituuden ja leveyden </summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>P20. Laske suorakulmion ala, kun käyttäjä antaa pituuden ja leveyden </summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function suorakulmionAla(sivu1, sivu2) {
+                    console.log(sivu1 * sivu2);
+                }
+                //suorakulmionAla(2, 3);
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -816,12 +842,22 @@
                   }
                 }
               }
-              -->
+              </pre>
           </details>
           <details closed>
-            <summary>P21. Tee ohjelma, joka muuntaa annetun päivien määrän vuosiksi, kuukausiksi ja päiviksi </summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>P21. Tee ohjelma, joka muuntaa annetun päivien määrän vuosiksi, kuukausiksi ja päiviksi </summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function muunnaVuosiksi(paivat) {
+                    let vuodet = parseInt(paivat / 365);
+                    let kuukaudet = parseInt((paivat % 365) / (365 / 12));
+                    let pvt = parseInt((paivat % 365) - kuukaudet * (365 / 12));
+                    console.log(paivat + " päivää on " + vuodet + " vuotta " + kuukaudet + " kuukautta ja " + pvt + " päivää.")
+                }
+                //muunnaVuosiksi(22500);
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -846,13 +882,29 @@
                   }
                 }
               }
-              -->
+              </pre>
           </details>
           <p class="s6">IF - ELSE HARJOITUKSIA</p>
           <details closed>
-            <summary>IE01. Tee ohjelma, joka etsii kahdesta luvusta suuremman</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE01. Tee ohjelma, joka etsii kahdesta luvusta suuremman</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function suurempi(a, b) {
+                    if (a > b) {
+                        console.log("Suurempi luku on " + a);
+                    }
+                    else if (b > a) {
+                        console.log("Suurempi luku on " + b);
+                    }
+                    else {
+                        console.log("Luvut ovat yhtäsuuret");
+                    }
+                }
+                /*suurempi(3, 2);
+                suurempi(2, 3);
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               using System;
               namespace MyApplication
               {
@@ -878,9 +930,46 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE02. Tee ohjelma, joka etsii kolmesta luvusta suurimman</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE02. Tee ohjelma, joka etsii kolmesta luvusta suurimman</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function suurinKolmesta(a, b, c) {
+                    if (a > b && a > c) {
+                        console.log("Suurin luku on " + a);
+                    }
+                    else if (b > c) {
+                        console.log("Suurin luku on " + b);
+                    }
+                    else {
+                        console.log("Suurin luku on " + c);
+                    }
+                }
+                /*suurinKolmesta(1, 2, 3);
+                suurinKolmesta(1, 3, 2);
+                suurinKolmesta(2, 1, 3);
+                suurinKolmesta(2, 3, 1);
+                suurinKolmesta(3, 1, 2);
+                suurinKolmesta(3, 1, 3);*/
+              </pre>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function etuMerkki(luku) {
+                    if (luku < 0) {
+                        console.log("Luku on negatiivinen");
+                    }
+                    else if (luku == 0) {
+                        console.log("Luku on nolla");
+                    }
+                    else {
+                        console.log("Luku on positiivinen");
+                    }
+                }
+                /*etuMerkki(-7);
+                etuMerkki(0);
+                etuMerkki(23000);*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               using System;
               namespace MyApplication
               {
@@ -907,9 +996,26 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE03. Tee ohjelma, joka etsii tarkistaa, onko luku negatiivinen, nolla vai positiivinen</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE03. Tee ohjelma, joka etsii tarkistaa, onko luku negatiivinen, nolla vai positiivinen</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function etuMerkki(luku) {
+                    if (luku < 0) {
+                        console.log("Luku on negatiivinen");
+                    }
+                    else if (luku == 0) {
+                        console.log("Luku on nolla");
+                    }
+                    else {
+                        console.log("Luku on positiivinen");
+                    }
+                }
+                /*etuMerkki(-7);
+                etuMerkki(0);
+                etuMerkki(23000);*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               using System;
               namespace MyApplication
               {
@@ -931,9 +1037,28 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE04. Tee ohjelma, joka kysyy käyttäjältä lukua ja tarkistaa, onko se 5:llä tai 11:sta jaollinen</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE04. Tee ohjelma, joka kysyy käyttäjältä lukua ja tarkistaa, onko se 5:llä tai 11:sta jaollinen</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function jaollinen(luku) {
+                    if (luku % 5 == 0 && luku % 11 == 0) {
+                        console.log("Luku on jaollinen sekä 5:llä, että 11:sta");
+                    }
+                    else if (luku % 5 == 0 || luku % 11 == 0)
+                    {
+                        console.log("Luku on jaollinen 5:llä tai 11:sta");
+                    }
+                    else {
+                        console.log("Luku ei ole jaollinen 5:llä tai 11:sta");
+                    }
+                }
+                /*jaollinen(55);
+                jaollinen(50);
+                jaollinen(44);
+                jaollinen(56);*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               ///<summary>
               ///This program prompts the user to enter a number,
               ///and then uses the modulo operator (%) to check if the number
@@ -965,9 +1090,27 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE05. Tee ohjelma, joka tarkastaa, onko annettu luku karkausvuosi vai ei</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE05. Tee ohjelma, joka tarkastaa, onko annettu luku karkausvuosi vai ei</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function karkaus(vuosi) {
+                    if (vuosi % 4 == 0 && vuosi % 100 != 0) {
+                        console.log("Vuosi on karkausvuosi");
+                    }
+                    else if (vuosi % 400 == 0) {
+                        console.log("Vuosi on karkausvuosi");
+                    }
+                    else {
+                        console.log("Vuosi ei ole karkausvuosi");
+                    }
+                }
+                /*karkaus(2004);
+                karkaus(2000);
+                karkaus(2100);
+                karkaus(1997);*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               ///<summary>
               /// The program prompts the user to enter a year, and then uses an if-else statement
               /// to check if the year is a leap year. If the year is evenly divisible by 4 and not
@@ -995,9 +1138,23 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE06. Tee ohjelma, joka tarkastaa, onko annettu luku parillinen vai pariton</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE06. Tee ohjelma, joka tarkastaa, onko annettu luku parillinen vai pariton</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function parillinenPariton(luku) {
+                    if (luku % 2 == 0) {
+                        console.log("Luku on parillinen");
+                    }
+                    else {
+                        console.log("Luku on pariton");
+                    }
+                }
+                /*parillinenPariton(3);
+                parillinenPariton(6);
+                parillinenPariton(0);*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               ///<summary>
               /// This program uses the modulus operator (%) to find the remainder when the input
               /// number is divided by 2. If the remainder is 0, then the number is even. If the
@@ -1025,9 +1182,26 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE07. Tee ohjelma, joka tarkistaa, onko annettu merkki kirjain vai ei</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE07. Tee ohjelma, joka tarkistaa, onko annettu merkki kirjain vai ei</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function kirjainko(merkki) {
+                    if (merkki.length == 1 && merkki.match(/[a-öA-Ö]/i)) {
+                        console.log("Annettu merkki on kirjain");
+                    }
+                    else {
+                        console.log("Annettu merkki ei ole kirjain");
+                    }
+                }
+                /*kirjainko("g");
+                kirjainko(1);
+                kirjainko("!");
+                kirjainko("ä");
+                kirjainko("H");
+                kirjainko("Ö");*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               /// This program uses the Char.IsLetter method to check if the input character is a
               /// letter or not. If the input is a letter, the program will output "The input is a letter."
@@ -1053,9 +1227,26 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE08. Tee ohjelma, joka tarkastaa, onko annettu kirjain vokaali vai konsonantti</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE08. Tee ohjelma, joka tarkastaa, onko annettu kirjain vokaali vai konsonantti</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function vokaaliKonsonantti(merkki) {
+                    if (merkki.match(/[aeiouyäö]/i)) {
+                        console.log("Annettu merkki on vokaali");
+                    }
+                    else if (merkki.match(/[bcdfghjklmnpqrstvwxz]/i)) {
+                        console.log("Annettu merkki on konsonantti");
+                    }
+                    else {
+                        console.log("Annettu merkki ei ole kumpikaan");
+                    }
+                }
+                /*vokaaliKonsonantti("C");
+                vokaaliKonsonantti("e");
+                vokaaliKonsonantti("?");*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               /// This program uses the char.ToLower method to convert the input letter to lowercase,
               /// then uses an if-else statement to check if the input letter is a vowel or a consonant.
@@ -1082,9 +1273,31 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE09. Tee ohjelma, joka tarkastaa, onko annettu merkki kirjain, numero vai erikoismerkki</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE09. Tee ohjelma, joka tarkastaa, onko annettu merkki kirjain, numero vai erikoismerkki</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function kiNuEm(merkki) {
+                    let kirjain = /[a-öA-Ö]/i;
+                    let numero = /[0-9]/i;
+                    if (merkki.length == 1 && merkki.match(kirjain))
+                    {
+                        console.log("Merkki on kirjain");
+                    }
+                    else if (merkki.match(numero))
+                    {
+                        console.log("Merkki on numero");
+                    }
+                    else
+                    {
+                        console.log("Merkki on erikoismerkki");
+                    }
+                }
+                /*kiNuEm("A");
+                kiNuEm("6");
+                kiNuEm("/");*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               /// This program uses the Char.IsLetter method and Char.IsNumber method to check if the input
               /// character is a letter or number respectively. If the input is a letter, the program will
@@ -1113,9 +1326,26 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE10. Tee ohjelma, joka tarkastaa, onko annettu kirjain iso vai pieni</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE10. Tee ohjelma, joka tarkastaa, onko annettu kirjain iso vai pieni</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function isoPieni(merkki) {
+                    if (merkki.match(/[a-öA-Ö]/i) && merkki == merkki.toUpperCase()) {
+                        console.log("Merkki on iso kirjain");
+                    }
+                    else if (merkki.match(/[a-öA-Ö]/i) && merkki == merkki.toLowerCase()) {
+                        console.log("Merkki on pieni kirjain");
+                    }
+                    else {
+                        console.log("Merkki ei ole kirjain");
+                    }
+                }
+                /*isoPieni("v");
+                isoPieni("T");
+                isoPieni("?");*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               /// This program uses the Char.IsUpper method and Char.IsLower method to check
               /// if the input character is an uppercase or lowercase letter respectively.
@@ -1146,9 +1376,25 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE11. Tee ohjelma, joka laskee annetuista myynti ja ostoluvuista, saitko voittoa vai tappiota</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE11. Tee ohjelma, joka laskee annetuista myynti ja ostoluvuista, saitko voittoa vai tappiota</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function voittoTappio(myynti, osto) {
+                    myynti = parseInt(myynti);
+                    osto = parseInt(osto);
+                    if ((myynti - osto) > 0) {
+                        console.log("Sait voittoa: " + (myynti - osto));
+                    }
+                    else {
+                        console.log("Tappiosi oli " + (myynti - osto));
+                    }
+                }
+                /*voittoTappio(30, 20);
+                voittoTappio(20, 30);
+                voittoTappio(30, 30);*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               /// This program prompts the user to enter the buying price and the selling price,
               /// then it uses an if-else statement to check if the selling price is greater
@@ -1182,10 +1428,40 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE12. Tee ohjelma, joka pyytää viiden kokeen pisteitä (Ma, KeFy, Äi, Ru, En -> 0 - 100) ja antaa arvion seuraavasti:
-            Yli 90 pistettä = K5, yli 80 pistettä = H4, yli 70 pistettä = H3, yli 60 pistettä = T2, yli 50 pistettä = T1, muutoin hylätty</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>
+                  IE12. Tee ohjelma, joka pyytää viiden kokeen pisteitä (Ma, KeFy, Äi, Ru, En -> 0 - 100) ja antaa arvion seuraavasti:
+                  Yli 90 pistettä = K5, yli 80 pistettä = H4, yli 70 pistettä = H3, yli 60 pistettä = T2, yli 50 pistettä = T1, muutoin hylätty
+              </summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function koePisteet(Ma, KeFy, Ai, Ru, En) {
+                    var taulukko = [["Matematiikka", Ma], ["KemiaFysiikka", KeFy], ["Aidinkieli", Ai], ["Ruotsi", Ru], ["Englanti", En]];
+                    for (var i = 0; i < taulukko.length; i++) {
+                        if (taulukko[i][1] >= 90) {
+                            console.log(taulukko[i][0] + ": K5");
+                        }
+                        else if (taulukko[i][1] >= 80) {
+                            console.log(taulukko[i][0] + ": H4");
+                        }
+                        else if (taulukko[i][1] >= 70) {
+                            console.log(taulukko[i][0] + ": H3");
+                        }
+                        else if (taulukko[i][1] >= 60) {
+                            console.log(taulukko[i][0] + ": T2");
+                        }
+                        else if (taulukko[i][1] >= 50) {
+                            console.log(taulukko[i][0] + ": T1");
+                        }
+                        else {
+                            console.log(taulukko[i][0] + ": Hylätty");
+                        }
+                    }
+                }
+                /*koePisteet(55, 78, 63, 88, 94);
+                koePisteet(99, 45, 70, 80, 60);*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               /// This program first creates an array to store the test points and an array
               /// to store the names of the tests. It then prompts the user to enter the
@@ -1232,9 +1508,45 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE13. Tee ohjelma, joka tulostaa viikonpäivät, kun annetaan vkpnumero (malli if-else, voit myös tehdä switch-case)</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE13. Tee ohjelma, joka tulostaa viikonpäivät, kun annetaan vkpnumero (malli if-else, voit myös tehdä switch-case)</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+                function viikonpaiva(nro) {
+                    nro = parseInt(nro);
+                    console.log(nro);
+                    switch (nro) {
+                        case 1:
+                            console.log("Maanantai");
+                            break;
+                        case 2:
+                            console.log("Tiistai");
+                            break;
+                        case 3:
+                            console.log("Keskiviikko");
+                            break;
+                        case 4:
+                            console.log("Torstai");
+                            break;
+                        case 5:
+                            console.log("Perjantai");
+                            break;
+                        case 6:
+                            console.log("Lauantai");
+                            break;
+                        case 7:
+                            console.log("Sunnuntai");
+                            break;
+                        default:
+                            console.log("Anna numero välillä 1-7");
+                            break;
+                    }
+                }
+                /*viikonpaiva(5);
+                viikonpaiva(0);
+                viikonpaiva(8);*/
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -1290,9 +1602,13 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE14. Tee ohjelma, joka kysyy kahta kokonaislukua ja tarkastaa, ovatko ne samat</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE14. Tee ohjelma, joka kysyy kahta kokonaislukua ja tarkastaa, ovatko ne samat</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -1326,9 +1642,13 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE15. Tee ohjelma, joka pyytää käyttäjältä ikää ja varmistaa, voiko tämä äänestää (18->)</summary>
-            <p class = "lihava">C#</p>
-              <pre class = "koodi">
+              <summary>IE15. Tee ohjelma, joka pyytää käyttäjältä ikää ja varmistaa, voiko tämä äänestää (18->)</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
                 /// <summary>
                 ///
                 /// </summary>
@@ -1362,9 +1682,13 @@
               </pre>
           </details>
           <details closed>
-            <summary>IE16. Tee ohjelma, joka pyytää kuukauden numeroa ja tulostaa sen jälkeen paljonko kuukaudessa on päiviä (malli vastaus on if-else, mutta tähän soveltuu paremmin switch-case)</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE16. Tee ohjelma, joka pyytää kuukauden numeroa ja tulostaa sen jälkeen paljonko kuukaudessa on päiviä (malli vastaus on if-else, mutta tähän soveltuu paremmin switch-case)</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -1439,9 +1763,13 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE17. Tee ohjelma, joka muuttaa annetun arvon rahaksi siten, että se ottaa huomioon setelien arvot. Esim. 1295 = 500 x 2 + 100 x 2 + 50 x 1 + 20 x 2 + 5 x 1</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE17. Tee ohjelma, joka muuttaa annetun arvon rahaksi siten, että se ottaa huomioon setelien arvot. Esim. 1295 = 500 x 2 + 100 x 2 + 50 x 1 + 20 x 2 + 5 x 1</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
@@ -1518,9 +1846,13 @@
             </pre>
           </details>
           <details closed>
-            <summary>IE18. Tee ohjelma, joka laskee, onko mahdollista piirtää kolmio annettujen kulma-astelukujen perusteella</summary>
-            <p class = "lihava">C#</p>
-            <pre class = "koodi">
+              <summary>IE18. Tee ohjelma, joka laskee, onko mahdollista piirtää kolmio annettujen kulma-astelukujen perusteella</summary>
+              <p class="lihava">JavaScript</p>
+              <pre class="koodi">
+
+              </pre>
+              <p class="lihava">C#</p>
+              <pre class="koodi">
               /// <summary>
               ///
               /// </summary>
