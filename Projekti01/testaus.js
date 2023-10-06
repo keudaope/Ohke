@@ -130,6 +130,7 @@ console.log(suuretNumerot);
 const teksti0 = "Minulla on tili pankissa.";
 const regex0 = /kissa/;
 console.log(regex0.test(teksti0));
+
 //SL02
 const teksti1 = "Poliiseja kutsutaan KISSALANpojiksi.";
 const regex1 = /kissa/i;
