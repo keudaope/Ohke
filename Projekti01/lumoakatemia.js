@@ -344,3 +344,321 @@ function viikonpaiva(nro) {
 /*viikonpaiva(5);
 viikonpaiva(0);
 viikonpaiva(8);*/
+// Tee ohjelma, joka kysyy kahta
+// kokonaislukua ja tarkastaa, ovatko
+// ne samat
+function tarkastaKokonaisluvut(a, b) {
+    try {
+        // Yritetään muuntaa annetut arvot kokonaisluvuiksi.
+        const lukuA = parseInt(a);
+        const lukuB = parseInt(b);
+
+        // Tarkistetaan, ovatko luvut NaN-arvoja, mikä osoittaa virheellisen muunnoksen.
+        if (isNaN(lukuA) || isNaN(lukuB)) {
+            throw new Error("Et antanut kokonaislukuja");
+        }
+
+        // Vertaillaan, ovatko luvut samat.
+        if (lukuA === lukuB) {
+            return "Antamasi luvut ovat samat.";
+        } else {
+            return "Antamasi luvut eivät ole samat.";
+        }
+    } catch (error) {
+        // Jos tapahtuu virhe (esim. muunnos ei onnistu), palautetaan virheviesti.
+        return error.message;
+    }
+}
+
+// Esimerkkejä käytöstä:
+/*console.log(tarkastaKokonaisluvut(5, 5)); // Tulostaa "Antamasi luvut ovat samat."
+console.log(tarkastaKokonaisluvut(5, "kymmenen")); // Tulostaa "Et antanut kokonaislukuja"
+console.log(tarkastaKokonaisluvut("3", 3)); // Tulostaa "Antamasi luvut ovat samat."*/
+
+// Tee ohjelma, joka pyytää käyttäjältä
+// ikää ja varmistaa, voiko tämä äänestää
+// (18 ->)
+function aanestys(ika) {
+    ika = parseInt(ika);
+    if (ika >= 18) {
+        console.log("Voit äänestää");
+    }
+    else if (isNaN(ika)) {
+        console.log("Et antanut numeroa");
+    }
+    else {
+        console.log("Et voi äänestää");
+    }
+}
+/*aanestys(19);
+aanestys(5);
+aanestys("viisi");*/
+// Tee ohjelma, joka pyytää kuukauden
+// numeroa ja tulostaa sen jälkeen
+// paljonko kuukaudessa on päiviä
+// (tähän soveltuu paremmin switch-case)
+function kuukaudenPaivat(kknro) {
+    kknro = parseInt(kknro);
+    switch (kknro) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            console.log("Kuukaudessa on 31 päivää");
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            console.log("Kuukaudessa on 30 päivää");
+            break;
+        case 2:
+            console.log("Kuukaudessa on 27/28 päivää");
+    }
+}
+/*kuukaudenPaivat(2);
+kuukaudenPaivat(6);
+kuukaudenPaivat(7);*/
+
+// Tee ohjelma, joka muuttaa annetun
+// arvon rahaksi siten, että se ottaa
+// huomioon setelien arvot.
+// Esim. 1295 = 500 x 2 + 100 x 2 +
+// 50 x 1 + 20 x 2 + 5 x 1
+function seteleiksi(amount) {
+    var note1 = 0, note2 = 0, note5 = 0, note10 = 0, note20 = 0, note50 = 0, note100 = 0, note500 = 0;
+    if (amount >= 500) {
+        note500 = Math.floor(amount / 500);
+        amount -= note500 * 500;
+    }
+    if (amount >= 100) {
+        note100 = Math.floor(amount / 100);
+        amount -= note100 * 100;
+    }
+    if (amount >= 50) {
+        note50 = Math.floor(amount / 50);
+        amount -= note50 * 50;
+    }
+    if (amount >= 20) {
+        note20 = Math.floor(amount / 20);
+        amount -= note20 * 20;
+    }
+    if (amount >= 10) {
+        note10 = Math.floor(amount / 10);
+        amount -= note10 * 10;
+    }
+    if (amount >= 5) {
+        note5 = Math.floor(amount / 5);
+        amount -= note5 * 5;
+    }
+    if (amount >= 2) {
+        note2 = Math.floor(amount / 2);
+        amount -= note2 * 2;
+    }
+    if(amount >= 1) {
+        note1 = amount;
+    }
+    console.log("Total number of notes = \n");
+    console.log("500 = " + note500);
+    console.log("100 = " + note100);
+    console.log("50 = " + note50);
+    console.log("20 = " + note20);
+    console.log("10 = " + note10);
+    console.log("5 = " + note5);
+    console.log("2 = " + note2);
+    console.log("1 = " + note1);
+}
+/*seteleiksi(1295);
+seteleiksi(1383);*/
+
+// Tee ohjelma, joka laskee, onko
+// mahdollista piirtää kolmio
+// annettujen kulma - astelukujen
+// perusteella
+function kolmio(a, b, c) {
+    if (a + b + c == 180) {
+        console.log("Kolmio on mahdollinen");
+    }
+    else {
+        console.log("Kolmio ei ole mahdollinen");
+    }
+}
+/*kolmio(60, 60, 60);
+kolmio(61, 61, 61);*/
+
+/* S01. Tee ohjelma, laskee, paljonko 
+ * joudut maksamaan takaisin, kun 
+ * lainasit 5000€ kahdeksi vuodeksi 
+ * 2% korolla */
+function laina() {
+    let maksu = 5000;
+    let korko = 1.02;
+    let aika = 2;
+    let korkosumma;
+    let maksettava = maksu;
+    for (var i = 1; i <= aika; i++) {
+        maksettava = (maksettava * korko);
+    }
+    korkosumma = maksettava - maksu;
+    console.log("Joudut maksamaan "
+        + maksu + " euron lainasta korkoa "
+        + korkosumma + " jolloin maksettavaa tulee yhteensä "
+        + maksettava);
+}
+//laina();
+
+/* S02. Tee ohjelma, joka laskee 
+ * annetun luvun kertoman */
+function kertoma(luku) {
+    let kertoma = 1;
+    for (var i = 1; i <= luku; i++) {
+        kertoma *= i;
+    }
+    console.log("Luvun " + luku + "kertoma on: " + kertoma);
+}
+/*kertoma(5);
+kertoma(7);*/
+
+/* S03. Tee ohjelma, joka etsii luvun 3 
+ * ensimmäisen esiintymän taulukosta 
+ * [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 
+ * 3, 6, 8, 2, 4, 3] */
+
+function esiintyma() {
+    let taulukko = [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3];
+    for (var i = 0; i < taulukko.length; i++) {
+        if (taulukko[i] == 3) {
+            console.log("Nro 3 on taulukon " + i + ". jäsen");
+            i = taulukko.length;
+        }
+    }
+}
+//esiintyma();
+/* S04. Tee ohjelma, kääntää käyttäjän 
+ * antaman sanan toisinpäin (Hevonen 
+ * --> nenoveH) */
+function tekstinKaanto(teksti) {
+    let lause = "";
+    for (var i = teksti.length - 1; i >= 0; i--) {
+        lause += teksti[i];
+    }
+    console.log(lause);
+}
+//tekstinKaanto("Hevonen");
+
+/* S05. Tee ohjelma, joka etsii 
+ * maksimiarvon taulukosta 
+ * [6, 7, 2, 4, 3, 8, 1] */
+function maksimi() {
+    let taulukko = [6, 7, 2, 4, 3, 8, 1];
+    let maksimi = taulukko[0];
+    for (var i = 1; i < taulukko.length; i++) {
+        if (taulukko[i] > maksimi) {
+            maksimi = taulukko[i];
+        }
+    }
+    console.log("Taulukon " + taulukko + " maksimiarvo on: " + maksimi);
+}
+//maksimi();
+
+/* S06. Tee ohjelma, joka laskee 
+ * keskiarvon taulukosta 
+ * [6, 7, 2, 4, 3, 8, 1] 
+ * ilman Math-luokan metodia */
+function keskiarvo() {
+    let taulukko = [6, 7, 2, 4, 3, 8, 1];
+    let summa = 0;
+    let keskiarvo = 0;
+    for (var i = 0; i < taulukko.length; i++) {
+        summa += taulukko[i];
+    }
+    keskiarvo = summa / taulukko.length;
+    console.log("Taulukon " + taulukko + " lukujen keskiarvo on: " + keskiarvo);
+}
+//keskiarvo();
+
+/* S07. Tee ohjelma, joka tekee uuden 
+ * taulukon taulukosta ["a", "b", "c", 
+ * "d", "e", "f"] siten, että kaikki 
+ * kirjaimet ovat isoja */
+function isoiksi() {
+    let taulukko = ["a", "b", "c", "d", "e", "f"];
+    let uusiTaulukko = [];
+    for (var i = 0; i < taulukko.length; i++) {
+        uusiTaulukko.push(taulukko[i].toUpperCase());
+    }
+    console.log(uusiTaulukko);
+}
+//isoiksi();
+
+/* S08. Tee ohjelma, joka etsii 
+ * seitsemännen parittoman esiintymän 
+ * taulukosta [6, 7, 2, 4, 3, 8, 1, 9, 
+ * 0, 3, 5, 7, 3, 6, 8, 2, 4, 3]*/
+function seitsemasPariton() {
+    let taulukko = [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3];
+    let laskuri = 0;
+    let haettuLuku;
+    for (var i = 0; i < taulukko.length; i++) {
+        if (taulukko[i] % 2 != 0) {
+            laskuri++;
+            if (laskuri == 7) {
+                console.log("Taulukon " + taulukko + " seitsemäs pariton jäsen on " + taulukko[i]);
+                i = taulukko.length;
+            }
+        }
+    }
+} 
+//seitsemasPariton();
+
+/* S09. Tee ohjelma, toiseksi suurimman 
+ * luvun taulukosta 
+ * [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 
+ * 3, 6, 8, 2, 4, 3]*/
+function toiseksiSuurin() {
+    let taulukko = [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3];
+    let suurin = taulukko[0];
+    let toiSuurin = 0;
+    for (var i = 1; i < taulukko.length; i++)
+    {
+        if (taulukko[i] > suurin)
+        {
+            toiSuurin = suurin;
+            suurin = taulukko[i];
+        }
+    }
+    console.log("Taulukon " + taulukko + " toiseksi suurin arvo on " + toiSuurin);
+}
+//toiseksiSuurin();
+/* S10. Tee ohjelma, joka tulostaa 
+ * sadasta luvusta kolme, kun luku on 
+ * 3:lla jaollinen, viisi, kun luku on 
+ * 5:llä jaollinen ja viisitoista, kun 
+ * luku on sekä kolmella, että viidellä 
+ * jaollinen */
+function jaollinen() {
+    let lause = "";
+    for (var i = 1; i <= 100; i++) {
+        if (i % 5 == 0 && i % 3 == 0) {
+            lause += "viisitoista ";
+        }
+        else if (i % 5 == 0) {
+            lause += "viisi ";
+        }
+        else if (i % 3 == 0) {
+            lause += "kolme ";
+        }
+        else {
+            lause += i + " ";
+        }
+    }
+    console.log(lause);
+}
+// jaollinen();
+/* S11. Tee ohjelma, joka tulostaa 
+ * 10 ensimmäistä Fibonaccin numeroa 
+ * (0, 1, 1, 2, 3, 5...), eli seuraava 
+ * luku on kahden edellisen summa */
