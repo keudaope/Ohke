@@ -780,5 +780,6 @@ function poistaPilkkuja(numerojono) {
 }
 
 // Käyttöesimerkki
-var syote = '7,3,9,2,44,99,123';
-poistaPilkkuja(syote);
+/*var syote = '7,3,9,2,44,99,123';
+poistaPilkkuja(syote);*/
+
