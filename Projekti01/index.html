@@ -2441,8 +2441,18 @@
               <summary>S11. Tee ohjelma, joka tulostaa 10 ensimmäistä Fibonaccin numeroa (0, 1, 1, 2, 3, 5...), eli seuraava luku on kahden edellisen summa</summary>
               <p class="lihava">JavaScript</p>
               <pre class="koodi">
-              
-              </pre>            <p class="lihava">C#</p>
+                function Fibonacci() {
+                    let fibonacci = [];
+                    fibonacci[0] = 0;
+                    fibonacci[1] = 1;
+                    for (var i = 2; i < 10; i++) {
+                        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+                    }
+                    console.log(fibonacci);
+                }
+                Fibonacci();              
+              </pre>            
+              <p class="lihava">C#</p>
               <pre class="koodi">
               using System;
               namespace MyApplication
@@ -2479,7 +2489,23 @@
               <summary>S12. Tee ohjelma, joka tarkastaa, onko annettu sana / lause palidromi (esim. aaroporaa), eli luettavissa molemmin päin</summary>
               <p class="lihava">JavaScript</p>
               <pre class="koodi">
-              
+                function palidromi(lause) {
+                    let kaannetty = "";
+                    for (var i = lause.length-1; i >= 0; i--) {
+                        kaannetty += lause[i];
+                    }
+                    if (lause == kaannetty) {
+                        console.log("lause on palidromi");
+                    }
+                    else {
+                        console.log("lause ei ole palidromi")
+                    }
+                }
+                palidromi("aaroporaa");
+                palidromi("aaro");
+                palidromi("saippuakauppias");
+                palidromi("innostunut");
+                palidromi("innostunutsonni");              
               </pre>            <p class="lihava">C#</p>
               <pre class="koodi">
               using System;
@@ -2512,7 +2538,21 @@
               <summary>S13. Muuta edellinen Fibonacci tehtävää siten, että lasket parillisten lukujen summan</summary>
               <p class="lihava">JavaScript</p>
               <pre class="koodi">
-              
+                function FibonacciParilliset() {
+                    let fibonacci = [];
+                    fibonacci[0] = 0;
+                    fibonacci[1] = 1;
+                    let summa = 0;
+                    for (var i = 2; i < 10; i++) {
+                        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+                        if (fibonacci[i] % 2 == 0) {
+                            summa += fibonacci[i];
+                        }
+                    }
+                    console.log(fibonacci);
+                    console.log("Parillisten summa: " + summa);
+                }
+                FibonacciParilliset();              
               </pre>            <p class="lihava">C#</p>
               <pre class="koodi">
               using System;
@@ -2548,7 +2588,21 @@
               <summary>S14. Muuta edellistä tehtävää siten, että lasket parittomien lukujen summan</summary>
               <p class="lihava">JavaScript</p>
               <pre class="koodi">
-              
+                function FibonacciParittomat() {
+                    let fibonacci = [];
+                    fibonacci[0] = 0;
+                    fibonacci[1] = 1;
+                    let summa = 1;
+                    for (var i = 2; i < 10; i++) {
+                        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+                        if (fibonacci[i] % 2 != 0) {
+                            summa += fibonacci[i];
+                        }
+                    }
+                    console.log(fibonacci);
+                    console.log("Parittomien summa: " + summa);
+                }
+                FibonacciParittomat();              
               </pre>            <p class="lihava">C#</p>
               <pre class="koodi">
               using System;
@@ -2584,7 +2638,24 @@
               <summary>S15. Tee ohjelma, joka etsii kahden annetun luvun suurimman yhteisen nimittäjän</summary>
               <p class="lihava">JavaScript</p>
               <pre class="koodi">
-              
+                function suurinNimittaja(a, b) {
+                    let pienempi, temp, suurempi;
+                    if (a > b) {
+                        pienempi = b;
+                        suurempi = a;
+                    }
+                    else {
+                        pienempi = a;
+                        suurempi = b;
+                    }
+                    while (pienempi > 0) {
+                        temp = pienempi;
+                        pienempi = suurempi % pienempi;
+                        suurempi = temp;       
+                    }
+                    console.log("Muuttujien yhteinen nimittäjä on: " + temp);
+                }
+                suurinNimittaja(15, 45);              
               </pre>            <p class="lihava">C#</p>
               <pre class="koodi">
               using System;
@@ -2623,8 +2694,28 @@
               </summary>
               <p class="lihava">JavaScript</p>
               <pre class="koodi">
-              
-              </pre>          <p class="lihava">C#</p>
+                function poistaPilkkuja(numerojono) {
+                    // Erotetaan numerojono pilkulla ja muunnetaan taulukoksi
+                    var numerot = numerojono.split(',');
+
+                    // Luodaan uusi taulukko ilman pilkkuja
+                    var tulostettavatNumerot = [];
+                    for (var i = 0; i < numerot.length; i++) {
+                        var numero = numerot[i].trim(); // Poistetaan mahdolliset välilyönnit
+                        if (!isNaN(numero)) { // Tarkistetaan, että se on numero
+                            tulostettavatNumerot.push(numero);
+                        }
+                    }
+
+                    // Tulostetaan numerot ilman pilkkua
+                    console.log(tulostettavatNumerot.join(' '));
+                }
+
+                // Käyttöesimerkki
+                var syote = '7,3,9,2,44,99,123';
+                poistaPilkkuja(syote);              
+              </pre>          
+              <p class="lihava">C#</p>
               <pre class="koodi">
             namespace MyApplication
             {

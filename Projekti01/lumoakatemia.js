@@ -662,3 +662,123 @@ function jaollinen() {
  * 10 ensimmäistä Fibonaccin numeroa 
  * (0, 1, 1, 2, 3, 5...), eli seuraava 
  * luku on kahden edellisen summa */
+function Fibonacci() {
+    let fibonacci = [];
+    fibonacci[0] = 0;
+    fibonacci[1] = 1;
+    for (var i = 2; i < 10; i++) {
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+    }
+    console.log(fibonacci);
+}
+//Fibonacci();
+
+/* S12. Tee ohjelma, joka tarkastaa, 
+ * onko annettu sana / lause palidromi 
+ * (esim. aaroporaa), eli luettavissa 
+ * molemmin päin */
+function palidromi(lause) {
+    let kaannetty = "";
+    for (var i = lause.length-1; i >= 0; i--) {
+        kaannetty += lause[i];
+    }
+    if (lause == kaannetty) {
+        console.log("lause on palidromi");
+    }
+    else {
+        console.log("lause ei ole palidromi")
+    }
+}
+/* palidromi("aaroporaa");
+palidromi("aaro");
+palidromi("saippuakauppias");
+palidromi("innostunut");
+palidromi("innostunutsonni"); */
+
+/* S13. Muuta edellinen Fibonacci 
+ * tehtävää siten, että lasket 
+ * parillisten lukujen summan */
+function FibonacciParilliset() {
+    let fibonacci = [];
+    fibonacci[0] = 0;
+    fibonacci[1] = 1;
+    let summa = 0;
+    for (var i = 2; i < 10; i++) {
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        if (fibonacci[i] % 2 == 0) {
+            summa += fibonacci[i];
+        }
+    }
+    console.log(fibonacci);
+    console.log("Parillisten summa: " + summa);
+}
+//FibonacciParilliset();
+
+/* S14. Muuta edellistä tehtävää siten, 
+ * että lasket parittomien lukujen 
+ * summan */
+function FibonacciParittomat() {
+    let fibonacci = [];
+    fibonacci[0] = 0;
+    fibonacci[1] = 1;
+    let summa = 1;
+    for (var i = 2; i < 10; i++) {
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        if (fibonacci[i] % 2 != 0) {
+            summa += fibonacci[i];
+        }
+    }
+    console.log(fibonacci);
+    console.log("Parittomien summa: " + summa);
+}
+//FibonacciParittomat();
+
+/* S15. Tee ohjelma, joka etsii kahden 
+ * annetun luvun suurimman yhteisen 
+ * nimittäjän */
+
+function suurinNimittaja(a, b) {
+    let pienempi, temp, suurempi;
+    if (a > b) {
+        pienempi = b;
+        suurempi = a;
+    }
+    else {
+        pienempi = a;
+        suurempi = b;
+    }
+    while (pienempi > 0) {
+        temp = pienempi;
+        pienempi = suurempi % pienempi;
+        suurempi = temp;       
+    }
+    console.log("Muuttujien yhteinen nimittäjä on: " + temp);
+}
+//suurinNimittaja(15, 45);
+
+/* S16. Tee ohjelma, joka pyytää 
+ * käyttäjältä merkkijonoa pilkulla 
+ * erotettuna ja tulostaa sen ilman 
+ * pilkkua esim. 
+ * pilkutta(7,3,9,2,44,99,123) 
+ * -->  7 3 9 2 44 99 123 */
+function poistaPilkkuja(numerojono) {
+    // Erotetaan numerojono pilkulla ja muunnetaan taulukoksi
+    var numerot = numerojono.split(',');
+
+    // Luodaan uusi taulukko ilman pilkkuja
+    var tulostettavatNumerot = [];
+    for (var i = 0; i < numerot.length; i++) {
+        var numero = numerot[i].trim(); // Poistetaan mahdolliset välilyönnit
+        if (!isNaN(numero)) { // Tarkistetaan, että se on numero
+            tulostettavatNumerot.push(numero);
+        }
+    }
+
+    // Tulostetaan numerot ilman pilkkua
+    console.log(tulostettavatNumerot.join(' '));
+}
+
+// Käyttöesimerkki
+var syote = '7,3,9,2,44,99,123';
+poistaPilkkuja(syote);
