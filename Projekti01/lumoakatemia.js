@@ -179,3 +179,16 @@ function karkaus(vuosi) {
 karkaus(2000);
 karkaus(2100);
 karkaus(1997);*/
+
+// Tee ohjelma, joka tarkastaa, onko annettu luku
+// parillinen vai pariton
+function parillinenPariton(luku) {
+    if (luku % 2 == 0) {
+        console.log("Luku on parillinen");
+    }
+    else {
+        console.log("Luku on pariton");
+    }
+}
+parillinenPariton(3);
+parillinenPariton(6);
