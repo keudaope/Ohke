@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <script type="text/javascript" href="script.js"></script>
+    <title></title>
+</head>
+<body>
+    <main>
+        <header>
+            <menu>
+                <p class="s1">SISÄLTÄÄ MM.:</p>
+                <p class="s2">❱<span class="s3">Perusharjoituksia</span></p>
+                <p class="s2">❱<span class="s3">Ehtolauseita</span></p>
+                <p class="s2">❱<span class="s3">Silmukoita</span></p>
+                <p class="s2">❱<span class="s3">Taulukoita</span></p>
+                <p class="s2">❱<span class="s3">Objekteja ... ja paljon muuta</span></p>
+            </menu>
+            <h1 style="">Ohjelmointi <span style=" color: #B30838;">tehtäviä</span></h1>
+            <nav class="navbar">
+                <a href="index.html" class="btn Active" onclick="nykyinenPainike(0)">Sivu 1</a>
+                <a href="sivu2.html" class="btn Active" onclick="nykyinenPainike(1)">Sivu 2</a>
+                <a href="sivu3.html" class="btn Active" onclick="nykyinenPainike(2)">Sivu 3</a>
+                <a href="sivu4.html" class="btn Active" onclick="nykyinenPainike(3)">Sivu 4</a>
+            </nav>
+            <p class="s5">Kerätty internetin sivustoilta</p>
+        </header>
+        <article class="grid-container">
+            <section class="sec1">
+                <p class="s6">BOOTSTRAP-HARJOITUKSIA</p>
+                <details closed>
+                    <summary>
+                        BootStrap01 - Luo perus Bootstrap-sivu, joka sisältää navigointipalkin ja muutaman elementin sivulla.
+                        <img src="bs01.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+                        <!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
+                        Luo perus Bootstrap-sivu, joka sisältää navigointipalkin ja muutaman elementin sivulla. -->
+                        &lt;!DOCTYPE html>
+                        &lt;html lang="en">
+                        &lt;head>
+                                            &lt;meta charset="UTF-8">
+                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+                                            &lt;title>Bootstrap esimerkki&lt;/title>
+                        &lt;/head>
+                        &lt;body>
+                                            &lt;nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                            &lt;a class="navbar-brand" href="#">Sivustoni&lt;/a>
+                                            &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                            &lt;span class="navbar-toggler-icon">&lt;/span>
+                                &lt;/button>
+                                            &lt;div class="collapse navbar-collapse" id="navbarNav">
+                                            &lt;ul class="navbar-nav">
+                                            &lt;li class="nav-item">
+                                            &lt;a class="nav-link" href="#">Koti&lt;/a>
+                                        &lt;/li>
+                                            &lt;li class="nav-item">
+                                            &lt;a class="nav-link" href="#">Meistä&lt;/a>
+                                        &lt;/li>
+                                            &lt;li class="nav-item">
+                                            &lt;a class="nav-link" href="#">Ota yhteyttä&lt;/a>
+                                        &lt;/li>
+                                    &lt;/ul>
+                                &lt;/div>
+                            &lt;/nav>
+                                            &lt;div class="container">
+                                            &lt;h1>Tervetuloa sivustollemme&lt;/h1>
+                                            &lt;p>Tämä on perus Bootstrap-sivu.&lt;/p>
+                            &lt;/div>
+                                            &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">&lt;/script>
+                        &lt;/body>
+                        &lt;/html>
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap02 - Luo sivulle Jumbotron Bootstrap-komponentti.
+                        <img src="bs02.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!-- https://getbootstrap.com/docs/4.0/components/jumbotron/ 
+Luo sivulle Jumbotron Bootstrap-komponentti. -->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+                    &lt;meta charset="UTF-8">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                          rel="stylesheet" crossorigin="anonymous">
+                    &lt;title>Jumbotron&lt;/title>
+&lt;/head>
+&lt;body>
+                    &lt;div class="jumbotron">
+                    &lt;h1 class="display-4">Tervetuloa kotisivulleni&lt;/h1>
+                    &lt;p class="lead">Tämä on yksinkertainen Jumbotron esimerkki.&lt;/p>
+                    &lt;hr class="my-4">
+                    &lt;p>Lisää meistä.&lt;/p>
+                    &lt;a class="btn btn-primary btn-lg" href="#" role="button">Meistä&lt;/a>
+&lt;/div>
+                    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">&lt;/script>
+&lt;/body>
+&lt;/html>                    
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap03 - Luo sivulle Bootstrapin grid-järjestelmän avulla kaksi riviä, joista kummassakin on kolme saraketta.
+                        <img src="bs03.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!-- https://getbootstrap.com/docs/5.3/layout/grid/
+Luo sivulle Bootstrapin grid-järjestelmän avulla kaksi riviä, 
+joista kummassakin on kolme saraketta. -->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+                    &lt;meta charset="UTF-8">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                          rel="stylesheet" crossorigin="anonymous">
+                    &lt;title>Document&lt;/title>
+&lt;/head>
+&lt;body>
+                    &lt;div class="container">
+                    &lt;div class="row">
+                    &lt;div class="col">&lt;p>Column 1&lt;/p>&lt;/div>
+                    &lt;div class="col">&lt;p>Column 2&lt;/p>&lt;/div>
+                    &lt;div class="col">&lt;p>Column 3&lt;/p>&lt;/div>
+    &lt;/div>
+                    &lt;div class="row">
+                    &lt;div class="col">&lt;p>Column 1&lt;/p>&lt;/div>
+                    &lt;div class="col">&lt;p>Column 2&lt;/p>&lt;/div>
+                    &lt;div class="col">&lt;p>Column 3&lt;/p>&lt;/div>
+    &lt;/div>
+&lt;/div>
+                    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">&lt;/script>
+&lt;/body>
+&lt;/html>                    
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap04 - Luo sivulle Bootstrapin offset-sarakkeita käyttäen kaksi saraketta, joista toinen on siirretty yhden sarakkeen verran oikealle.
+                        <img src="bs04.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!-- https://getbootstrap.com/docs/5.3/layout/columns/#offsets
+ Luo sivulle Bootstrapin offset-sarakkeita käyttäen kaksi saraketta, 
+ joista toinen on siirretty yhden sarakkeen verran oikealle. -->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+                    &lt;meta charset="UTF-8">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                          rel="stylesheet" crossorigin="anonymous">
+                    &lt;title>Document&lt;/title>
+&lt;/head>
+&lt;body>
+                    &lt;div class="container">
+                    &lt;div class="row">
+                    &lt;div class="col">
+                    &lt;p>Column 1&lt;/p>
+        &lt;/div>
+                    &lt;div class="col offset-md-1">
+                    &lt;p>Column 2 (Offset)&lt;/p>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+&lt;/body>
+&lt;/html>                    
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap05 - Luo Bootstrap-nappi, joka on sininen ja suuri.
+                        <img src="bs05.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!-- https://getbootstrap.com/docs/5.3/components/buttons/
+    Luo Bootstrap-nappi, joka on sininen ja suuri.-->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+                    &lt;meta charset="UTF-8">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                          rel="stylesheet" crossorigin="anonymous">
+                    &lt;title>Document&lt;/title>
+&lt;/head>
+&lt;body>
+                    &lt;button class="btn btn-primary btn-lg">Blue Button&lt;/button>
+&lt;/body>
+&lt;/html>                    
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap06 - Luo Bootstrapin taulukko, jossa on muutama rivi ja solu.
+                        <img src="bs06.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!-- https://getbootstrap.com/docs/5.3/content/tables/
+    Luo Bootstrapin taulukko, jossa on muutama rivi ja solu. -->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+                    &lt;meta charset="UTF-8">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                          rel="stylesheet" crossorigin="anonymous">
+                    &lt;title>Document&lt;/title>
+&lt;/head>
+&lt;body>
+                    &lt;table class="table">
+                    &lt;thead>
+                    &lt;tr>
+                    &lt;th>ID&lt;/th>
+                    &lt;th>Name&lt;/th>
+                    &lt;th>Email&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+                    &lt;tbody>
+                    &lt;tr>
+                    &lt;td>1&lt;/td>
+                    &lt;td>John Doe&lt;/td>
+                    &lt;td>johndoe@example.com&lt;/td>
+        &lt;/tr>
+                    &lt;tr>
+                    &lt;td>2&lt;/td>
+                    &lt;td>Jane Smith&lt;/td>
+                    &lt;td>janesmith@example.com&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+&lt;/body>
+&lt;/html>                    
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap07 - Luo Bootstrap-kaavio käyttäen Bootstrapin "progress" -komponenttia.
+                        <img src="bs07.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!-- https://getbootstrap.com/docs/5.3/components/progress/
+Luo Bootstrap-kaavio käyttäen Bootstrapin "progress" -komponenttia.-->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+                    &lt;meta charset="UTF-8">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                          rel="stylesheet"
+                          crossorigin="anonymous">
+                    &lt;title>Document&lt;/title>
+&lt;/head>
+&lt;body>
+                    &lt;div class="progress">
+                    &lt;div class="progress-bar" role="progressbar" style="width: 75%;"
+                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%&lt;/div>
+&lt;/div>
+&lt;/body>
+&lt;/html>                    
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap08 - Luo kuvagalleria Bootstrapin "carousel" -komponentilla, joka näyttää kuvia, joita voit selata.
+                        <img src="bs08.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+                    &lt;title>Bootstrap Example&lt;/title>
+                    &lt;meta charset="utf-8">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+                    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">&lt;/script>
+&lt;/head>
+&lt;body>
+
+    &lt;!-- Carousel -->
+                    &lt;div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        &lt;!-- Indicators/dots -->
+                    &lt;div class="carousel-indicators">
+                    &lt;button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active">&lt;/button>
+                    &lt;button type="button" data-bs-target="#demo" data-bs-slide-to="1">&lt;/button>
+                    &lt;button type="button" data-bs-target="#demo" data-bs-slide-to="2">&lt;/button>
+        &lt;/div>
+
+        &lt;!-- The slideshow/carousel -->
+                    &lt;div class="carousel-inner">
+                    &lt;div class="carousel-item active">
+                    &lt;img src="la.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            &lt;/div>
+                    &lt;div class="carousel-item">
+                    &lt;img src="chicago.jpg" alt="Chicago" class="d-block" style="width:100%">
+            &lt;/div>
+                    &lt;div class="carousel-item">
+                    &lt;img src="ny.jpg" alt="New York" class="d-block" style="width:100%">
+            &lt;/div>
+        &lt;/div>
+
+        &lt;!-- Left and right controls/icons -->
+                    &lt;button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    &lt;span class="carousel-control-prev-icon">&lt;/span>
+        &lt;/button>
+                    &lt;button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    &lt;span class="carousel-control-next-icon">&lt;/span>
+        &lt;/button>
+    &lt;/div>
+
+                    &lt;div class="container-fluid mt-3">
+                    &lt;h3>Carousel Example&lt;/h3>
+                    &lt;p>The following example shows how to create a basic carousel with indicators and controls.&lt;/p>
+    &lt;/div>
+
+&lt;/body>
+&lt;/html>
+                    
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap09 - Luo yhteydenottolomake Bootstrapilla, joka sisältää nimen, sähköpostiosoitteen ja viestikentän.
+                        <img src="bs09.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!-- https://getbootstrap.com/docs/5.3/forms/overview/
+Luo yhteydenottolomake Bootstrapilla, joka sisältää nimen, sähköpostiosoitteen ja viestikentän. -->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    &lt;title>Document&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;form>
+        &lt;div class="form-group">
+            &lt;label for="name">Nimi&lt;/label>
+            &lt;input type="text" class="form-control" id="nimi" placeholder="Ole hyvä ja syötä nimesi">
+        &lt;/div>
+        &lt;div class="form-group">
+            &lt;label for="email">Sähköposti&lt;/label>
+            &lt;input type="email" class="form-control" id="email" placeholder="Ole hyvä ja syötä sähköpostiosoitteesi">
+        &lt;/div>
+        &lt;div class="form-group">
+            &lt;label for="message">Viesti&lt;/label>
+            &lt;textarea class="form-control" id="message" rows="4" placeholder="Ole hyvä ja syötä viestisi meille">&lt;/textarea>
+        &lt;/div>
+        &lt;button type="submit" class="btn btn-primary">Lähetä&lt;/button>
+&lt;/form>
+&lt;/body>
+&lt;/html>                    
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        BootStrap10 - Luo Bootstrapin tabbikomponentti, joka sisältää viisi välilehteä
+                        <img src="bs10.png" alt="Tehtävän kuva" />
+                    </summary>
+                    <p class="lihava">HTML</p>
+                    <pre class="koodi">
+&lt;!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/
+Luo Bootstrapin tabbikomponentti, joka sisältää kaksi välilehteä -->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;title>Bootstrap Example&lt;/title>
+    &lt;meta charset="utf-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">&lt;/script>
+    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">&lt;/script>
+&lt;/head>
+&lt;body>
+    &lt;div class="container">
+    &lt;h3>A basic demo of Bootstrap Tabs&lt;/h3>
+
+    &lt;!-- Nav tabs -->
+    &lt;ul class="nav nav-tabs" role="tablist">
+        &lt;li class="active">&lt;a href="#hometab" role="tab" data-toggle="tab">Home&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#javatab" role="tab" data-toggle="tab">Java&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#csharptab" role="tab" data-toggle="tab">C#&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#mysqltab" role="tab" data-toggle="tab">MySQL&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#jquerytab" role="tab" data-toggle="tab">jQuery&lt;/a>&lt;/li>
+  
+    &lt;/ul>
+    &lt;/li>
+
+    &lt;!-- Tab panes -->
+    &lt;div class="tab-content">
+        &lt;div class="tab-pane active" id="hometab">Write something for home tab&lt;/div>
+        &lt;div class="tab-pane" id="javatab">The Java is an object-oriented programming language &lt;br /> 
+        that was developed by James Gosling from the Sun Microsystems in 1995.&lt;/div>
+        &lt;div class="tab-pane" id="csharptab">C# is also a programming language&lt;/div>
+        &lt;div class="tab-pane" id="mysqltab">MySQL is a databased mostly used for web applications.&lt;/div>
+        &lt;div class="tab-pane" id="jquerytab">jQuery content here&lt;/div>
+  
+    &lt;/div>
+&lt;/body>
+&lt;/html>            
+                    </pre>
+                </details>
+            </section>
+            <section class="sec2">
+                <details closed>
+                    <summary>
+                        DOM11. Kirjoita JavaScript ohjelma, joka tulostaa selainikkunan leveyden ja korkeuden joka kerta, kun ikkunan kokoa muutetaan.
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="haeKoko()" onresize="haeKoko()">
+                        &lt;div id="wh">
+                            &lt;!-- Tulosta leveys ja korkeus tänne -->
+                        &lt;/div>
+                    &lt;/body>
+                    &lt;/html>
+                    <b>JavaScript</b>
+                        function haeKoko() {
+                            var leveys = document.documentElement.clientWidth;
+                            var korkeus = document.documentElement.clientHeight;
+
+                            // Laitetaan vastaus &lt;h1>-tägien sisään
+                            document.getElementById('wh').innerHTML = "&lt;h1>Leveys: " 
+                            + leveys + " ja korkeus: " + korkeus + "&lt;/h1>";
+                        }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM12. Kirjoita JavaScript ohjelma, joka hakee elementin id:n avulla ja muuttaa sen sisältöä
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;!DOCTYPE html>
+                    &lt;html>
+                    &lt;head>
+                       &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p id="muutettava">Tämä teksti muuttuu.&lt;/p>
+                        &lt;input type="button" onclick="muutaSisalto()" value="Muuta sisältö">     
+
+                        &lt;/script>
+                    &lt;/body>
+                    &lt;/html> 
+
+                    <b>JavaScript</b>
+                        function muutaSisalto()
+                        {
+                            const elementti = document.getElementById('muutettava');
+                            elementti.textContent = 'Uusi teksti';
+                        }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM13. Kirjoita JavaScript ohjelma, joka luo uuden paragraph-elementin teksteineen sivulle
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;div id="container">&lt;/div>
+                    &lt;input type="button" onclick="luoElementti()" value="Luo elementti"> 
+                    &lt;/div>
+                    &lt;/body>
+                    &lt;/html>  
+
+                    <b>JavaScript</b>
+                        function luoElementti()
+                        {
+                            const uusiElementti = document.createElement('p');
+                            uusiElementti.textContent = 'Uusi teksti';
+                            document.getElementById('container').appendChild(uusiElementti);  
+                        }                        
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM14. Kirjoita JavaScript ohjelma, joka poistaa p-elementin sivulta
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p id="poistettava">Tämä poistetaan.&lt;/p>
+                    &lt;input type="button" onclick="poistaElementti()" value="Poista elementti"> 
+                    &lt;/div>
+                    &lt;/body>
+                    &lt;/html> 
+
+                    <b>JavaScript</b>
+                        function poistaElementti()
+                        {
+                            const elementti = document.getElementById('poistettava');
+                            elementti.parentNode.removeChild(elementti); 
+                        }                       
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM15. Kirjoita JavaScript ohjelma, joka lisää luokkamääritteen p-elementille
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p id="muokattava">Tämä saa luokan.&lt;/p>
+                    &lt;input type="button" onclick="lisaaLuokka()" value="Lisaa luokka"> 
+                    &lt;/div>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                        function lisaaLuokka()
+                        {
+                            const elementti = document.getElementById('muokattava');
+                            elementti.classList.add('uusi-luokka'); 
+                        }                        
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM16. Kirjoita JavaScript ohjelma, joka käyttää querySelectoria valitsemaan elementti ja vaihda elementin teksti
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p class="valittava">Valitse minut&lt;/p>
+                    &lt;input type="button" onclick="qs()" value="Query Selector"> 
+                    &lt;/div>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function qs()
+                    {
+                        const elementti = document.querySelector('.valittava');
+                        elementti.textContent = 'Valittu!';
+                    }                       
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM17. Kirjoita JavaScript ohjelma, joka käyttää querySelectorAll-komentoa valitsemaan kaikki li-elementit ja muuttamaan elementtien sisältöä
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;ul>
+                        &lt;li>Kohta 1&lt;/li>
+                        &lt;li>Kohta 2&lt;/li>
+                        &lt;li>Kohta 3&lt;/li>
+                        &lt;/ul>
+                    &lt;input type="button" onclick="qsa()" value="Query Selector All"> 
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                        function qsa()
+                        {
+                            const kaikkiKohdat = document.querySelectorAll('li');
+                            kaikkiKohdat.forEach((kohta, indeksi) => {
+                                kohta.textContent = `Kohta ${indeksi + 1} muokattu`;
+                            });
+                        }                       
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM18. Kirjoita JavaScript ohjelma, joka muuttaa p-elementin (id="tyylittava") fontin väriä punaiseksi ja fontin kokoa 24px:ään
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;p id="tyylittava">Muuta tyyliä&lt;/p>
+                        &lt;input type="button" onclick="muutaTyyli()" value="Muuta tyyliä"> 
+                    &lt;/body>
+                    &lt;/html>  
+
+                    <b>JavaScript</b>
+                    function muutaTyyli()
+                    {
+                        const elementti = document.getElementById('tyylittava');
+                        elementti.style.color = 'red';
+                        elementti.style.fontSize = '24px'; 
+                    }                        
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM19. Kirjoita JavaScript ohjelma, joka käyttää querySelector ja getAttribute -komentoja hakeakseen div-elementin data-arvo attribuutin arvon
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;div data-arvo="123">Data-arvo&lt;/div>
+                        &lt;input type="button" onclick="haeArvo()" value="Hae arvo"> 
+                    &lt;/body>
+                    &lt;/html>    
+
+                    <b>JavaScript</b>
+                    function haeArvo()
+                    {
+                        const elementti = document.querySelector('div');
+                        const dataArvo = elementti.getAttribute('data-arvo');
+                        alert(dataArvo); // Tulostaa "123"
+                    }                        
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM20. Kirjoita JavaScript ohjelma, joka lisää tapahtuman käsittelijän painikkeeseen
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                        &lt;title>Harjoitus 2&lt;/title>
+                    &lt;/head>
+                    &lt;body onload="tapahtumanKasittelija()">
+                        &lt;button id="painike">Klikkaa minua&lt;/button>
+                    &lt;/body>
+                    &lt;/html>   
+                                    
+                    <b>JavaScript</b>
+                    function tapahtumanKasittelija()
+                    {
+                        const painike = document.getElementById('painike');
+                        painike.addEventListener('click', () => {
+                            alert('Painoit nappia!');
+                        });
+                    }                        
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM21. Luo listaelementtejä dynaamisesti
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="luoLista()">
+                        &lt;ul id="lista">&lt;/ul>
+                    &lt;/body>
+                    &lt;/html> 
+
+                    <b>JavaScript</b>
+                    function luoLista()
+                    {
+                    const lista = document.getElementById('lista');
+                    const elementit = ['Kohta 1', 'Kohta 2', 'Kohta 3'];
+                    elementit.forEach((teksti) => {
+                        const uusiLi = document.createElement('li');
+                        uusiLi.textContent = teksti;
+                        lista.appendChild(uusiLi);
+                    });                        
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM22. Tee lomake, jossa on kohdat nimelle ja sähköpostille ja muuta niiden sisältö JavaScriptillä
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="muutaArvot()">
+                        &lt;form id="lomake">
+                        &lt;input type="text" id="nimi" value="John Doe">
+                        &lt;input type="email" id="sahkoposti" value="john@example.com">
+                        &lt;button type="button" id="muutaArvot">Muuta arvot&lt;/button>
+                        &lt;/form>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function muutaArvot()
+                    {
+                        const muutaArvotButton = document.getElementById('muutaArvot');
+                        muutaArvotButton.addEventListener('click', () => {
+                            const nimiKentta = document.getElementById('nimi');
+                            const sahkopostiKentta = document.getElementById('sahkoposti');
+                            nimiKentta.value = 'Jane Doe';
+                            sahkopostiKentta.value = 'jane@example.com';
+                        });
+                    }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM23. Tee JavaScript koodi, joka avaa Alert-ikkunan ja antaa siellä viestin
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="avaaAlertIkkuna()">
+                        &lt;button id="avaaValintaikkuna">Avaa Alert-ikkuna&lt;/button>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function avaaAlertIkkuna()
+                    {
+                        const avaaValintaikkunaButton = document.getElementById('avaaValintaikkuna');
+                        avaaValintaikkunaButton.addEventListener('click', () => {
+                            const valinta = confirm('Haluatko jatkaa?');
+                            if (valinta) {
+                                alert('Jatka painamalla OK.');
+                            } else {
+                                alert('Peruutettu.');
+                            }
+                        });
+                    }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM24. Tee JavaScript koodi, joka näyttää Alert-ikkunan vasta 3 sekunnin kuluttua napin painalluksesta
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="naytaIlmoitus()">
+                        &lt;button id="naytaIlmoitus">Nayta ilmoitus&lt;/button>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function naytaIlmoitus()
+                    {
+                        const naytaIlmoitusButton = document.getElementById('naytaIlmoitus');
+                        naytaIlmoitusButton.addEventListener('click', () => {
+                            setTimeout(() => {
+                                alert('Aikarajoitettu ilmoitus!');
+                            }, 3000); // Ilmoitus näkyy 3 sekuntia
+                        });
+                    }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM25. Kirjoita JavaScript koodi, joka lisää kuvauslistaan (dl) uusi jäsen ja sen kuvaus
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;dl>
+                            &lt;dt>Termi 1&lt;/dt>
+                            &lt;dd>Kuvaus 1&lt;/dd>
+                            &lt;dt>Termi 2&lt;/dt>
+                            &lt;dd>Kuvaus 2&lt;/dd>
+                        &lt;/dl>
+                        &lt;button onclick="kuvausLista()">Lisää jäsen ja sen kuvaus&lt;/button>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function kuvausLista() {
+                        const lista = document.querySelector('dl');
+                        const uusiTermi = document.createElement('dt');
+                        uusiTermi.textContent = 'Uusi termi';
+                        const uusiKuvaus = document.createElement('dd');
+                        uusiKuvaus.textContent = 'Uusi kuvaus';
+                        lista.appendChild(uusiTermi);
+                        lista.appendChild(uusiKuvaus);
+                    }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM26. Kirjoita JavaScript koodi, joka piilottaa ja tuo esiin elementin (esim. p)
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="piilotaNayta()">
+                        &lt;button id="piilota">Piilota&lt;/button>
+                        &lt;button id="nayta">Näytä&lt;/button>
+                        &lt;div id="piilotettava">Tämä voidaan piilottaa&lt;/div>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function piilotaNayta() {
+                        const piilotaButton = document.getElementById('piilota');
+                        const naytaButton = document.getElementById('nayta');
+                        const piilotettava = document.getElementById('piilotettava');
+                        piilotaButton.addEventListener('click', () => {
+                            piilotettava.style.display = 'none';
+                        });
+                        naytaButton.addEventListener('click', () => {
+                            piilotettava.style.display = 'block';
+                        });
+                    }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM27. Kirjoita JavaScript koodi, joka tuo kuvan näkyviin nappia painettaessa.
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="lataaKuva()">
+                        &lt;button id="lataaKuva">Lataa kuva&lt;/button>
+                        &lt;img id="kuva" src="" alt="Kuva">
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function lataaKuva() {
+                        const lataaKuvaButton = document.getElementById('lataaKuva');
+                        const kuva = document.getElementById('kuva');
+                        lataaKuvaButton.addEventListener('click', () => {
+                            kuva.src = 'kuva.jpg'; // Korvaa 'kuva.jpg' halutulla kuvan URL:llä
+                        });
+                    }
+                    </pre>
+                </details>
+                <details closed>
+                    <summary>
+                        DOM28. Tee JavaScript koodi, joka hakee lomakkeelta kaksi lukua ja laskee ne yhteen
+                    </summary>
+                    <p class="lihava">HTML + JavaScript</p>
+                    <pre class="koodi">
+                    <b>HTML:</b>
+                    &lt;html>
+                    &lt;head>
+                        &lt;script src="testi.js">&lt;/script>
+                    &lt;/head>
+                    &lt;body onload="laskeYhteen()">
+                        &lt;input type="number" id="luku1" placeholder="Luku 1">
+                        &lt;input type="number" id="luku2" placeholder="Luku 2">
+                        &lt;button id="laske">Laske&lt;/button>
+                        &lt;p>Tulos: &lt;span id="tulos">&lt;/span>&lt;/p>
+                    &lt;/body>
+                    &lt;/html>
+
+                    <b>JavaScript</b>
+                    function laskeYhteen() {
+                        const luku1Kentta = document.getElementById('luku1');
+                        const luku2Kentta = document.getElementById('luku2');
+                        const laskeButton = document.getElementById('laske');
+                        const tulosElementti = document.getElementById('tulos');
+
+                        laskeButton.addEventListener('click', () => {
+                            const luku1 = parseFloat(luku1Kentta.value);
+                            const luku2 = parseFloat(luku2Kentta.value);
+                            const tulos = luku1 + luku2;
+                            tulosElementti.textContent = tulos;
+                        });
+                    }
+                    </pre>
+                </details>
+            </section>
+
+      </article>
+    </main>
+  </body>
+</html>      

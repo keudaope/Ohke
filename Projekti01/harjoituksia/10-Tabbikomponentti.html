@@ -1,0 +1,40 @@
+<!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/
+Luo Bootstrapin tabbikomponentti, joka sisältää kaksi välilehteä -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<h3>A basic demo of Bootstrap Tabs</h3>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#hometab" role="tab" data-toggle="tab">Home</a></li>
+  <li><a href="#javatab" role="tab" data-toggle="tab">Java</a></li>
+  <li><a href="#csharptab" role="tab" data-toggle="tab">C#</a></li>
+  <li><a href="#mysqltab" role="tab" data-toggle="tab">MySQL</a></li>
+  <li><a href="#jquerytab" role="tab" data-toggle="tab">jQuery</a></li>
+  
+</ul>
+</li>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="hometab">Write something for home tab</div>
+  <div class="tab-pane" id="javatab">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
+  <div class="tab-pane" id="csharptab">C# is also a programming language</div>
+  <div class="tab-pane" id="mysqltab">MySQL is a databased mostly used for web applications.</div>
+  <div class="tab-pane" id="jquerytab">jQuery content here</div>
+  
+</div>
+
+</body>
+</html>

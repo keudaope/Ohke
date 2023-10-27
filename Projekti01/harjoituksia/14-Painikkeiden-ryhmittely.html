@@ -1,0 +1,30 @@
+<!-- https://getbootstrap.com/docs/5.3/components/button-group/
+Luo Bootstrap-painikkeiden ryhmä, jossa on painikkeita eri väreillä.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+  <title>Document</title>
+</head>
+<body>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDropdown" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
